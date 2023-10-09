@@ -1,0 +1,739 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+
+<head>
+
+	<!-- META DATA -->
+	<meta charset="UTF-8">
+	<meta name='viewport' content='width=device-width, initial-scale=1.0, user-scalable=0'>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="description"
+		content="هيئة الاتصالات والفضاء والتقنية هي الجهة المسؤولة عن تنظيم قطاع الاتصالات وتقنية المعلومات في المملكة العربية السعودية. ويحدد كلٌ من ( نظام الاتصالات ) الصادر بقرار مجلس الوزراء ذي الرقم (74 ) في 5/3/1422هـ ولائحته التنفيذية الصادرة بالقرار الوزاري رقم ( 11) في 17 / 5 / 1423هـ الإطار القانوني الخاص بتنظيم القطاع" />
+	<meta name="keywords" content="هيئة الاتصالات والفضاء والتقنية" />
+	<meta name="author" content="هيئة الاتصالات والفضاء والتقنية">
+
+	<!-- FAVICON -->
+	<link rel="apple-touch-icon" sizes="180x180" href="../assets/images/fav/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="../assets/images/fav/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="../assets/images/fav/favicon-16x16.png">
+	<link rel="mask-icon" href="../assets/images/fav/safari-pinned-tab.svg" color="#000062">
+	<link rel="shortcut icon" href="../assets/images/fav/favicon.ico">
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="theme-color" content="#ffffff">
+
+	<!-- TITLE -->
+	<title>منصة متصل - هيئة الاتصالات والفضاء والتقنية</title>
+
+	<!-- BOOTSTRAP CSS -->
+	<link id="style" href="../assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+
+	<!-- STYLE CSS -->
+	<link href="../assets/css/style.css" rel="stylesheet" />
+
+	<!-- SINGLE-PAGE CSS -->
+	<link href="../assets/plugins/single-page/css/main.css" rel="stylesheet" type="text/css">
+
+	<!-- P-scroll bar css-->
+	<link href="../assets/plugins/p-scroll/perfect-scrollbar.css" rel="stylesheet" />
+
+	<!--- FONT-ICONS CSS -->
+	<link href="../assets/css/icons.css" rel="stylesheet" />
+
+	<!-- INTERNAL SELECT2 CSS -->
+	<link href="../assets/plugins/select2/select2.min.css" rel="stylesheet" />
+
+	<!-- INTERNAL Fancy File Upload css -->
+	<link href="../assets/plugins/fancyuploder/fancy_fileupload.css" rel="stylesheet" />
+
+	<!--SWEET ALERT CSS-->
+	<link href="../assets/plugins/sweet-alert/sweetalert.css" rel="stylesheet" />
+
+	<!--Video Popup CSS-->
+	<link href="../assets/plugins/videopopup/video.popup.css" rel="stylesheet" />
+
+
+
+</head>
+
+<body class="app horizontal rtl government">
+
+	<!-- GLOBAL-LOADER -->
+	<div id="global-loader">
+		<img src="../assets/images/loader.svg" class="loader-img" alt="Loader">
+	</div>
+	<!-- /GLOBAL-LOADER -->
+
+	<!-- PAGE -->
+	<div class="page">
+		<div class="page-main">
+
+			<!-- app-Header -->
+			<div class="header citc_header hor-header sticky">
+				<div class="header-particles" id="particles-js"></div>
+				<div class="main-container container-xxl">
+					<div class="d-flex align-md-items-end align-items-center">
+						<a class="logo-horizontal order-1 order-md-1" href="../index.html">
+							<img src="../assets/images/brand/gate_logo_gov.svg" class="header-brand-img desktop-logo"
+								alt="متصل">
+							<img src="../assets/images/brand/gate_logo_gov.svg" class="header-brand-img light-logo1"
+								alt="متصل">
+						</a>
+						<!-- LOGO -->
+						<div class="d-flex header-right-icons flex-grow-1 order-2 order-lg-2">
+							<button class="navbar-toggler navresponsive-toggler d-lg-none ms-auto" type="button"
+								data-bs-toggle="offcanvas" data-bs-target="#offcanvasSideMenu"
+								aria-controls="offcanvasSideMenu" aria-label="Toggle navigation">
+								<span class="navbar-toggler-icon mutasil-icon mutasil-icon-35"></span>
+							</button>
+							<div class="offcanvas offcanvas-end0-md offcanvas-start flex-grow-1" tabindex="-1"
+								id="offcanvasSideMenu" aria-labelledby="offcanvasExampleLabel">
+								<div class="offcanvas-header d-flex d-lg-none border-bottom">
+									<h5 class="offcanvas-title text-dark fw-bold" id="offcanvasExampleLabel">
+										<img class="offcanvas-logo" src="../assets/images/brand/gate_logo_side.svg" />
+									</h5>
+									<a href="javascript:void(0)" class="text-dark p-0" data-bs-dismiss="offcanvas"
+										aria-label="close">
+										<i class="mutasil-icon mutasil-icon-29 fa-lg"></i>
+									</a>
+								</div>
+								<div class="offcanvas-body p-lg-0">
+									<div class="navbar ps-lg-6 pe-lg-0">
+										<a class="nav-link icon ps-3 pe-3 head-notifications" href="notifications.html">
+											<i class="mutasil-icon mutasil-icon-06"></i>
+											<span
+												class="position-absolute top-2 start-90 translate-middle badge rounded-pill bg-danger">2
+												<span class="visually-hidden">عدد التنيهات</span>
+											</span>
+										</a>
+										<div class="d-flex position-relative head-icons">
+											<div class="v-separate mx-4 d-none d-lg-block"></div>
+
+											<div class="head-link text-nowrap">
+												<a href="faq.html" class="nav-link icon text-center font-weight-bold">
+													تواصل معنا
+												</a>
+											</div>
+											<!-- Language -->
+											<div class="country">
+												<a class="nav-link icon text-center fw-600 fs-14"
+													href="../index_en.html">
+													<strong>En</strong>
+													<i class="mutasil-icon mutasil-business-global ms-1"></i>
+												</a>
+											</div>
+											<div class="v-separate mx-4 d-none d-lg-block"></div>
+											<div class="head-link text-nowrap">
+												<a href="../index.html"
+													class="nav-link icon text-center font-weight-bold">
+													تسجيل خروج
+												</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- /app-Header -->
+
+			<!--app-content open-->
+			<div class="main-content hor-content container-xxl">
+				<div class="side-app">
+
+					<!-- CONTAINER -->
+					<div class="main-container">
+
+
+
+						<div class="row">
+							<div class="col-lg side-nav-col col-md-12">
+								<div class="bg-white p-4 h-100 d-flex flex-column">
+									<div class="flex-grow-001">
+										<div class="page-title page-header-element mb-5">
+											<div class="d-flex align-items-center">
+												<span class="avatar avatar-lg bradius cover-image bg-avatar me-3"
+													data-bs-image-src="../assets/images/stc.jpg">
+												</span>
+												<div class="fw-bold">
+													<a href="javascript:void(0);" class="profile-link">
+														<span>الشركة السعودية للإتصالات</span>
+													</a>
+
+												</div>
+
+											</div>
+										</div>
+									</div>
+									<nav class="navbar navbar-sm inner-navbar navbar-expand-lg navbar-light white">
+										<div class="container-fluid nav-content px-0 position-relative">
+											<button class="navbar-toggler bg-transparent" type="button"
+												data-bs-toggle="collapse" data-bs-target="#sidbarNavigation"
+												aria-controls="sidbarNavigation" aria-expanded="false"
+												aria-label="Toggle Navigation">
+												<span class="d-flex align-items-center justify-content-between">
+													<span>القائمة</span>
+													<i class="mutasil-icon mutasil-icon-51 fa-sm"></i>
+												</span>
+											</button>
+											<div class="collapse navbar-collapse" id="sidbarNavigation">
+												<div>
+													<div class="list-group list-group-transparent mb-0 pb-3">
+														<a href="service_catalog.html"
+															class="list-group-item d-flex align-items-center py-3">
+															<i class="mutasil-icon mutasil-buildings-home1 fa-lg"></i>
+															<span class="ms-2">الرئيسية</span>
+														</a>
+														<hr class="light" />
+														<a href="user_dashboard.html"
+															class="list-group-item d-flex align-items-center">
+															<i
+																class="mutasil-icon mutasil-business-briefcase2 fa-lg"></i>
+															<span class="ms-2">متابعة الطلبات</span>
+														</a>
+														<hr class="light" />
+														<a href="all_services.html"
+															class="list-group-item d-flex align-items-center">
+															<i class="mutasil-icon mutasil-icon-20 fa-lg"></i>
+															<span class="ms-2">الخدمات الالكترونية</span>
+														</a>
+														<hr class="light" />
+														<a href="user_documents.html"
+															class="list-group-item d-flex align-items-center">
+															<i
+																class="mutasil-icon mutasil-business-barchart1 fa-lg"></i>
+															<span class="ms-2">لوحة المعلومات</span>
+														</a>
+														<hr class="light" />
+														<a href="edit_company_info.html#reg_step_02"
+															class="list-group-item d-flex align-items-center">
+															<i class="mutasil-icon mutasil-buildings-home fa-lg"></i>
+															<span class="ms-2">ادارة بيانات المؤسسة</span>
+														</a>
+														<hr class="light" />
+														<a href="authorizations.html"
+															class="list-group-item d-flex align-items-center">
+															<i class="mutasil-icon mutasil-user-users2 fa-lg"></i>
+															<span class="ms-2">تفويضات الحساب</span>
+														</a>
+													</div>
+
+													<a href="help_wizzrad.html"
+														class="faq-banner d-flex mb-4 mt-4 mt-lg-8">
+														<span>
+															<img src="../assets/images/svgs/banners/code.svg" width="40"
+																class="ms-0" />
+														</span>
+														<span class="ms-2">
+															<b>لتحديد الخدمة المناسبة</b><br />
+															<small>اضغط هنا</small>
+														</span>
+													</a>
+
+													<div class="card mt-0 mb-0">
+														<div class="card-body bg-light-gray p-4">
+															<div class="bg-white p-4">
+																<h6 class="">
+																	<span class="fw-bold fs-">رأيك يصنع الفارق </span>
+																</h6>
+																<p class="fs-11 mt-3 mb-4 opacity-75">
+																	شارك برأيك في تقييم متصل للمساعدة في تطوير الخدمة
+																	المقدمة للعموم ...
+																</p>
+																<a href="questionnaire.html"
+																	class="btn btn-outline-warning btn-block btn-sm py-2 mt-3">بدا
+																	الإستبيان</a>
+															</div>
+														</div>
+													</div>
+
+												</div>
+											</div>
+										</div>
+									</nav>
+								</div>
+							</div>
+
+							<div class="col-lg">
+								<div class="site-content bg-white px-4 px-md-6 py-4">
+									<!-- PAGE-HEADER -->
+									<div class="page-header d-flex flex-md-row flex-column mb-0">
+										<div class="d-flex page-header-element align-items-center">
+											<img src="../assets/images/svgs/service_line/gov/file.svg" width="64"
+												class="me-2" />
+											<div>
+												<a href="service_catalog.html"
+													class="back_btn pb-1 align-items-end mt-0 fs-12">
+													<i class="mutasil-icon mutasil-icon-40 fa-lg"></i>
+													&nbsp;&nbsp;
+													عودة الى الرئيسية
+												</a>
+												<h1 class="page-title font-weight-bold page-header-element">
+													خدمة البلاغات
+												</h1>
+											</div>
+										</div>
+										<a href="new_request_data.html"
+											class="btn btn-primary btn-lg ms-md-auto mt-3 mt-md-0 px-6">
+											<b>إبدأ الخدمة</b>
+										</a>
+									</div>
+									<!-- PAGE-HEADER END -->
+
+									<!-- ROW-1 OPEN -->
+
+									<div class="row">
+										<div class="col-md-12">
+											<div class="page-content">
+												<div class="row">
+													<div class="col-lg-12">
+														<div class="service-header"></div>
+														<div
+															class="service_details_block bg-light-gray p-5 info-icon-bg">
+															<h4
+																class="text-blue mb-4 fw-bold d-flex align-items-center">
+																<i
+																	class="mutasil-icon mutasil-document-file15 fa-lg me-2 d-none"></i>
+																التعريف بالخدمة
+															</h4>
+															<p class="mb-4">
+																هي خدمة تتيح للمستخدمين من التقديم على البلاغات التي تخص
+																قطاع الاتصالات وتقنية المعلومات والتي تقع ضمن اختصاصات
+																ومهام الهيئة وفي حال وجود أي مشكلة بخدمات المعلومات.
+															</p>
+															<div class="mt-4 d-block d-md-flex justify-content-end">
+																<a href="#"
+																	video-url="https://www.youtube.com/watch?v=XNFdS37QGxY"
+																	class="btn btn-outline-primary fw-600 video_popup mt-1">
+																	<i
+																		class="mutasil-icon mutasil-icon-13 fa-lg me-1 text-secondary"></i>
+																	الفيديو التعريفي
+																</a>
+																&nbsp;&nbsp;
+																<a href="#" class="btn btn-outline-primary fw-600 mt-1">
+																	<i
+																		class="mutasil-icon mutasil-icon-61 fa-lg me-1 text-secondary"></i>
+																	ملف الخدمة (PDF)
+																</a>
+																&nbsp;&nbsp;
+																<a href="#" class="btn btn-outline-primary fw-600 mt-1">
+																	<i
+																		class="mutasil-icon mutasil-communication-chat22 fa-lg me-1 text-secondary"></i>
+																	الاسئلة الشائعة
+																</a>
+															</div>
+														</div>
+													</div>
+
+												</div>
+
+												<div class="faq-list mt-5">
+													<div class="accordion">
+														<div class="row">
+															<div class="col-lg-12">
+																<div class="accordion-item">
+																	<h2 class="accordion-header" id="headingOne">
+																		<button class="accordion-button" type="button"
+																			data-bs-toggle="collapse"
+																			data-bs-target="#collapseOne"
+																			aria-expanded="true"
+																			aria-controls="collapseOne">
+																			<i
+																				class="mutasil-icon mutasil-device-server1 fa-lg me-2 text-secondary"></i>
+																			خطوات طلب الخدمة
+																		</button>
+																	</h2>
+																	<div id="collapseOne"
+																		class="accordion-collapse collapse show"
+																		aria-labelledby="headingOne">
+																		<div class="accordion-body">
+																			<div class="row">
+																				<div class="col-md-8">
+																					<ol
+																						class="order-list timeline-list">
+																						<li>تسجيل دخول عبر منصة متصل
+																							لمنشآت الأعمال أو الإشتراك
+																							بالبوابة</li>
+																						<li>اختيار نوع البلاغ</li>
+																						<li>تعبئة نموذج تفيم البلاغ</li>
+																						<li>ستصلك رسالة نصية للتأكيد على
+																							البلاغ المقدم</li>
+																					</ol>
+																				</div>
+																				<div class="col-md-4">
+
+																					<div
+																						class="service_details_block bg-light-gray p-4 p-md-6 h-100 d-flex flex-column">
+																						<div class="row flex-grow-1">
+																							<div
+																								class="col-6 text-center d-flex justify-content-center align-items-center flex-column">
+																								<img src="../assets/images/svgs/service_line/gov/tv.svg"
+																									width="32"
+																									class="me-2" />
+																								<h6 class="fs-12 mt-2">
+																									الخدمة متوفرة عبر
+																									<br />
+																									الموقع الالكتروني
+																								</h6>
+																							</div>
+																							<div
+																								class="col-6 text-center border-start d-flex justify-content-center align-items-center flex-column">
+																								<img src="../assets/images/svgs/service_line/gov/mobile.svg"
+																									width="32"
+																									class="me-2" />
+																								<h6 class="fs-12 mt-2">
+																									الخدمة متوفرة عبر
+																									<br />
+																									تطبيق الجوال
+																									<!-- 
+																								<hr class="light mb-1"/>
+																									<a href="#" class="btn">
+																										<img src="../assets/images/svgs/appstore.svg" width="20" />
+																									</a>
+																									<a href="#" class="btn">
+																										<img src="../assets/images/svgs/playstore.svg" width="20" />
+																									</a>
+																									-->
+																								</h6>
+																							</div>
+																						</div>
+																					</div>
+
+																				</div>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+															</div>
+															<div class="col-lg-6">
+																<div class="accordion-item">
+																	<h2 class="accordion-header" id="headingTwo">
+																		<button class="accordion-button" type="button"
+																			data-bs-toggle="collapse"
+																			data-bs-target="#collapseTwo"
+																			aria-expanded="true"
+																			aria-controls="collapseTwo">
+																			<i
+																				class="mutasil-icon mutasil-document-file20 fa-lg me-2 text-secondary"></i>
+																			الوثائق المطلوبة
+																		</button>
+																	</h2>
+																	<div id="collapseTwo"
+																		class="accordion-collapse collapse show"
+																		aria-labelledby="headingTwo">
+																		<div class="accordion-body">
+																			<ul
+																				class="list-style-1 fw-600 list-icon-file">
+																				<li>بطاقة هوية سارية ( خليجية ) أو دواز
+																					السفر للمنشئات الأجنبية</li>
+																				<li>نسخة من وثائق تؤكد صحة البلاغ المقدم
+																				</li>
+																				<li>بطاقة هوية سارية ( خليجية ) أو دواز
+																					السفر للمنشئات الأجنبية</li>
+																				<li>نسخة من وثائق تؤكد صحة البلاغ المقدم
+																				</li>
+																			</ul>
+																		</div>
+																	</div>
+																</div>
+															</div>
+															<div class="col-lg-6">
+																<div class="accordion-item">
+																	<h2 class="accordion-header" id="headingThree">
+																		<button class="accordion-button" type="button"
+																			data-bs-toggle="collapse"
+																			data-bs-target="#collapseThree"
+																			aria-expanded="true"
+																			aria-controls="collapseThree">
+																			<i
+																				class="mutasil-icon mutasil-user-users1 fa-lg me-2 text-secondary"></i>
+																			الجمهور المستهدف
+																		</button>
+																	</h2>
+																	<div id="collapseThree"
+																		class="accordion-collapse collapse show"
+																		aria-labelledby="headingThree">
+																		<div class="accordion-body">
+																			<p class="fs-14">
+																				كافة مستهلكي خدمات الاتصالات في الدولة
+																				من أفراد وقطاع الأعمال والقطاع الحكومي
+																			</p>
+																		</div>
+																	</div>
+																</div>
+
+
+																<div class="accordion-item d-none">
+																	<h2 class="accordion-header" id="headingFive">
+																		<button class="accordion-button" type="button"
+																			data-bs-toggle="collapse"
+																			data-bs-target="#collapseFive"
+																			aria-expanded="true"
+																			aria-controls="collapseFive">
+																			<i
+																				class="mutasil-icon mutasil-finance-pricetag2 fa-lg me-2 text-secondary"></i>
+																			فئة و نوع الخدمة
+																		</button>
+																	</h2>
+																	<div id="collapseFive"
+																		class="accordion-collapse collapse show"
+																		aria-labelledby="headingFive">
+																		<div class="accordion-body">
+																			<ul
+																				class="list-style-1 fw-600 list-icon-tag">
+																				<li>خدمة البلاغات العامة</li>
+																				<li>خدمة حكومية مقدمة الى الأفرد ,
+																					الشركات , الجهات الحكومية</li>
+																			</ul>
+																		</div>
+																	</div>
+																</div>
+															</div>
+															<div class="col-lg-12">
+																<div class="accordion-item">
+																	<h2 class="accordion-header" id="headingFour">
+																		<button class="accordion-button" type="button"
+																			data-bs-toggle="collapse"
+																			data-bs-target="#collapseFour"
+																			aria-expanded="true"
+																			aria-controls="collapseFour">
+																			<i
+																				class="mutasil-icon mutasil-document-task fa-lg me-2 text-secondary"></i>
+																			شروط الحصول على الخدمة
+																		</button>
+																	</h2>
+																	<div id="collapseFour"
+																		class="accordion-collapse collapse show"
+																		aria-labelledby="headingFour">
+																		<div class="accordion-body">
+																			<ul
+																				class="list-style-1 fw-600 list-icon-flag">
+																				<li>الحصول على رقم مرجعي للبلاغ "إن وجد"
+																					قبل تقديم النزاع إلى الهيئة وذلك
+																					ليتم معالجتها وفقاً لإجراءات التعامل
+																					مع البلاغ المنفذة لديه</li>
+																				<li>في حالة عدم رضا أو عدم حصول المستهلك
+																					على نتيجة معالجة البلاغ يمكنه رفعها
+																					للهيئة</li>
+																				<li>إرفاق الوثائق المطلوبة </li>
+																			</ul>
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+
+													</div>
+
+												</div>
+
+												<div
+													class="service_details_head d-flex flex-column flex-md-row align-items-center bg-white py-3">
+													<div
+														class="service_details_item mb-3 me-md-7 order-md-1 order-2 ps-lg-4">
+														<i
+															class="mutasil-icon mutasil-icon-28 fa-lg me-1 text-secondary"></i>
+														<span class="fw-600">زمن تنفيذ الخدمة :</span>
+														<b>5 أيام عمل</b>
+													</div>
+													<div class="service_details_item mb-3 me-md-7 order-md-1 order-3">
+														<i
+															class="mutasil-icon mutasil-icon-03 fa-lg me-1 text-secondary"></i>
+														<span class="fw-600">رسوم الخدمة :</span>
+														<b>مجانية</b>
+													</div>
+												</div>
+
+												<div class="alert alert-warning text-black p-6 mt-6">
+													<h4><i class="far fa-lightbulb-on me-1 text-warning"></i> يجب أن
+														تعرف</h4>
+													<p>
+														كافة مستهلكي خدمات الاتصالات في الدولة من أفراد وقطاع الأعمال
+														والقطاع الحكومي , تهدف الهيئة إلى تسوية نزاعات المستهلكين بشكل
+														كامل في غضون 5 أيام عمل
+													</p>
+												</div>
+
+											</div>
+										</div>
+										<!-- /Row -->
+									</div>
+								</div>
+							</div>
+
+						</div>
+						<!-- CONTAINER CLOSED -->
+					</div>
+				</div>
+				<!--app-content closed-->
+			</div>
+
+
+			<!-- FOOTER -->
+			<footer class="footer">
+				<div class="container-xxl">
+					<div class="row align-items-center">
+						<div class="col-md-4 col-sm-12">
+							<div class="footer-info">جميع الحقوق محفوظة © 2023 هيئة الاتصالات والفضاء والتقنية</div>
+						</div>
+						<div class="col-md-8 col-sm-12 text-end d-lg-flex justify-content-end">
+							<ul class="footer-social-list me-lg-8">
+								<li class="footer-link">
+									<a href="faq.html">
+										الاسئلة الشائعة
+									</a>
+								</li>
+								<li class="footer-link">
+									<a href="complaint.html">
+										ارسل إستفسار أو مقترح
+									</a>
+								</li>
+								<li class="footer-link">
+									<a href="#">
+										سياسة الخصوصية
+									</a>
+								</li>
+								<li class="footer-link">
+									<a href="#">
+										شروط الاستخدام
+									</a>
+								</li>
+
+							</ul>
+							<ul class="footer-social-list ">
+								<li>
+									<img src="../assets/images/svgs/vision.svg" width="64" class="vision-logo" />
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</footer>
+			<!-- FOOTER CLOSED -->
+		</div>
+
+
+		<!-- JQUERY JS -->
+		<script src="../assets/js/jquery.min.js"></script>
+
+		<!-- BOOTSTRAP JS -->
+		<script src="../assets/plugins/bootstrap/js/popper.min.js"></script>
+		<script src="../assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+
+		<!-- SIDEBAR JS -->
+		<script src="../assets/plugins/sidebar/sidebar.js"></script>
+
+		<!-- Sticky js -->
+		<script src="../assets/js/sticky.js"></script>
+		<!-- INTERNAL SELECT2 JS -->
+		<script src="../assets/plugins/select2/select2.full.min.js"></script>
+		<script src="../assets/js/select2.js"></script>
+
+		<!-- SWEET-ALERT JS -->
+		<script src="../assets/plugins/sweet-alert/sweetalert.min.js"></script>
+
+		<!-- INTERNAL ScrollToFixed-->
+		<script src="../assets/plugins/scrolltofixed/ScrollToFixed.js"></script>
+
+		<!-- INTERNAL Video Popup-->
+		<script src="../assets/plugins/videopopup/video.popup.js"></script>
+
+
+		<!-- Particles Animation JS -->
+		<script src="../assets/plugins/particles/particles.min.js"></script>
+		<script src="../assets/plugins/particles/particles.init.js"></script>
+
+		<!-- CUSTOM JS -->
+		<script src="../assets/js/custom.js"></script>
+
+		<script>
+			$(".fav-input").change(function (e) {
+				var popupTitle = "";
+				console.log($(this).is(":checked"))
+				if ($(this).is(":checked")) {
+					popupTitle = 'تم اضافة الخدمة للخدمات المفضلة';
+				} else {
+					popupTitle = 'تم ازالة الخدمة من قائمة الخدمات المفضلة';
+				}
+				swal({
+					type: "success",
+					title: popupTitle,
+
+					timer: 2000,
+					allowOutsideClick: true,
+					showConfirmButton: false,
+					customClass: 'swal-nobuttons'
+				});
+			});
+		</script>
+		<script>
+			$(document).ready(function () {
+				$(window).scrollTop(0);
+				var fsi = $(".fixed_scroll_item");
+				if ($(fsi).length > 0) {
+					$(fsi).scrollToFixed({
+						minWidth: fsi.data('minwidth-fixed'),
+						marginTop: fsi.data('margintop'),
+						removeOffsets: true,
+						zIndex: 10,
+					});
+				}
+			});
+		</script>
+
+		<script>
+			$(function () {
+				$(".video_popup").videoPopup({
+					autoplay: 1,
+					controlsColor: 'white',
+					showVideoInformations: true,
+					width: 1000,
+					/*customOptions: {
+						rel: 0,
+						end: 60
+					}*/
+				});
+			});
+		</script>
+		<script>
+			(function () {
+				var s = document.createElement('script');
+				var h = document.querySelector('head') || document.body;
+				s.src = 'https://acsbapp.com/apps/app/dist/js/app.js';
+				s.async = true;
+				s.onload = function () {
+					acsbJS.init({
+						statementLink: '',
+						footerHtml: '',
+						hideMobile: false,
+						hideTrigger: false,
+						disableBgProcess: false,
+						language: 'ar',
+						position: 'right',
+						leadColor: '#000062',
+						triggerColor: '#000062',
+						triggerRadius: '50%',
+						triggerPositionX: 'right',
+						triggerPositionY: 'bottom',
+						triggerIcon: 'people',
+						triggerSize: 'bottom',
+						triggerOffsetX: 20,
+						triggerOffsetY: 20,
+						mobile: {
+							triggerSize: 'small',
+							triggerPositionX: 'right',
+							triggerPositionY: 'bottom',
+							triggerOffsetX: 20,
+							triggerOffsetY: 20,
+							triggerRadius: '20'
+						}
+					});
+				};
+				h.appendChild(s);
+			})();
+		</script>
+
+</body>
+
+</html>

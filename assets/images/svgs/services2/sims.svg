@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 24.1.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 480 480" style="enable-background:new 0 0 480 480;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#61C4F2;}
+	.st1{fill:#FFFFFF;}
+	.st2{fill:#047FA7;}
+	.st3{fill:#6B7FD1;}
+	.st4{fill:#EBEFFF;}
+	.st5{fill:#263357;}
+</style>
+<path class="st0" d="M416,472H192c-13.3,0-24-10.7-24-24V128c0-13.3,10.7-24,24-24h176l72,72v272C440,461.3,429.3,472,416,472z"/>
+<path class="st1" d="M208,272h192v160H208V272z"/>
+<path class="st2" d="M168,376h40v16h-40V376z"/>
+<path class="st2" d="M312,104h16v168h-16V104z"/>
+<path class="st3" d="M208,272v120h80c22.1,0,40-17.9,40-40v-80H208z"/>
+<path class="st0" d="M288,376H64c-13.3,0-24-10.7-24-24V32C40,18.7,50.7,8,64,8h176l72,72v272C312,365.3,301.3,376,288,376z"/>
+<path class="st4" d="M80,176h192v160H80V176z"/>
+<path class="st5" d="M64,384h224c17.7,0,32-14.3,32-32V80c0-2.1-0.8-4.2-2.3-5.7l-72-72C244.2,0.8,242.1,0,240,0H64
+	C46.3,0,32,14.3,32,32v320C32,369.7,46.3,384,64,384z M48,32c0-8.8,7.2-16,16-16h172.7L304,83.3V352c0,8.8-7.2,16-16,16H64
+	c-8.8,0-16-7.2-16-16V32z"/>
+<path class="st5" d="M80,344h192c4.4,0,8-3.6,8-8V176c0-4.4-3.6-8-8-8H80c-4.4,0-8,3.6-8,8v160C72,340.4,75.6,344,80,344z M88,280
+	h32v48H88V280z M184,224v-40h32v80H88v-32h88C180.4,232,184,228.4,184,224z M168,280v48h-32v-48H168z M184,280h32v48h-32V280z
+	 M264,328h-32V184h32V328z M168,184v32H88v-32H168z"/>
+<path class="st5" d="M72,40h16v16H72V40z"/>
+<path class="st5" d="M104,40h56v16h-56V40z"/>
+<path class="st5" d="M72,72h112v16H72V72z"/>
+<path class="st5" d="M432,179.3V448c0,8.8-7.2,16-16,16H192c-8.8,0-16-7.2-16-16v-48h-16v48c0,17.7,14.3,32,32,32h224
+	c17.7,0,32-14.3,32-32V176c0-2.1-0.8-4.2-2.3-5.7l-72-72c-1.5-1.5-3.5-2.3-5.7-2.3h-32v16h28.7L432,179.3z"/>
+<path class="st5" d="M352,424h-40v-24h-16v24h-32v-24h-16v24h-32v-24h-16v32c0,4.4,3.6,8,8,8h192c4.4,0,8-3.6,8-8V272
+	c0-4.4-3.6-8-8-8h-64v16h16v80h-16v16h16V424z M392,280v144h-24V280H392z"/>
+<path class="st5" d="M464,264h16v152h-16V264z"/>
+<path class="st5" d="M464,432h16v16h-16V432z"/>
+<path class="st5" d="M0,40h16v232H0V40z"/>
+</svg>

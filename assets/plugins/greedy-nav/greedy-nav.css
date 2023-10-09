@@ -1,0 +1,141 @@
+.greedy-nav {
+	position: relative;
+	min-width: 250px;
+	background: #fff;
+}
+
+.greedy-nav a {
+	/*display: block;
+	padding: 20px 30px;
+	background: #fff;
+	font-size: 18px;
+	color: #ff9800;
+	text-decoration: none;*/
+}
+
+.greedy-nav a:hover {
+	color: #ef6c00;
+}
+
+.greedy-nav button {
+	position: absolute;
+	right: 0;
+	/*height: 100%;
+	padding: 0 15px;
+	border: 0;
+	outline: none;
+	background-color: #f57c00;
+	color: #fff;*/
+	cursor: pointer;
+}
+.rtl .greedy-nav button {
+	right:auto;
+	left:0;
+}
+
+.greedy-nav button:hover {
+	background-color: #ef6c00;
+}
+
+.greedy-nav button .count::after {
+	content: attr(count);
+	
+}
+
+.greedy-nav button:hover::after {
+	transform: scale(1.075);
+}
+
+.greedy-nav .hamburger {
+	position: relative;
+	width: 32px;
+	height: 4px;
+	background: #fff;
+	margin: auto;
+}
+
+.greedy-nav .hamburger:before,
+.greedy-nav .hamburger:after {
+	content: '';
+	position: absolute;
+	left: 0;
+	width: 32px;
+	height: 4px;
+	background: #fff;
+}
+
+.greedy-nav .hamburger:before {
+	top: -8px;
+}
+
+.greedy-nav .hamburger:after {
+	bottom: -8px;
+}
+
+@media (min-width: 767px) {
+	.greedy-nav .visible-links {
+		display: inline-table;
+	}
+
+	.greedy-nav .visible-links li {
+		display: table-cell;
+	}
+}
+.greedy-nav .hidden-links:before  {
+    content: "";
+    width: 13px;
+    height: 13px;
+    background: #fff;
+    position: absolute;
+    top: -7px;
+    right: 28px;
+    transform: rotate(45deg);
+    border-top: 1px solid #e9edf4;
+    border-left: 1px solid #e9edf4;
+}
+.rtl .greedy-nav .hidden-links:before  {
+	right:auto;
+	left:28px;
+}
+
+.greedy-nav .hidden-links {
+	position: absolute;
+	right: 0px;
+	top: 100%;
+    display: block;
+    margin: 0;
+    border: 1px solid #eaf2f6;
+    box-shadow: 0 3px 9px 0 rgb(104 113 123 / 15%);
+    border-radius: 0 0 var(--border-radius) var(--border-radius);
+	/*overflow:hidden;*/
+	z-index:8;
+	background-color:#fff;
+	min-width:12rem;
+	transition: all .2s ease;
+}
+.rtl .greedy-nav .hidden-links {
+	right: auto;
+	left: 0px;
+}
+@media (max-width: 767px) {
+	.greedy-nav .hidden-links,
+	.greedy-nav button	{
+		display:none;
+	}
+}
+.greedy-nav .hidden-links li:last-child {
+	border:0;
+}
+.greedy-nav .hidden-links li .btn {
+	margin-bottom:0;
+	border-radius:0;
+}
+.greedy-nav .hidden-links li {
+	display: block;
+	border-bottom:1px #e9edf4 solid;
+}
+
+.greedy-nav .hidden {
+	visibility: hidden;
+	opacity:0;
+}

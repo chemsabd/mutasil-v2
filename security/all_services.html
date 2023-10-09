@@ -1,0 +1,799 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+
+<head>
+
+	<!-- META DATA -->
+	<meta charset="UTF-8">
+	<meta name='viewport' content='width=device-width, initial-scale=1.0, user-scalable=0'>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="description"
+		content="هيئة الاتصالات والفضاء والتقنية هي الجهة المسؤولة عن تنظيم قطاع الاتصالات وتقنية المعلومات في المملكة العربية السعودية. ويحدد كلٌ من ( نظام الاتصالات ) الصادر بقرار مجلس الوزراء ذي الرقم (74 ) في 5/3/1422هـ ولائحته التنفيذية الصادرة بالقرار الوزاري رقم ( 11) في 17 / 5 / 1423هـ الإطار القانوني الخاص بتنظيم القطاع" />
+	<meta name="keywords" content="هيئة الاتصالات والفضاء والتقنية" />
+	<meta name="author" content="هيئة الاتصالات والفضاء والتقنية">
+
+	<!-- FAVICON -->
+	<link rel="apple-touch-icon" sizes="180x180" href="../assets/images/fav/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="../assets/images/fav/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="../assets/images/fav/favicon-16x16.png">
+	<link rel="mask-icon" href="../assets/images/fav/safari-pinned-tab.svg" color="#000062">
+	<link rel="shortcut icon" href="../assets/images/fav/favicon.ico">
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="theme-color" content="#ffffff">
+
+	<!-- TITLE -->
+	<title>منصة متصل - هيئة الاتصالات والفضاء والتقنية</title>
+
+	<!-- BOOTSTRAP CSS -->
+	<link id="style" href="../assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+
+	<!-- STYLE CSS -->
+	<link href="../assets/css/style.css" rel="stylesheet" />
+
+	<!-- SINGLE-PAGE CSS -->
+	<link href="../assets/plugins/single-page/css/main.css" rel="stylesheet" type="text/css">
+
+	<!-- P-scroll bar css-->
+	<link href="../assets/plugins/p-scroll/perfect-scrollbar.css" rel="stylesheet" />
+
+	<!--- FONT-ICONS CSS -->
+	<link href="../assets/css/icons.css" rel="stylesheet" />
+	<link href="../assets/iconfonts/mutasil-service/mutasil-service.css?v21" rel="stylesheet" />
+
+	<!-- INTERNAL SELECT2 CSS -->
+	<link href="../assets/plugins/select2/select2.min.css" rel="stylesheet" />
+
+	<!-- INTERNAL Fancy File Upload css -->
+	<link href="../assets/plugins/fancyuploder/fancy_fileupload.css" rel="stylesheet" />
+
+	<!--SWEET ALERT CSS-->
+	<link href="../assets/plugins/sweet-alert/sweetalert.css" rel="stylesheet" />
+	<link href="../assets/plugins/sweetalert2/dist/sweetalert2.min.css" rel="stylesheet" />
+
+	<!--Greedy Nav CSS-->
+	<link href="../assets/plugins/greedy-nav/greedy-nav.css" rel="stylesheet" />
+	<!-- INTERNAL Notifications  Css -->
+	<link href="../assets/plugins/growl-notification/light-theme.min.css" rel="stylesheet" />
+
+
+</head>
+
+<body class="app horizontal rtl security">
+
+	<!-- GLOBAL-LOADER -->
+	<div id="global-loader">
+		<img src="../assets/images/loader.svg" class="loader-img" alt="Loader">
+	</div>
+	<!-- /GLOBAL-LOADER -->
+
+	<!-- PAGE -->
+	<div class="page">
+		<div class="page-main">
+
+			<!-- app-Header -->
+			<div class="header citc_header hor-header sticky">
+				<div class="header-particles" id="particles-js"></div>
+				<div class="main-container container-xxl">
+					<div class="d-flex align-md-items-end align-items-center">
+						<a class="logo-horizontal order-1 order-md-1" href="../index.html">
+							<img src="../assets/images/brand/gate_logo_sec.svg" class="header-brand-img desktop-logo"
+								alt="متصل">
+							<img src="../assets/images/brand/gate_logo_sec.svg" class="header-brand-img light-logo1"
+								alt="متصل">
+						</a>
+						<!-- LOGO -->
+						<div class="d-flex header-right-icons flex-grow-1 order-2 order-lg-2">
+							<button class="navbar-toggler navresponsive-toggler d-lg-none ms-auto" type="button"
+								data-bs-toggle="offcanvas" data-bs-target="#offcanvasSideMenu"
+								aria-controls="offcanvasSideMenu" aria-label="Toggle navigation">
+								<span class="navbar-toggler-icon mutasil-icon mutasil-icon-35"></span>
+							</button>
+							<div class="offcanvas offcanvas-end0-md offcanvas-start flex-grow-1" tabindex="-1"
+								id="offcanvasSideMenu_footer" aria-labelledby="offcanvasSideMenu_footer">
+								<div class="offcanvas-body p-lg-0">
+									<div class="navbar ps-lg-6 pe-lg-0">
+										<a class="nav-link icon ps-3 pe-3 head-notifications" href="notifications.html">
+											<i class="mutasil-icon mutasil-icon-06"></i>
+											<span
+												class="position-absolute top-2 start-90 translate-middle badge rounded-pill bg-danger">2
+												<span class="visually-hidden">عدد التنيهات</span>
+											</span>
+										</a>
+										<div class="d-flex position-relative head-icons">
+											<div class="v-separate mx-4 d-none d-lg-block"></div>
+
+											<div class="head-link text-nowrap">
+												<a href="faq.html" class="nav-link icon text-center font-weight-bold">
+													<i
+														class="mutasil-icon mutasil-icon-27 fa-lg d-inline d-lg-none me-2"></i>
+													تواصل معنا
+												</a>
+											</div>
+											<!-- Language -->
+											<div class="country">
+												<a class="nav-link icon text-center fw-600 fs-14"
+													href="../index_en.html">
+													<strong>En</strong>
+													<i
+														class="mutasil-icon mutasil-business-global ms-lg-1 me-2 me-lg-0"></i>
+												</a>
+											</div>
+											<div class="v-separate mx-4 d-none d-lg-block"></div>
+											<div
+												class="nav-item nav-item-dropdown-lg dropdown d-none-d-lg-flex ms-lg-2">
+												<a href="#"
+													class="navbar-nav-link align-items-center rounded-pill dropdown-toggle p-1 userImg"
+													data-toggle="dropdown">
+													<img src="../assets/images/user.jpg" height="32" width="32" alt="">
+													<span class="d-none d-lg-inline-block fw-bold mx-lg-2">
+														أحمد
+														عبدالرحمن </span>
+												</a>
+
+												<div class="dropdown-menu dropdown-menu-end">
+													<a href="edit_user_info.html" class="dropdown-item">
+														<i class="mutasil-icon mutasil-icon-09 me-2"></i>
+														ادارة بيانات الحساب
+													</a>
+													<!-- <a href="helpdesk.html" class="dropdown-item">
+														<i
+															class="mutasil-icon mutasil-business-customerservice me-2"></i>
+														طلبات الدعم التقني
+													</a> -->
+													<a href="../index.html" class="dropdown-item">
+														<i class="mutasil-icon  mutasil-device-shutdown me-2"></i>
+														تسجيل خروج
+													</a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- /app-Header -->
+
+			<!--app-content open-->
+			<div class="main-content hor-content container-xxl">
+				<div class="side-app">
+
+					<!-- CONTAINER -->
+					<div class="main-container">
+
+						<div class="row">
+							<div class="col-lg side-nav-col col-md-12">
+								<div class="card p-4 h-100 d-flex flex-column">
+									<div class="flex-grow-001">
+										<div class="page-title page-header-element mb-5">
+											<div class="d-flex align-items-center">
+												<span class="avatar avatar-lg bradius cover-image bg-avatar me-3"
+													data-bs-image-src="../assets/images/stc.jpg">
+												</span>
+												<div class="fw-bold">
+													<a href="javascript:void(0);" class="profile-link">
+														<span>الشركة السعودية للإتصالات</span>
+													</a>
+
+												</div>
+
+											</div>
+										</div>
+									</div>
+									<nav class="navbar navbar-sm inner-navbar navbar-expand-lg navbar-light white">
+										<div class="container-fluid nav-content px-0 position-relative">
+											<button class="navbar-toggler bg-transparent" type="button"
+												data-bs-toggle="collapse" data-bs-target="#sidbarNavigation"
+												aria-controls="sidbarNavigation" aria-expanded="false"
+												aria-label="Toggle Navigation">
+												<span class="d-flex align-items-center justify-content-between">
+													<span>القائمة</span>
+													<i class="mutasil-icon mutasil-icon-51 fa-sm"></i>
+												</span>
+											</button>
+											<div class="collapse navbar-collapse" id="sidbarNavigation">
+												<div>
+													<div class="list-group list-group-transparent mb-0 pb-3">
+														<a href="service_catalog.html"
+															class="list-group-item d-flex align-items-center py-3">
+															<i class="mutasil-icon mutasil-buildings-home1 fa-lg"></i>
+															<span class="ms-2">الرئيسية</span>
+														</a>
+														<hr class="light" />
+														<a href="user_dashboard.html"
+															class="list-group-item d-flex align-items-center">
+															<i
+																class="mutasil-icon mutasil-business-briefcase2 fa-lg"></i>
+															<span class="ms-2">متابعة الطلبات</span>
+														</a>
+														<hr class="light" />
+														<a href="all_services.html"
+															class="list-group-item d-flex align-items-center active">
+															<i class="mutasil-icon mutasil-icon-20 fa-lg"></i>
+															<span class="ms-2">الخدمات الالكترونية</span>
+														</a>
+														<hr class="light" />
+														<a href="user_documents.html"
+															class="list-group-item d-flex align-items-center">
+															<i
+																class="mutasil-icon mutasil-business-barchart1 fa-lg"></i>
+															<span class="ms-2">لوحة المعلومات</span>
+														</a>
+														<hr class="light" />
+														<a href="edit_company_info.html#reg_step_02"
+															class="list-group-item d-flex align-items-center">
+															<i class="mutasil-icon mutasil-buildings-home fa-lg"></i>
+															<span class="ms-2">ادارة بيانات المؤسسة</span>
+														</a>
+														<hr class="light" />
+														<a href="authorizations.html"
+															class="list-group-item d-flex align-items-center">
+															<i class="mutasil-icon mutasil-user-users2 fa-lg"></i>
+															<span class="ms-2">تفويضات الحساب</span>
+														</a>
+													</div>
+
+													<a href="help_wizzrad.html"
+														class="faq-banner d-flex mb-4 mt-4 mt-lg-8">
+														<span>
+															<img src="../assets/images/svgs/banners/code.svg" width="40"
+																class="ms-0" />
+														</span>
+														<span class="ms-2">
+															<b>لتحديد الخدمة المناسبة</b><br />
+															<small>اضغط هنا</small>
+														</span>
+													</a>
+
+													<div class="card mt-0 mb-0">
+														<div class="card-body bg-light-gray p-4">
+															<div class="bg-white p-4">
+																<h6 class="">
+																	<span class="fw-bold fs-">رأيك يصنع الفارق </span>
+																</h6>
+																<p class="fs-11 mt-3 mb-4 opacity-75">
+																	شارك برأيك في تقييم متصل للمساعدة في تطوير الخدمة
+																	المقدمة للعموم ...
+																</p>
+																<a href="questionnaire.html"
+																	class="btn btn-outline-warning btn-block btn-sm py-2 mt-3">بدا
+																	الإستبيان</a>
+															</div>
+														</div>
+													</div>
+
+												</div>
+											</div>
+									</nav>
+								</div>
+							</div>
+
+							<div class="col-lg">
+								<div class="site-content bg-white px-4 px-md-6 py-4">
+									<div class="page-header d-flex flex-md-row flex-column">
+										<div class="d-flex page-header-element align-items-center">
+											<img src="../assets/images/svgs/service_line/gov/grid.svg" width="58"
+												class="me-2" />
+											<div>
+												<a href="service_catalog.html"
+													class="back_btn pb-1 align-items-end mt-0 fs-12">
+													<i class="mutasil-icon mutasil-icon-40 fa-lg"></i>
+													&nbsp;&nbsp;
+													عودة الى الرئيسية
+												</a>
+												<h1 class="page-title font-weight-bold page-header-element">
+													الخدمات الإلكترونية
+												</h1>
+											</div>
+										</div>
+										<div class="order-2 d-block d-sm-flex page-header-element ms-md-4">
+											<div class="form-group mb-0">
+												<label class="custom-switch form-switch mb-0 mt-1">
+													<input type="checkbox" name="custom-switch-radio"
+														class="custom-switch-input">
+													<span
+														class="custom-switch-indicator custom-switch-indicator-md"></span>
+													<span class="custom-switch-description fw-600 ms-4 text-black">عرض
+														المفضلة فقط</span>
+												</label>
+											</div>
+										</div>
+									</div>
+									<div class="filter_form">
+										<div class="row">
+											<div class="col-lg-12">
+												<div class="input-group mb-0">
+													<input type="text" class="form-control servicesearch"
+														placeholder="البحث عن خدمة .." aria-label="البحث عن خدمة ..">
+												</div>
+											</div>
+										</div>
+									</div>
+									<nav class="navbar navbar-sm inner-navbar navbar-expand-md navbar-light white">
+										<div class="container-fluid nav-content px-0 position-relative">
+											<button class="navbar-toggler bg-transparent" type="button"
+												data-bs-toggle="collapse" data-bs-target="#inPageNavBar"
+												aria-controls="inPageNavBar" aria-expanded="false"
+												aria-label="Toggle navigation">
+												<span class="d-flex align-items-center justify-content-between">
+													<span>فلترة الخدمات</span>
+													<i class="mutasil-icon mutasil-icon-51 fa-sm"></i>
+												</span>
+											</button>
+											<div class="collapse navbar-collapse service-filter-buttons"
+												id="inPageNavBar">
+												<ul class="navbar-nav me-auto visible-links">
+													<li class="animated-state"></li>
+													<li class="nav-item" data-bs-toggle="collapse"
+														data-bs-target=".navbar-collapse.show">
+														<a href="#" data-filter="*"
+															class="btn btn-white btn-block text-start text-md-center active">
+															<i
+																class="mutasil-icon mutasil-icon-20 fa-lg align-baseline"></i>
+															كافة الخدمات <span class="small">(7)</span>
+														</a>
+													</li>
+													<li class="nav-item" data-bs-toggle="collapse"
+														data-bs-target=".navbar-collapse.show">
+														<a href="#" data-filter=".filter-complaints"
+															class="btn btn-white btn-block text-start text-md-center">
+															<i
+																class="mutasil-icon mutasil-document-file5 fa-lg align-baseline"></i>
+															الشكاوى <span class="small">(2)</span>
+														</a>
+													</li>
+													<li class="nav-item" data-bs-toggle="collapse"
+														data-bs-target=".navbar-collapse.show">
+														<a href="#" data-filter=".filter-reports"
+															class="btn btn-white btn-block text-start text-md-center">
+															<i
+																class="mutasil-icon mutasil-document-file fa-lg align-baseline"></i>
+															البلاغات <span class="small">(2)</span>
+														</a>
+													</li>
+													<li class="nav-item" data-bs-toggle="collapse"
+														data-bs-target=".navbar-collapse.show">
+														<a href="#" data-filter=".filter-inq"
+															class="btn btn-white btn-block text-start text-md-center">
+															<i
+																class="mutasil-icon mutasil-document-searchfile fa-lg align-baseline"></i>
+															الاستعلامات <span class="small">(2)</span>
+														</a>
+													</li>
+													<li class="nav-item" data-bs-toggle="collapse"
+														data-bs-target=".navbar-collapse.show">
+														<a href="#" data-filter=".filter-req"
+															class="btn btn-white btn-block text-start text-md-center">
+															<i
+																class="mutasil-icon mutasil-document-file11 fa-lg align-baseline"></i>
+															الطلبات <span class="small">(1)</span>
+														</a>
+													</li>
+												</ul>
+
+												<button class="greedy-btn btn btn-white d-none">
+													<i class="mutasil-icon mutasil-icon-31 fa-lg"></i>
+													<span class="ms-1">المزيد</span>
+												</button>
+											</div>
+										</div>
+									</nav>
+
+
+
+									<div class="services_list mt-5">
+										<div class="row row-flex grid">
+
+											<div class="col-xl-4 col-lg-4 col-md-6 mb-5 grid-item filter-reports">
+												<div class="service_item">
+													<div class="fav-controls">
+														<label class="custom-control custom-checkbox-md mb-0">
+															<input type="checkbox"
+																class="custom-control-input fav-input" name="isFav"
+																value="isFav" checked>
+															<span class="custom-control-label"></span>
+														</label>
+													</div>
+													<img src="../assets/images/svgs/service_line/gov/alert.svg"
+														width="50" />
+													<div class="d-flex align-items-center mt-1">
+														<h5 class="m-0">البلاغات العامة</h5>
+													</div>
+													<p>
+														هي خدمة تتيح للمستخدمين من التقديم على البلاغات التي تخص قطاع
+														الاتصالات وتقنية المعلومات والتي تقع ضمن اختصاصات ومهام الهيئة.
+													</p>
+													<div class="row btn-holder gx-2">
+														<div class="col">
+															<a href="service_details.html"
+																class="btn btn-block btn-outline-primary"><b>تعرف
+																	أكثر</b></a>
+														</div>
+														<div class="col">
+															<a href="new_request_data.html"
+																class="btn btn-block btn-primary"><b>بدء الخدمة</b></a>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="col-xl-4 col-lg-4 col-md-6 mb-5 grid-item filter-complaints">
+												<div class="service_item">
+													<div class="fav-controls">
+														<label class="custom-control custom-checkbox-md mb-0">
+															<input type="checkbox"
+																class="custom-control-input fav-input" name="isFav"
+																value="isFav">
+															<span class="custom-control-label"></span>
+														</label>
+													</div>
+
+													<img src="../assets/images/svgs/service_line/gov/phone.svg"
+														width="50" />
+													<div class="d-flex align-items-center mt-1">
+														<h5 class="m-0"> تصعيد شكاوى الاتصالات</h5>
+													</div>
+													<p>
+														خدمة مقدمة للمستفيد لتصعيد الشكاوى المقدمة لدى الخدمة التي تم
+														اغلاقها دون معالجتها أو في حال مرور 5 أيام ولم يتم حلها.
+													</p>
+													<div class="row btn-holder gx-2">
+														<div class="col">
+															<a href="service_details.html"
+																class="btn btn-block btn-outline-primary"><b>تعرف
+																	أكثر</b></a>
+														</div>
+														<div class="col">
+															<a href="new_request_data.html"
+																class="btn btn-block btn-primary"><b>بدء الخدمة</b></a>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="col-xl-4 col-lg-4 col-md-6 mb-5 grid-item filter-req">
+												<div class="service_item">
+													<div class="fav-controls">
+														<label class="custom-control custom-checkbox-md mb-0">
+															<input type="checkbox"
+																class="custom-control-input fav-input" name="isFav"
+																value="isFav">
+															<span class="custom-control-label"></span>
+														</label>
+													</div>
+													<img src="../assets/images/svgs/service_line/gov/mail.svg"
+														width="50" />
+													<div class="d-flex align-items-center mt-1">
+														<h5 class="m-0"> تسجيل طلب توفير خدمات اتصالات</h5>
+													</div>
+													<p>
+														هي خدمة تتيح للمستخدمين من التقديم على طلبات التغطية التي تخص
+														قطاع الاتصالات وتقنية المعلومات
+													</p>
+													<div class="row btn-holder gx-2">
+														<div class="col">
+															<a href="service_details.html"
+																class="btn btn-block btn-outline-primary"><b>تعرف
+																	أكثر</b></a>
+														</div>
+														<div class="col">
+															<a href="new_request_data.html"
+																class="btn btn-block btn-primary"><b>بدء الخدمة</b></a>
+														</div>
+													</div>
+												</div>
+											</div>
+
+											<div class="col-xl-4 col-lg-4 col-md-6 mb-5 grid-item filter-complaints">
+												<div class="service_item">
+													<div class="fav-controls">
+														<label class="custom-control custom-checkbox-md mb-0">
+															<input type="checkbox"
+																class="custom-control-input fav-input" name="isFav"
+																value="isFav">
+															<span class="custom-control-label"></span>
+														</label>
+													</div>
+													<img src="../assets/images/svgs/service_line/gov/coverage2.svg"
+														width="50" />
+													<div class="d-flex align-items-center mt-1">
+														<h5 class="m-0"> شكوى التعرض للمجالات الكهرومغناطيسية</h5>
+													</div>
+													<p>
+														تتيح الخدمة تقديم شكوى التعرض للمجالات الكهرومغناطيسية
+													</p>
+													<div class="row btn-holder gx-2">
+														<div class="col">
+															<a href="service_details.html"
+																class="btn btn-block btn-outline-primary"><b>تعرف
+																	أكثر</b></a>
+														</div>
+														<div class="col">
+															<a href="new_request_data.html"
+																class="btn btn-block btn-primary"><b>بدء الخدمة</b></a>
+														</div>
+													</div>
+												</div>
+											</div>
+
+											<div class="col-xl-4 col-lg-4 col-md-6 mb-5 grid-item filter-inq">
+												<div class="service_item">
+													<div class="fav-controls">
+														<label class="custom-control custom-checkbox-md mb-0">
+															<input type="checkbox"
+																class="custom-control-input fav-input" name="isFav"
+																value="isFav">
+															<span class="custom-control-label"></span>
+														</label>
+													</div>
+													<img src="../assets/images/svgs/service_line/gov/sims.svg"
+														width="50" />
+													<div class="d-flex align-items-center mt-1">
+														<h5 class="m-0"> أرقامي</h5>
+													</div>
+													<p>
+														تتيح الخدمة للمستخدم الاطلاع على تفاصيل أرقام الهاتف وشرائح
+														البيانات المسجلة برقم هويته لدى مقدمي خدمات الاتصالات وتقنية
+														المعلومات
+													</p>
+													<div class="row btn-holder gx-2">
+														<div class="col">
+															<a href="service_details.html"
+																class="btn btn-block btn-outline-primary"><b>تعرف
+																	أكثر</b></a>
+														</div>
+														<div class="col">
+															<a href="new_request_data.html"
+																class="btn btn-block btn-primary"><b>بدء الخدمة</b></a>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="col-xl-4 col-lg-4 col-md-6 mb-5 grid-item filter-reports">
+												<div class="service_item">
+													<div class="fav-controls">
+														<label class="custom-control custom-checkbox-md mb-0">
+															<input type="checkbox"
+																class="custom-control-input fav-input" name="isFav"
+																value="isFav">
+															<span class="custom-control-label"></span>
+														</label>
+													</div>
+													<img src="../assets/images/svgs/service_line/gov/cog.svg"
+														width="50" />
+													<div class="d-flex align-items-center mt-1">
+														<h5 class="m-0">بلاغات البنية التحتية</h5>
+													</div>
+													<p>
+														خدمة تتيح للمستخدمين من التقديم على البلاغات الخاصة بالبنية
+														التحتية بقطاع الاتصالات وتقنية المعلومات
+													</p>
+													<div class="row btn-holder gx-2">
+														<div class="col">
+															<a href="service_details.html"
+																class="btn btn-block btn-outline-primary"><b>تعرف
+																	أكثر</b></a>
+														</div>
+														<div class="col">
+															<a href="new_request_data.html"
+																class="btn btn-block btn-primary"><b>بدء الخدمة</b></a>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="col-xl-4 col-lg-4 col-md-6 mb-5 grid-item filter-inq">
+												<div class="service_item">
+													<div class="fav-controls">
+														<label class="custom-control custom-checkbox-md mb-0">
+															<input type="checkbox"
+																class="custom-control-input fav-input" name="isFav"
+																value="isFav">
+															<span class="custom-control-label"></span>
+														</label>
+													</div>
+													<img src="../assets/images/svgs/service_line/gov/warning.svg"
+														width="50" />
+													<div class="d-flex align-items-center mt-1">
+														<h5 class="m-0">الاستعلام عن المخالفات</h5>
+													</div>
+													<p>
+														تتيح للمستخدم الاستعلام عن المخالفات المسجلة على المستخدم
+														والاطلاع على تفاصيلها
+													</p>
+													<div class="row btn-holder gx-2">
+														<div class="col">
+															<a href="service_details.html"
+																class="btn btn-block btn-outline-primary"><b>تعرف
+																	أكثر</b></a>
+														</div>
+														<div class="col">
+															<a href="new_request_data.html"
+																class="btn btn-block btn-primary"><b>بدء الخدمة</b></a>
+														</div>
+													</div>
+												</div>
+											</div>
+
+										</div>
+
+										<div class="row no-results d-none">
+											<div class="col-lg-12">
+												<div class="text-center">
+													<img src="../assets/images/svgs/no-results.svg" width="128" />
+													<br />
+													<h6 class="mt-4 text-muted mb-5">
+														لم يتم العثور على خدمة بهذا الاسم ...
+													</h6>
+												</div>
+											</div>
+										</div>
+									</div>
+
+
+								</div>
+							</div>
+
+						</div>
+
+
+					</div>
+					<!-- CONTAINER CLOSED -->
+				</div>
+			</div>
+			<!--app-content closed-->
+		</div>
+
+		<!-- FOOTER -->
+		<footer class="footer">
+			<div class="container-xxl">
+				<div class="row align-items-center">
+					<div class="col-md-4 col-sm-12">
+						<div class="footer-info">جميع الحقوق محفوظة © 2023 هيئة الاتصالات والفضاء والتقنية</div>
+					</div>
+					<div class="col-md-8 col-sm-12 text-end d-lg-flex justify-content-end">
+						<ul class="footer-social-list me-lg-8">
+							<li class="footer-link">
+								<a href="faq.html">
+									الاسئلة الشائعة
+								</a>
+							</li>
+							<li class="footer-link">
+								<a href="complaint.html">
+									ارسل إستفسار أو مقترح
+								</a>
+							</li>
+							<li class="footer-link">
+								<a href="#">
+									سياسة الخصوصية
+								</a>
+							</li>
+							<li class="footer-link">
+								<a href="#">
+									شروط الاستخدام
+								</a>
+							</li>
+						</ul>
+						<ul class="footer-social-list ">
+							<li>
+								<img src="../assets/images/svgs/vision.svg" width="64" class="vision-logo" />
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+
+
+	<!-- BACK-TO-TOP -->
+	<a href="#top" id="back-to-top"><i class="mutasil-icon mutasil-icon-37 fa-lg"></i></a>
+
+	<!-- JQUERY JS -->
+	<script src="../assets/js/jquery.min.js"></script>
+
+	<!-- BOOTSTRAP JS -->
+	<script src="../assets/plugins/bootstrap/js/popper.min.js"></script>
+	<script src="../assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+
+	<!-- SIDEBAR JS -->
+	<script src="../assets/plugins/sidebar/sidebar.js"></script>
+
+	<!-- Sticky js -->
+	<script src="../assets/js/sticky.js"></script>
+	<!-- Greedy Navigation JS -->
+	<script src="../assets/plugins/greedy-nav/greedy-nav.js"></script>
+
+	<!-- INTERNAL Notifications js -->
+	<script src="../assets/plugins/growl-notification/growl-notification.min.js"></script>
+
+	<!-- INTERNAL SELECT2 JS -->
+	<script src="../assets/plugins/select2/select2.full.min.js"></script>
+	<script src="../assets/js/select2.js"></script>
+
+	<!-- SWEET-ALERT JS -->
+	<script src="../assets/plugins/sweet-alert/sweetalert.min.js"></script>
+	<script src="../assets/plugins/sweetalert2/dist/sweetalert2.min.js"></script>
+
+	<!-- isotope Filter JS -->
+	<script src="../assets/plugins/isotope/isotope.pkgd.js"></script>
+
+
+	<!-- Particles Animation JS -->
+	<script src="../assets/plugins/particles/particles.min.js"></script>
+	<script src="../assets/plugins/particles/particles.init.js"></script>
+
+	<!-- CUSTOM JS -->
+	<script src="../assets/js/custom.js"></script>
+
+	<script>
+		$(".fav-input").change(function (e) {
+
+			var popupTitle = "";
+			if ($(this).is(":checked")) {
+				popupTitle = 'تم اضافة الخدمة للخدمات المفضلة';
+			} else {
+				popupTitle = 'تم ازالة الخدمة من قائمة الخدمات المفضلة';
+			}
+			Swal.fire({
+				title: popupTitle,
+				icon: 'success',
+				confirmButtonText: 'موافق',
+				customClass: {
+					confirmButton: 'btn btn-primary btn-sm',
+				}
+			});
+		});
+
+		function notifiCopy(reqNumber) {
+			GrowlNotification.closeAll();
+			GrowlNotification.notify({
+				description: 'تم نسخ رقم الطلب : ' + reqNumber,
+				image: {
+					visible: true,
+				},
+				type: 'success',
+				closeTimeout: 3000
+			});
+		}
+	</script>
+	<script>
+		(function () {
+			var s = document.createElement('script');
+			var h = document.querySelector('head') || document.body;
+			s.src = 'https://acsbapp.com/apps/app/dist/js/app.js';
+			s.async = true;
+			s.onload = function () {
+				acsbJS.init({
+					statementLink: '',
+					footerHtml: '',
+					hideMobile: false,
+					hideTrigger: false,
+					disableBgProcess: false,
+					language: 'ar',
+					position: 'right',
+					leadColor: '#000062',
+					triggerColor: '#000062',
+					triggerRadius: '50%',
+					triggerPositionX: 'right',
+					triggerPositionY: 'bottom',
+					triggerIcon: 'people',
+					triggerSize: 'bottom',
+					triggerOffsetX: 20,
+					triggerOffsetY: 20,
+					mobile: {
+						triggerSize: 'small',
+						triggerPositionX: 'right',
+						triggerPositionY: 'bottom',
+						triggerOffsetX: 20,
+						triggerOffsetY: 20,
+						triggerRadius: '20'
+					}
+				});
+			};
+			h.appendChild(s);
+		})();
+	</script>
+
+</body>
+
+</html>

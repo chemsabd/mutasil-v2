@@ -1,0 +1,645 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+
+<head>
+
+	<!-- META DATA -->
+	<meta charset="UTF-8">
+	<meta name='viewport' content='width=device-width, initial-scale=1.0, user-scalable=0'>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="description"
+		content="هيئة الاتصالات والفضاء والتقنية هي الجهة المسؤولة عن تنظيم قطاع الاتصالات وتقنية المعلومات في المملكة العربية السعودية. ويحدد كلٌ من ( نظام الاتصالات ) الصادر بقرار مجلس الوزراء ذي الرقم (74 ) في 5/3/1422هـ ولائحته التنفيذية الصادرة بالقرار الوزاري رقم ( 11) في 17 / 5 / 1423هـ الإطار القانوني الخاص بتنظيم القطاع" />
+	<meta name="keywords" content="هيئة الاتصالات والفضاء والتقنية" />
+	<meta name="author" content="هيئة الاتصالات والفضاء والتقنية">
+
+	<!-- FAVICON -->
+	<link rel="apple-touch-icon" sizes="180x180" href="../assets/images/fav/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="../assets/images/fav/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="../assets/images/fav/favicon-16x16.png">
+	<link rel="mask-icon" href="../assets/images/fav/safari-pinned-tab.svg" color="#000062">
+	<link rel="shortcut icon" href="../assets/images/fav/favicon.ico">
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="theme-color" content="#ffffff">
+
+	<!-- TITLE -->
+	<title>منصة متصل - هيئة الاتصالات والفضاء والتقنية</title>
+
+	<!-- BOOTSTRAP CSS -->
+	<link id="style" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0-alpha3/css/bootstrap.rtl.min.css"
+		rel="stylesheet" />
+
+	<!-- P-scroll bar css-->
+	<link href="../assets/plugins/p-scroll/perfect-scrollbar.css" rel="stylesheet" />
+
+	<!--- FONT-ICONS CSS -->
+	<link href="../assets/css/icons.css" rel="stylesheet" />
+
+	<!-- INTERNAL SELECT2 CSS -->
+	<link href="../assets/plugins/select2/select2.min.css" rel="stylesheet" />
+
+	<!-- INTERNAL Datepicker -->
+	<link rel="stylesheet" href="../assets/plugins/datepicker/css/bootstrap-datetimepicker.min.css">
+
+	<!-- INTERNAL Fancy File Upload css -->
+	<link href="../assets/plugins/fancyuploder/fancy_fileupload.css" rel="stylesheet" />
+
+	<!--SWEET ALERT CSS-->
+	<link href="../assets/plugins/sweet-alert/sweetalert.css" rel="stylesheet" />
+
+	<!-- STYLE CSS -->
+	<link href="../assets/css/style.css" rel="stylesheet" />
+
+</head>
+
+<body class="app horizontal rtl business">
+
+	<!-- GLOBAL-LOADER -->
+	<div id="global-loader">
+		<img src="../assets/images/loader.svg" class="loader-img" alt="Loader">
+	</div>
+	<!-- /GLOBAL-LOADER -->
+
+	<!-- PAGE -->
+	<div class="page">
+		<div class="page-main">
+			<div class="beta-alert text-center">
+				<i class="fal fa-rocket fa-lg me-1 align-middle"></i>
+				<span>اطلاق تجريبي</span>
+			</div>
+			<!-- app-Header -->
+			<div class="header citc_header hor-header sticky">
+				<div class="header-particles" id="particles-js"></div>
+				<div class="main-container container-xxl">
+					<div class="d-flex align-md-items-end align-items-center">
+						<a class="logo-horizontal order-1 order-md-1" href="#">
+							<img src="../assets/images/brand/gate_logo_bus.svg" class="header-brand-img desktop-logo"
+								alt="متصل">
+							<img src="../assets/images/brand/gate_logo_bus.svg" class="header-brand-img light-logo1"
+								alt="متصل">
+						</a>
+						<!-- LOGO -->
+						<div class="d-flex header-right-icons flex-grow-1 order-2 order-lg-2">
+							<button class="navbar-toggler navresponsive-toggler d-lg-none ms-auto" type="button"
+								data-bs-toggle="offcanvas" data-bs-target="#offcanvasSideMenu"
+								aria-controls="offcanvasSideMenu" aria-label="Toggle navigation">
+								<span class="navbar-toggler-icon mutasil-icon mutasil-icon-35"></span>
+							</button>
+							<div class="offcanvas offcanvas-end0-md offcanvas-start flex-grow-1" tabindex="-1"
+								id="offcanvasSideMenu_footer" aria-labelledby="offcanvasSideMenu_footer">
+								<div class="offcanvas-body p-lg-0">
+									<div class="navbar ps-lg-6 pe-lg-0">
+										<a class="nav-link icon ps-3 pe-3 head-notifications" href="#">
+											<i class="mutasil-icon mutasil-icon-06"></i>
+											<span
+												class="position-absolute top-2 start-90 translate-middle badge rounded-pill bg-danger">2
+												<span class="visually-hidden">عدد التنيهات</span>
+											</span>
+										</a>
+										<div class="d-flex position-relative head-icons">
+											<div class="v-separate mx-4 d-none d-lg-block"></div>
+
+											<div class="head-link text-nowrap">
+												<a href="#" class="nav-link icon text-center font-weight-bold">
+													<i
+														class="mutasil-icon mutasil-icon-27 fa-lg d-inline d-lg-none me-2"></i>
+													تواصل معنا
+												</a>
+											</div>
+											<!-- Language -->
+											<div class="country">
+												<a class="nav-link icon text-center fw-600 fs-14" href="#">
+													<strong>En</strong>
+													<i
+														class="mutasil-icon mutasil-business-global ms-lg-1 me-2 me-lg-0"></i>
+												</a>
+											</div>
+											<div class="v-separate mx-4 d-none d-lg-block"></div>
+											<div class="head-link text-nowrap">
+												<a href="#" class="nav-link icon text-center font-weight-bold">
+													<i
+														class="mutasil-icon mutasil-power fa-lg d-inline d-lg-none me-2"></i>
+													تسجيل خروج
+												</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- /app-Header -->
+
+			<!--app-content open-->
+			<div class="main-content hor-content container-xxl">
+				<div class="side-app">
+
+					<!-- CONTAINER -->
+					<div class="main-container">
+
+						<div class="row">
+							<div class="col-lg side-nav-col col-md-12">
+								<div class="bg-white p-0 p-lg-4 h-100 d-flex flex-column offcanvas offcanvas-start"
+									id="offcanvasSideMenu">
+									<div class="offcanvas-header d-flex d-lg-none border-bottom">
+										<h5 class="offcanvas-title text-dark fw-bold" id="offcanvasExampleLabel">
+											<img class="offcanvas-logo"
+												src="../assets/images/brand/gate_logo_side.svg" />
+										</h5>
+										<a href="javascript:void(0)" class="text-dark p-0" data-bs-dismiss="offcanvas"
+											aria-label="close">
+											<i class="mutasil-icon mutasil-icon-29 fa-lg"></i>
+										</a>
+									</div>
+									<div class="p-4 p-lg-0">
+										<div class="page-title page-header-element mb-0 mb-lg-4">
+											<div class="d-flex align-items-center">
+												<span class="avatar avatar-lg bradius cover-image bg-avatar me-3"
+													data-bs-image-src="../assets/images/stc.jpg">
+												</span>
+												<div class="fw-bold">
+													<a href="#cr_numbers" class="profile-link" data-bs-dismiss="modal"
+														data-bs-toggle="modal">
+														<span>الشركة السعودية للإتصالات</span>
+														<i
+															class="mutasil-icon mutasil-development-code1 fa-lg ms-1"></i>
+													</a>
+
+												</div>
+											</div>
+										</div>
+									</div>
+									<nav class="offcanvas-body p-0">
+										<div class="container-fluid nav-content px-0 position-relative">
+											<div>
+
+												<div class="list-group list-group-transparent mb-0 pb-3">
+													<a href="#" class="list-group-item d-flex align-items-center py-3">
+														<i class="mutasil-icon mutasil-buildings-home1 fa-lg"></i>
+														<span class="ms-2">الرئيسية</span>
+													</a>
+													<hr class="light" />
+													<a href="#" class="list-group-item d-flex align-items-center">
+														<i class="mutasil-icon mutasil-business-briefcase2 fa-lg"></i>
+														<span class="ms-2">متابعة الطلبات</span>
+													</a>
+													<hr class="light" />
+													<a href="#" class="list-group-item d-flex align-items-center">
+														<i class="mutasil-icon mutasil-icon-20 fa-lg"></i>
+														<span class="ms-2">الخدمات الالكترونية</span>
+													</a>
+													<hr class="light" />
+													<a href="#" class="list-group-item d-flex align-items-center">
+														<i class="mutasil-icon mutasil-business-barchart1 fa-lg"></i>
+														<span class="ms-2">لوحة المعلومات</span>
+													</a>
+													<hr class="light" />
+													<a href="#" class="list-group-item d-flex align-items-center">
+														<i class="mutasil-icon mutasil-buildings-home fa-lg"></i>
+														<span class="ms-2">ادارة بيانات المؤسسة</span>
+													</a>
+													<hr class="light" />
+													<a href="#" class="list-group-item d-flex align-items-center">
+														<i class="mutasil-icon mutasil-user-users2 fa-lg"></i>
+														<span class="ms-2">تفويضات الحساب</span>
+													</a>
+												</div>
+
+												<a href="#" class="faq-banner d-flex mb-4 mt-4 mt-lg-8">
+													<span>
+														<img src="../assets/images/svgs/banners/code.svg" width="40"
+															class="ms-0" />
+													</span>
+													<span class="ms-2">
+														<b>لتحديد الخدمة المناسبة</b><br />
+														<small>اضغط هنا</small>
+													</span>
+												</a>
+
+												<div class="card mt-0 mb-0">
+													<div class="card-body bg-light-gray p-4">
+														<div class="bg-white p-4">
+															<h6 class="">
+																<span class="fw-bold fs-">رأيك يصنع الفارق </span>
+															</h6>
+															<p class="fs-11 mt-3 mb-4 opacity-75">
+																شارك برأيك في تقييم متصل للمساعدة في تطوير الخدمة
+																المقدمة للعموم ...
+															</p>
+															<a href="#"
+																class="btn btn-outline-warning btn-block btn-sm py-2 mt-3">بدا
+																الإستبيان</a>
+														</div>
+													</div>
+												</div>
+
+											</div>
+										</div>
+									</nav>
+								</div>
+							</div>
+
+							<div class="col-lg">
+								<div class="site-content bg-white px-4 px-md-6 py-4 max-height">
+
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- CONTAINER CLOSED -->
+				</div>
+			</div>
+			<!--app-content closed-->
+		</div>
+
+		<!-- FOOTER -->
+		<footer class="footer">
+			<div class="container-xxl">
+				<div class="row align-items-center">
+					<div class="col-md-4 col-sm-12">
+						<div class="footer-info">جميع الحقوق محفوظة © 2023 هيئة الاتصالات والفضاء والتقنية</div>
+					</div>
+					<div class="col-md-8 col-sm-12 text-end d-lg-flex justify-content-end">
+						<ul class="footer-social-list me-lg-8">
+							<li class="footer-link">
+								<a href="#">
+									الاسئلة الشائعة
+								</a>
+							</li>
+							<li class="footer-link">
+								<a href="#">
+									ارسل مقترح او شكوى
+								</a>
+							</li>
+							<li class="footer-link">
+								<a href="#">
+									سياسة الخصوصية
+								</a>
+							</li>
+							<li class="footer-link">
+								<a href="#">
+									شروط الاستخدام
+								</a>
+							</li>
+
+						</ul>
+						<ul class="footer-social-list ">
+							<li>
+								<a href="https://cst.gov.sa/" target="_blank"><img
+										src="../assets/images/svgs/cst_logo.svg" width="48"
+										class="vision-logo me-2" /></a>
+							</li>
+							<li>
+								<img src="../assets/images/svgs/vision.svg" width="64" class="vision-logo" />
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<!-- FOOTER CLOSED -->
+	</div>
+
+	<!-- cr_numbers Modal -->
+	<div class="modal fade" id="cr_numbers" tabindex="-1">
+		<div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+			<div class="modal-content p-4">
+				<div class="modal-header border-0">
+					<h6 class="modal-title text-primary fs-20">
+						<i class="mutasil-icon mutasil-buildings-building1 fs-40" class="mb-2"></i>&nbsp;&nbsp;
+						<b>تبديل رقم السجل التجاري</b>
+					</h6>
+					<button aria-label="Close" class="btn-close text-blue" data-bs-dismiss="modal"><i
+							class="mutasil-icon mutasil-icon-29 fa-lg"></i></button>
+				</div>
+				<div class="modal-body pt-0">
+
+					<p class="mb-1 fs-12">
+						يمكنك تبديل حساب الشركة
+					</p>
+
+					<h5 class="mb-5 text-dark lh-md">
+						<b>اختر واحد من السجلات التجارية المرتبطة بحسابك</b>
+					</h5>
+
+					<div class="row row-flex g-lg-3 gy-2">
+						<div class="col-lg-6">
+							<a href="#" class="btn btn-outline-primary btn-block p-3 h-100 text-wrap active">
+								<span class="d-flex align-items-center">
+									<i class="mutasil-icon mutasil-buildings-home fs-40 me-2 d-none d-lg-block"></i>
+									<span class="text-start lh-sm">
+										<span class="fw-bold">
+											شركة رواد الأثير لتقنية المعلومات
+										</span><br />
+										<span class="fs-12">س . ت : 565465465156</span>
+									</span>
+								</span>
+							</a>
+						</div>
+						<div class="col-lg-6">
+							<a href="#" class="btn btn-outline-primary btn-block p-3 h-100 text-wrap">
+								<span class="d-flex align-items-center align-self-center">
+									<i class="mutasil-icon mutasil-buildings-home fs-40 me-2 d-none d-lg-block"></i>
+									<span class="text-start lh-sm">
+										<span class="fw-bold">
+											شركة معايير التقنية المحدودة
+										</span><br />
+										<span class="fs-12">س . ت : 565465465156</span>
+									</span>
+								</span>
+							</a>
+						</div>
+						<div class="col-lg-6">
+							<a href="#" class="btn btn-outline-primary btn-block p-3 h-100 text-wrap">
+								<span class="d-flex align-items-center align-self-center">
+									<i class="mutasil-icon mutasil-buildings-home fs-40 me-2 d-none d-lg-block"></i>
+									<span class="text-start lh-sm">
+										<span class="fw-bold">
+											مؤسسة ضوئيات لامدادات الاتصالات
+										</span><br />
+										<span class="fs-12">س . ت : 565465465156</span>
+									</span>
+								</span>
+							</a>
+						</div>
+						<div class="col-lg-6">
+							<a href="#" class="btn btn-outline-primary btn-block p-3 h-100 text-wrap">
+								<span class="d-flex align-items-center">
+									<i class="mutasil-icon mutasil-buildings-home fs-40 me-2 d-none d-lg-block"></i>
+									<span class="text-start lh-sm">
+										<span class="fw-bold">
+											مؤسسة المعدات السعودية الحديثة
+										</span><br />
+										<span class="fs-12">س . ت : 565465465156</span>
+									</span>
+								</span>
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="modal-footer border-0 pt-2 px-3">
+					<button class="btn btn-default py-2 px-4 m-0" data-bs-dismiss="modal"><b>الغاء</b></button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- cr_numbers Modal -->
+	<div class="modal fade" id="cr_numbers" tabindex="-1">
+		<div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+			<div class="modal-content p-4">
+				<div class="modal-header border-0">
+					<h6 class="modal-title text-primary fs-20">
+						<i class="mutasil-icon mutasil-buildings-building1 fs-40" class="mb-2"></i>&nbsp;&nbsp;
+						<b>تبديل رقم السجل التجاري</b>
+					</h6>
+					<button aria-label="Close" class="btn-close text-blue" data-bs-dismiss="modal"><i
+							class="mutasil-icon mutasil-icon-29 fa-lg"></i></button>
+				</div>
+				<div class="modal-body pt-0">
+
+					<p class="mb-1 fs-12">
+						يمكنك تبديل حساب الشركة
+					</p>
+
+					<h5 class="mb-5 text-dark lh-md">
+						<b>اختر واحد من السجلات التجارية المرتبطة بحسابك</b>
+					</h5>
+
+					<div class="row row-flex g-lg-3 gy-2">
+						<div class="col-lg-6">
+							<a href="#" class="btn btn-outline-primary btn-block p-3 h-100 text-wrap active">
+								<span class="d-flex align-items-center">
+									<i class="mutasil-icon mutasil-buildings-home fs-40 me-2 d-none d-lg-block"></i>
+									<span class="text-start lh-sm">
+										<span class="fw-600">
+											شركة رواد الأثير لتقنية المعلومات
+										</span><br />
+										<span class="fs-12">س . ت : 565465465156</span>
+									</span>
+								</span>
+							</a>
+						</div>
+						<div class="col-lg-6">
+							<a href="#" class="btn btn-outline-primary btn-block p-3 h-100 text-wrap">
+								<span class="d-flex align-items-center align-self-center">
+									<i class="mutasil-icon mutasil-buildings-home fs-40 me-2 d-none d-lg-block"></i>
+									<span class="text-start lh-sm">
+										<span class="fw-600">
+											شركة معايير التقنية المحدودة
+										</span><br />
+										<span class="fs-12">س . ت : 565465465156</span>
+									</span>
+								</span>
+							</a>
+						</div>
+						<div class="col-lg-6">
+							<a href="#" class="btn btn-outline-primary btn-block p-3 h-100 text-wrap">
+								<span class="d-flex align-items-center align-self-center">
+									<i class="mutasil-icon mutasil-buildings-home fs-40 me-2 d-none d-lg-block"></i>
+									<span class="text-start lh-sm">
+										<span class="fw-600">
+											مؤسسة ضوئيات لامدادات الاتصالات
+										</span><br />
+										<span class="fs-12">س . ت : 565465465156</span>
+									</span>
+								</span>
+							</a>
+						</div>
+						<div class="col-lg-6">
+							<a href="#" class="btn btn-outline-primary btn-block p-3 h-100 text-wrap">
+								<span class="d-flex align-items-center">
+									<i class="mutasil-icon mutasil-buildings-home fs-40 me-2 d-none d-lg-block"></i>
+									<span class="text-start lh-sm">
+										<span class="fw-600">
+											مؤسسة المعدات السعودية الحديثة
+										</span><br />
+										<span class="fs-12">س . ت : 565465465156</span>
+									</span>
+								</span>
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="modal-footer border-0 pt-2 px-3">
+					<button class="btn btn-default py-2 px-4 m-0" data-bs-dismiss="modal"><b>الغاء</b></button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- BACK-TO-TOP -->
+	<a href="#top" id="back-to-top"><i class="mutasil-icon mutasil-icon-37 fa-lg"></i></a>
+
+
+	<!-- JQUERY JS -->
+	<script src="../assets/js/jquery.min.js"></script>
+
+	<!-- BOOTSTRAP JS -->
+	<script src="../assets/plugins/bootstrap/js/popper.min.js"></script>
+	<script src="../assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+
+	<!-- SIDEBAR JS -->
+	<script src="../assets/plugins/sidebar/sidebar.js"></script>
+
+	<!-- Sticky js -->
+	<script src="../assets/js/sticky.js"></script>
+	<!-- INTERNAL SELECT2 JS -->
+	<script src="../assets/plugins/select2/select2.full.min.js"></script>
+	<script src="../assets/js/select2.js"></script>
+
+	<!-- Datepicker -->
+	<script src="../assets/plugins/datepicker/bootstrap-hijri-datetimepicker.min.js">
+	</script>
+
+
+	<!-- SWEET-ALERT JS -->
+	<script src="../assets/plugins/sweet-alert/sweetalert.min.js"></script>
+
+	<!-- INTERNAL File-Uploads Js-->
+	<script src="../assets/plugins/fancyuploder/jquery.ui.widget.js"></script>
+	<script src="../assets/plugins/fancyuploder/jquery.fileupload.js"></script>
+	<script src="../assets/plugins/fancyuploder/jquery.iframe-transport.js"></script>
+	<script src="../assets/plugins/fancyuploder/jquery.fancy-fileupload.js"></script>
+	<script src="../assets/plugins/fancyuploder/lang/ar.js"></script>
+
+	<script type="text/javascript"
+		src='https://maps.google.com/maps/api/js?sensor=false&amp;libraries=places&region=SA&language=ar&key=AIzaSyBZIZb0-K2sEz2T_FmT8KI_ZdN6TNhzu7s'>
+	</script>
+	<script src="../assets/plugins/locationpicker/locationpicker.jquery.min.js"></script>
+
+
+	<!-- Particles Animation JS -->
+	<script src="../assets/plugins/particles/particles.min.js"></script>
+	<script src="../assets/plugins/particles/particles.init.js"></script>
+
+	<!-- CUSTOM JS -->
+	<script src="../assets/js/custom.js"></script>
+
+	<script>
+		$(".fav-input").change(function (e) {
+			var popupTitle = "";
+			console.log($(this).is(":checked"))
+			if ($(this).is(":checked")) {
+				popupTitle = 'تم اضافة الخدمة للخدمات المفضلة';
+			} else {
+				popupTitle = 'تم ازالة الخدمة من قائمة الخدمات المفضلة';
+			}
+			swal({
+				type: "success",
+				title: popupTitle,
+
+				timer: 2000,
+				allowOutsideClick: true,
+				showConfirmButton: false,
+				customClass: 'swal-nobuttons'
+			});
+		});
+	</script>
+	<script>
+		$(document).ready(function () {
+
+			$('input[data-type="date"]').each(function () {
+				$(this).hijriDatePicker({
+					hijri: $(this).data('hijri'),
+					locale: $('body').hasClass('rtl') ? 'ar-sa' : 'en-us',
+					isRTL: $('body').hasClass('rtl'),
+					widgetPositioning: {
+						horizontal: $('body').hasClass('rtl') ? 'right' : 'left',
+					},
+					showSwitcher: false,
+					ignoreReadonly: true,
+					debug: false,
+					maxDate: $.now(),
+					icons: {
+						previous: $('body').hasClass('rtl') ? '<i class="far fa-chevron-right"></i>' :
+							'<i class="far fa-chevron-left"></i>',
+						next: $('body').hasClass('rtl') ? '<i class="far fa-chevron-left"></i>' :
+							'<i class="far fa-chevron-right"></i>',
+					},
+				});
+			});
+		});
+	</script>
+	<script>
+		$(document).ready(function () {
+			//fancyfileuplod
+			$('.fancy_uploader').FancyFileUpload({
+				params: {
+					action: 'fileuploader'
+				},
+				maxfilesize: 41943040
+			});
+		});
+	</script>
+	<script>
+		$(document).ready(function () {
+			$('#ui_map').locationpicker({
+				location: {
+					latitude: 24.736661811835706,
+					longitude: 46.63445197712784
+				},
+				radius: 0,
+				inputBinding: {
+					/*latitudeInput: $('#ui-lat'),
+					longitudeInput: $('#ui-lon'),
+					radiusInput: $('#ui-radius'),
+					locationNameInput: $('#ui-address')*/
+				},
+				enableAutocomplete: false,
+				markerInCenter: true,
+				onchanged: function (currentLocation, radius, isMarkerDropped) {
+					// show alert on each Location Changed event
+					console.log('ziko');
+					console.log(currentLocation);
+				},
+				oninitialized: function (currentLocation, radius, isMarkerDropped) {
+					// show alert on each Location Changed event
+					console.log('ziko');
+					console.log(currentLocation);
+				}
+			});
+		});
+	</script>
+	<script>
+		(function () {
+			var s = document.createElement('script');
+			var h = document.querySelector('head') || document.body;
+			s.src = 'https://acsbapp.com/apps/app/dist/js/app.js';
+			s.async = true;
+			s.onload = function () {
+				acsbJS.init({
+					statementLink: '',
+					footerHtml: '',
+					hideMobile: false,
+					hideTrigger: false,
+					disableBgProcess: false,
+					language: 'ar',
+					position: 'right',
+					leadColor: '#000062',
+					triggerColor: '#000062',
+					triggerRadius: '50%',
+					triggerPositionX: 'right',
+					triggerPositionY: 'bottom',
+					triggerIcon: 'people',
+					triggerSize: 'bottom',
+					triggerOffsetX: 20,
+					triggerOffsetY: 20,
+					mobile: {
+						triggerSize: 'small',
+						triggerPositionX: 'right',
+						triggerPositionY: 'bottom',
+						triggerOffsetX: 20,
+						triggerOffsetY: 20,
+						triggerRadius: '20'
+					}
+				});
+			};
+			h.appendChild(s);
+		})();
+	</script>
+
+</body>
+
+</html>

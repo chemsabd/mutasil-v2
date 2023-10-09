@@ -1,0 +1,651 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+
+<head>
+
+    <!-- META DATA -->
+    <meta charset="UTF-8">
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, user-scalable=0'>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="description" content="هيئة الاتصالات والفضاء والتقنية هي الجهة المسؤولة عن تنظيم قطاع الاتصالات وتقنية المعلومات في المملكة العربية السعودية. ويحدد كلٌ من ( نظام الاتصالات ) الصادر بقرار مجلس الوزراء ذي الرقم (74 ) في 5/3/1422هـ ولائحته التنفيذية الصادرة بالقرار الوزاري رقم ( 11) في 17 / 5 / 1423هـ الإطار القانوني الخاص بتنظيم القطاع" />
+	<meta name="keywords" content="هيئة الاتصالات والفضاء والتقنية" />
+    <meta name="author" content="هيئة الاتصالات والفضاء والتقنية">
+
+    <!-- FAVICON -->
+	<link rel="apple-touch-icon" sizes="180x180" href="../assets/images/fav/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="../assets/images/fav/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="../assets/images/fav/favicon-16x16.png">
+	<link rel="mask-icon" href="../assets/images/fav/safari-pinned-tab.svg" color="#000062">
+	<link rel="shortcut icon" href="../assets/images/fav/favicon.ico">
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="theme-color" content="#ffffff">
+
+    <!-- TITLE -->
+    <title>منصة متصل - هيئة الاتصالات والفضاء والتقنية</title>
+
+    <!-- BOOTSTRAP CSS -->
+    <link id="style" href="../assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- STYLE CSS -->
+    <link href="../assets/css/style.css" rel="stylesheet" />
+
+    <!-- SINGLE-PAGE CSS -->
+    <link href="../assets/plugins/single-page/css/main.css" rel="stylesheet" type="text/css">
+
+    <!-- P-scroll bar css-->
+    <link href="../assets/plugins/p-scroll/perfect-scrollbar.css" rel="stylesheet" />
+
+    <!--- FONT-ICONS CSS -->
+    <link href="../assets/css/icons.css" rel="stylesheet" />
+	<link href="../assets/iconfonts/mutasil-service/mutasil-service.css?v21" rel="stylesheet" />
+	
+    <!-- INTERNAL SELECT2 CSS -->
+    <link href="../assets/plugins/select2/select2.min.css" rel="stylesheet" />
+	
+    <!-- INTERNAL Fancy File Upload css -->
+    <link href="../assets/plugins/fancyuploder/fancy_fileupload.css" rel="stylesheet" />
+	
+    <!--SWEET ALERT CSS-->
+    <link href="../assets/plugins/sweet-alert/sweetalert.css" rel="stylesheet" />
+
+    
+</head>
+
+<body class="app horizontal rtl individuals">
+
+    <!-- GLOBAL-LOADER -->
+    <div id="global-loader">
+        <img src="../assets/images/loader.svg" class="loader-img" alt="Loader">
+    </div>
+    <!-- /GLOBAL-LOADER -->
+
+    <!-- PAGE -->
+    <div class="page">
+        <div class="page-main">
+			<div class="beta-alert text-center">
+				<i class="fal fa-rocket fa-lg me-1 align-middle"></i>
+				<span>اطلاق تجريبي</span>
+			</div>
+            <!-- app-Header -->
+            <div class="header citc_header hor-header sticky">
+                <div class="main-container container-xxl">
+                    <div class="d-flex align-md-items-end align-items-center">
+                        <a class="logo-horizontal order-1 order-md-1" href="../index.html">
+                        <!-- LOGO -->
+                        <div class="d-flex header-right-icons ms-auto ms-md-0 ms-md-auto">
+                            <button class="navbar-toggler navresponsive-toggler d-lg-none ms-auto" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasSideMenu" aria-controls="offcanvasSideMenu" aria-label="Toggle navigation">
+								<span class="navbar-toggler-icon mutasil-icon mutasil-icon-35"></span>
+							</button>
+							<div class="offcanvas offcanvas-start-lg flex-grow-1" tabindex="-1" id="offcanvasSideMenu" aria-labelledby="offcanvasExampleLabel">
+								<div class = "offcanvas-header d-flex d-lg-none border-bottom">
+									<h5 class="offcanvas-title text-dark fw-bold" id="offcanvasExampleLabel">
+										<img class="offcanvas-logo" src="../assets/images/brand/gate_logo_side.svg" />
+									</h5>
+									<a href="javascript:void(0)" class="text-dark p-0" data-bs-dismiss="offcanvas" aria-label="close">
+										<i class="mutasil-icon mutasil-icon-29"></i>
+									</a>
+								</div>
+								<div class="offcanvas-body p-lg-0">
+									<div class="navbar p-0">
+										
+										<div class="head-link text-nowrap">
+											<a href="service_catalog.html" class="nav-link icon text-center font-weight-bold -active">
+												الخدمات الالكترونية
+											</a>
+										</div>
+										<div class="head-link text-nowrap">
+											<a href="service_catalog.html" class="nav-link icon text-center font-weight-bold">
+												متابعة الطلبات
+											</a>
+										</div>
+										<div class="d-flex position-relative head-icons">
+											<div class="v-separate mx-4 d-none d-lg-block"></div>
+											
+											<div class="dropdown d-flex profile-1 ms-lg-4">
+												<a href="#" data-bs-toggle="dropdown" class="nav-link pe-2">
+													<svg version="1.1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+														 width="27px" height="16px" viewBox="0 0 27 16" style="enable-background:new 0 0 27 16;" xml:space="preserve">
+														<path d="M22.7,5.4h-3.1l-3.3,8L11,0.2H6.3L0,15.7h4.1l1.2-3h6.8l1.2,3h2.2h1.9h0.8l0.8-2h4.5l0.8,2H27L22.7,5.4z
+															 M6.4,9.8l2.3-5.9L11,9.8H6.4z M19.7,11.8l1.5-3.9l1.5,3.9H19.7z"/>
+													</svg>
+												</a>
+												<div class="dropdown-menu dropdown-menu-end dropdown-menu-arrow" onclick="event.stopPropagation()">
+													<a class="dropdown-item" href="javascript:void(0)" onclick="enlargeText();">
+														<i class="fas fa-plus addon-icon dropdown-icon"></i><i class="dropdown-icon fas fa-font fa-lg"></i> تكبير حجم الخط
+													</a>
+													<a class="dropdown-item" href="javascript:void(0)" onclick="minimizeText();">
+														<i class="fas fa-minus addon-icon dropdown-icon"></i><i class="dropdown-icon fas fa-font fa-lg"></i> تصغير حجم الخط
+													</a>
+													<a class="dropdown-item" href="javascript:void(0)" onclick="resetText();">
+														<i class="fas fa-font addon-icon dropdown-icon"></i><i class="dropdown-icon fas fa-font fa-lg"></i> استعادة الحجم الافتراضي
+													</a>
+												</div>
+											</div>
+											<div class="head-icon">
+												<a class="nav-link icon text-center toggle-highcontrast">
+													<i class="mutasil-icon mutasil-icon-05"></i>
+												</a>
+											</div>
+											<!-- Language -->
+											<div class="country">
+												<a class="nav-link icon text-center fw-600" href="../index_en.html">
+													EN
+												</a>
+											</div>
+
+											<div class="dropdown d-flex notifications">
+												<a class="nav-link icon ms-3" href="notifications.html">
+													<i class="mutasil-icon mutasil-icon-06"></i>
+													<span class="position-absolute top-2 start-90 translate-middle badge rounded-pill bg-danger">2
+														<span class="visually-hidden">عدد التنيهات</span>
+													</span>
+												</a>
+											</div>
+										</div>
+										<div class="dropdown d-flex profile-dropdown profile-1 pb-4 pb-md-0 ms-lg-4">
+											<a href="#" data-bs-toggle="dropdown" class="nav-link pe-lg-2 d-flex">
+												<div class="text-center">
+													<div class="mt-n5px">مرحبا : &nbsp;
+														<strong>أحمد عبدالرحمن</strong>
+													</div>
+												</div>
+												<i class="mutasil-icon mutasil-icon-51 ms-3"></i>
+											</a>
+											<div class="dropdown-menu dropdown-menu-end dropdown-menu-arrow mt-lg-3">
+												<a class="dropdown-item" href="edit_company_info.html">
+													<i class="dropdown-icon mutasil-icon mutasil-icon-09"></i> ادارة بيانات الحساب
+												</a>
+												<a class="dropdown-item" href="../index.html">
+													<i class="dropdown-icon mutasil-icon mutasil-power"></i> تسجيل خروج
+												</a>
+											</div>
+										</div>
+										
+									</div>
+								</div>
+							</div>
+						</div>
+                    </div>
+                </div>
+            </div>
+            <!-- /app-Header -->
+
+            <!--app-content open-->
+            <div class="main-content hor-content container-xxl">
+                <div class="side-app">
+
+                    <!-- CONTAINER -->
+                    <div class="main-container">
+						<div class="site-content bg-white py-0">
+							<nav class="navbar inner-navbar navbar-expand-md navbar-light pt-4 mb-5">
+								<div class="container-fluid nav-content px-0">
+									<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#inPageNavBar" aria-controls="inPageNavBar" aria-expanded="false" aria-label="Toggle navigation">
+										<span class="d-flex align-items-center justify-content-between">
+											<span>متابعة طلباتي</span>
+											<i class="fas fa-chevron-down fa-sm	"></i>
+										</span>
+									</button>
+									<div class="collapse navbar-collapse" id="inPageNavBar">
+										<ul class="navbar-nav me-auto">
+											<li class="nav-item active d-none d-md-flex">
+												<a href="service_catalog.html" class="btn btn-outline-dark active btn-block me-md-2 text-start">متابعة طلباتي</a>
+											</li>
+											<li class="nav-item">
+												<a href="notifications.html" class="btn btn-white btn-block me-md-2 text-start">تنبيهات الحساب</a>
+											</li>
+											<li class="nav-item">
+												<a href="edit_user_info.html" class="btn btn-white btn-block me-md-2 text-start">ادارة بيانات الحساب</a>
+											</li>
+										</ul>
+										<span>
+											<a href="#" class="btn btn-white btn-block text-start"><i class="mutasil-icon mutasil-icon-26 text-blue fa-lg me-1"></i>  تسجيل خروج</a>
+										</span>
+									</div>
+								</div>
+							</nav>
+							<div class="px-4 px-md-6">
+
+								<!-- PAGE-HEADER -->
+								<div class="page-header d-flex flex-md-row flex-column mb-0">
+									<h1 class="page-title font-weight-bold order-2 order-md-1 page-header-element">
+										متابعة طلباتي
+									</h1>
+
+									<a href="service_catalog.html" class="back_btn order-1 order-md-4  page-header-element">
+										عودة للرئيسية
+										&nbsp;&nbsp;
+										<i class="mutasil-icon mutasil-icon-38 fa-lg"></i>
+									</a>
+									
+								</div>
+								<!-- PAGE-HEADER END -->
+								<!-- ROW-1 OPEN -->
+								<!-- Row -->
+								<div class="row">
+									<div class="col-md-12">
+
+										<div class="card">
+											<div class="card-header border-0 px-0 d-block d-lg-flex">
+												<h3 class="card-title sub-page-title mb-0 d-flex">
+													<i class="mutasil-service-icon icon-complaint me-2"></i>
+													<div class="mt-1">
+														طلبات الشكاوى
+														<h6 class="text-black mt-1">
+															إجمالي الطلبات ( 12 )
+														</h6>
+													</div>
+												</h3>
+												<div class="card-options d-block d-lg-flex">
+
+													<div class="d-flex align-items-center justify-content-lg-center  my-5 my-lg-0  me-lg-8">
+														<div class="progress-circle me-4" dir="ltr">
+															<input class="knob1" data-width="10" data-height="70" data-thickness=".3" data-angleoffset="0" data-linecap="round" data-fgcolor="#09ad95" data-bgcolor="#e0e9ea" value="58" readonly>
+														</div>
+														<div>
+															<p class="mb-0 text-start"><span class="dot-label me-1 bg-success"></span> <span class="fw-bold text-success">12</span> <span class="text-success fs-13">طلب مكتمل </span></p>
+															<p class="mb-0 text-start text-gray"><span class="dot-label me-1 bg-gray opacity-50"></span> <span class="fw-bold">4</span> <span class="fs-13">تحت المعالجة </span></p>
+														</div>
+													</div>
+													<div class="d-flex align-items-center justify-content-lg-center">
+														<div class="progress-circle me-4" dir="ltr">
+															<input class="knob1 no-text" data-width="10" data-height="70" data-thickness=".3" data-angleoffset="0" data-linecap="round" data-fgcolor="#5a5afe" data-bgcolor="#babbfe" value="70" readonly>
+														</div>
+														<div>
+															<p class="mb-0 text-start"><span class="dot-label me-1" style="background-color:#5a5afe;"></span> <span class="fw-bold" style="color:#5a5afe;">12</span> <span class="text-dark fs-13">شكاوى الإتصالات </span></p>
+															<p class="mb-0 text-start"><span class="dot-label me-1" style="background-color:#babbfe;"></span> <span class="fw-bold" style="color:#babbfe;">4</span> <span class="text-dark fs-13">شكاوى البريد </span></p>
+														</div>
+													</div>
+
+													
+													
+												</div>
+											</div>
+											<div class="card-body px-0 pb-0 pt-3">
+												<div class="filter_form">
+													<div class="row">
+														<div class="col-lg-6">
+															<div class="input-group mb-3">
+																<input type="text" class="form-control form-control-lg" placeholder="البحث عن الطلبات .." aria-label="البحث عن طلب .." aria-describedby="button-addon1">
+																<button class="btn btn-light" type="button" id="button-addon1">
+																	<i class="fas fa-search fa-lg"></i>
+																</button>
+															</div>
+														</div>
+														<div class="col-lg-6">
+															<div class="form-group select2-lg mb-3">
+																<select name="country" class="form-control form-select select2" data-bs-placeholder="ترتيب الطلبات">
+																	<option selected disabled>اختر ترتيب الطلبات</option>
+																	<option>ترتيب الأحدث أولا</option>
+																	<option>ترتيب الأقدم أولا</option>
+																	<option>ترتيب حسب الحالة</option>
+																</select>
+															</div>
+														</div>
+													</div>
+												</div>
+												
+												<div class="page-content">
+													<div class="requests_list">
+														<div class="row row-flex">
+															<div class="col-lg-4 col-md-6">
+																<a href="saved_request.html" class="request_item">
+																	<div class="request_item_content">
+																		<div class="row align-items-center w-100">
+																			<div class="col-lg-12">
+																				<span class="item-status fw-600 text-muted mb-1 d-block">
+																					مسودة طلب
+																				</span>
+																				<h5>
+																					أنخفاض سرعة الإنترنت
+																				</h5>
+																			</div>
+																			<div class="col-12">
+																				<span class="text-blue">
+																					<i class="mutasil-icon mutasil-icon-04 fa-lg"></i>&nbsp;
+																					<b>تاريخ الحفظ :  </b>
+																				</span>
+																				 <span class="text-black">2 / 11 / 2021</span>
+																			</div>
+																		</div>
+																	</div>
+																</a>
+															</div>
+														
+															<div class="col-lg-4 col-md-6">
+																<a href="active_request.html" class="request_item">
+																	<div class="request_item_content">
+																		<div class="row align-items-center w-100">
+																			<div class="col-12">
+																				<span class="item-status text-blue fw-600 mb-1 d-block">
+																					تحت المعالجة 
+																				</span>
+																				<h5>
+																					أنخفاض سرعة الإنترنت
+																				</h5>
+																			</div>
+																			<div class="col-md-6">
+																				<span class="text-blue d-block">
+																					<i class="mutasil-icon mutasil-icon-22 fa-lg"></i>&nbsp;
+																					<b>رقم الطلب : </b>
+																				</span>
+																				<span class="text-black">4245874254</span>
+																			</div>
+																			<div class="col-md-6">
+																				<span class="text-blue d-block">
+																					<i class="mutasil-icon mutasil-icon-04 fa-lg"></i>&nbsp;
+																					<b>تاريخ الطلب :  </b>
+																				</span>
+																				 <span class="text-black">2 / 11 / 2021</span>
+																			</div>
+																		</div>
+																	</div>
+																</a>
+																
+															</div>
+															
+															<div class="col-lg-4 col-md-6">
+																<a href="active_request.html" class="request_item">
+																	<div class="request_item_content">
+																		<div class="row align-items-center w-100">
+																			<div class="col-12">
+																				<span class="item-status text-danger mb-1 d-block">
+																					تم رفض الشكوى
+																				</span>
+																				<h5>
+																					كابينة هاتف مفتوحة معرضة للعبث
+																				</h5>
+																			</div>
+																			<div class="col-md-6">
+																				<span class="text-blue d-block">
+																					<i class="mutasil-icon mutasil-icon-22 fa-lg"></i>&nbsp;
+																					<b>رقم الطلب : </b>
+																				</span>
+																				<span class="text-black">4245874254</span>
+																			</div>
+																			<div class="col-md-6">
+																				<span class="text-blue d-block">
+																					<i class="mutasil-icon mutasil-icon-04 fa-lg"></i>&nbsp;
+																					<b>تاريخ الطلب :  </b>
+																				</span>
+																				 <span class="text-black">2 / 11 / 2021</span>
+																			</div>
+																		</div>
+																	</div>
+																</a>
+																
+															</div>
+															<div class="col-lg-4 col-md-6">
+																<a href="need_info_request.html" class="request_item">
+																	<div class="request_item_content">
+																		<div class="row align-items-center w-100">
+																			<div class="col-12">
+																				<span class="item-status text-blue fw-600 mb-1 d-block">
+																					تحت المعالجة 
+																				</span>
+																				<h5>
+																					عدم تقديم خدمة أو تفعيلها أو تطبيق مزاياها
+																				</h5>
+																			</div>
+																			<div class="col-md-6">
+																				<span class="text-blue d-block">
+																					<i class="mutasil-icon mutasil-icon-22 fa-lg"></i>&nbsp;
+																					<b>رقم الطلب : </b>
+																				</span>
+																				<span class="text-black">4245874254</span>
+																			</div>
+																			<div class="col-md-6">
+																				<span class="text-blue d-block">
+																					<i class="mutasil-icon mutasil-icon-04 fa-lg"></i>&nbsp;
+																					<b>تاريخ الطلب :  </b>
+																				</span>
+																				 <span class="text-black">2 / 11 / 2021</span>
+																			</div>
+																		</div>
+																	</div>
+																	<div class="alert alert-warning text-black d-block" role="alert">
+																		<strong class="text-warning">الطلب بحاجة لبيانات إضافية :  </strong>  برجاء إضافة صورة اخر فاتورة اتصالات تم تحصيلها من الشركة.
+																		<span class="text-warning ms-auto d-block d-md-inline strong">
+																			التفاصيل <i class="mutasil-icon mutasil-icon-38 fa-lg"></i>
+																		</span>
+																	</div>
+																</a>
+																
+															</div>
+															<div class="col-lg-4 col-md-6">
+																<a href="active_request.html" class="request_item">
+																	<div class="request_item_content">
+																		<div class="row align-items-center w-100">
+																			<div class="col-lg-12">
+																				<span class="item-status text-blue fw-600 mb-1 d-block">
+																					تمت المعالجة 
+																				</span>
+																				<h5>
+																					عدم تقديم خدمة أو تطبيق مزاياها
+																				</h5>
+																			</div>
+																			<div class="col-md-6">
+																				<span class="text-blue d-block">
+																					<i class="mutasil-icon mutasil-icon-22 fa-lg"></i>&nbsp;
+																					<b>رقم الطلب : </b>
+																				</span>
+																				<span class="text-black">4245874254</span>
+																			</div>
+																			<div class="col-md-6">
+																				<span class="text-blue d-block">
+																					<i class="mutasil-icon mutasil-icon-04 fa-lg"></i>&nbsp;
+																					<b>تاريخ الطلب :  </b>
+																				</span>
+																				 <span class="text-black">2 / 11 / 2021</span>
+																			</div>
+																		</div>
+																	</div>
+																</a>
+																
+															</div>
+														</div>
+													</div>
+												
+													<div class="request-footer mt-3">
+														<nav aria-label="Page navigation example">
+															<ul class="pagination justify-content-center">
+																<li class="page-item disabled">
+																	<a class="page-link" href="#" tabindex="-1">
+																		<i class="fa fa-angle-left"></i>
+																		<span class="sr-only">Previous</span>
+																	</a>
+																</li>
+																<li class="page-item"><a class="page-link" href="#">1</a></li>
+																<li class="page-item active"><a class="page-link" href="#">2</a></li>
+																<li class="page-item"><a class="page-link" href="#">3</a></li>
+																<li class="page-item">
+																	<a class="page-link" href="#">
+																		<i class="fa fa-angle-right"></i>
+																		<span class="sr-only">Next</span>
+																	</a>
+																</li>
+															</ul>
+														</nav>
+													</div>
+												
+												</div>
+											</div>
+										</div>
+
+									
+									</div>
+								</div>
+								<!-- /Row -->
+							</div>
+						</div>
+                    </div>
+                    <!-- CONTAINER CLOSED -->
+                </div>
+            </div>
+            <!--app-content closed-->
+        </div>
+
+
+        <!-- FOOTER -->
+        <footer class="footer">
+            <div class="container-xxl">
+                <div class="row align-items-center w-100">
+                    <div class="col-md-6 col-sm-12">
+                        <div class="footer-info">جميع الحقوق محفوظة © 2021  هيئة الاتصالات والفضاء والتقنية</div>
+                    </div>
+                    <div class="col-md-6 col-sm-12 text-end d-lg-flex justify-content-end">
+						<ul class="footer-social-list me-lg-8">
+							<li class="footer-link">
+								<a href="complaint.html">
+									ارسل إستفسار أو مقترح
+								</a>
+							</li>
+							<li class="footer-link">
+								<a href="#">
+									سياسة الخصوصية
+								</a>
+							</li>
+							<li class="footer-link">
+								<a href="#">
+									شروط الاستخدام
+								</a>
+							</li>
+
+						</ul>
+						<ul class="footer-social-list ">
+							<li><a href="javascript:;"><i class="fab fa-twitter"></i></a></li>
+							<li><a href="javascript:;"><i class="fab fa-instagram"></i></a></li>
+							<li><a href="javascript:;"><i class="fab fa-youtube"></i></a></li>
+						</ul>
+                    </div>
+					
+                </div>
+            </div>
+        </footer>
+        <!-- FOOTER CLOSED -->
+    </div>
+	<!-- Post Question Modal -->
+	<div class="modal fade" id="postQuestion" tabindex="-1">
+		<div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+			<div class="modal-content p-4">
+				<div class="modal-header border-0">
+					<h6 class="modal-title text-primary fs-20">
+						<img src="../assets/images/svgs/icons_individuals/faq_alt.svg" width="40" class="me-4"/> <b>ارسل إستفسار أو مقترح</b>
+					</h6>
+					<button aria-label="Close" class="btn-close text-blue" data-bs-dismiss="modal"><i class="far fa-times fa-lg"></i></button>
+				</div>
+				<div class="modal-body">
+					<div class="row">
+						<div class="col-md-12">
+							<div class="form-group select2-lg">
+								<label class="form-label-small">نوع الرسالة * :</label>
+								<select name="type" class="form-control form-control-lg form-select" data-bs-placeholder="اختر نوع السؤال">
+									<option selected disabled>اختر الرسالة</option>
+									<option>مقترح</option>
+									<option>شكوى</option>
+								</select>
+							</div>
+						</div>
+						<div class="col-md-12">
+							<div class="form-group">
+								<textarea class="form-control mb-4" placeholder="أكتب سؤالك هنا ..." rows="6"></textarea>
+							</div>
+						</div>
+					</div>
+					
+				</div>
+				<div class="modal-footer border-0 pt-0">
+					<div class="me-auto fs-12 d-none">
+						<i class="mutasil-icon mutasil-icon-17 text-warning fa-lg me-2"></i>
+						<strong>تنويه : </strong>  سيتم الرد على سؤالك في خلال 48 ساعة كحد أقصى
+
+					</div>
+					<button class="btn btn-outline-primary py-2 px-4" data-bs-dismiss="modal"><b>ارسال</b></button>
+				</div>
+			</div>
+		</div>
+	</div>
+    <!-- BACK-TO-TOP -->
+    <a href="#top" id="back-to-top"><i class="mutasil-icon mutasil-icon-37 fa-lg"></i></a>
+
+
+    <!-- JQUERY JS -->
+    <script src="../assets/js/jquery.min.js"></script>
+
+    <!-- BOOTSTRAP JS -->
+    <script src="../assets/plugins/bootstrap/js/popper.min.js"></script>
+    <script src="../assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- SIDEBAR JS -->
+    <script src="../assets/plugins/sidebar/sidebar.js"></script>
+	
+    <!-- Sticky js -->
+    <script src="../assets/js/sticky.js"></script>
+    <!-- INTERNAL SELECT2 JS -->
+    <script src="../assets/plugins/select2/select2.full.min.js"></script>
+    <script src="../assets/js/select2.js"></script>
+	
+    <!-- SWEET-ALERT JS -->
+    <script src="../assets/plugins/sweet-alert/sweetalert.min.js"></script>
+
+    <!-- Charts Js-->
+	<script src="../assets/plugins/knob/knob.min.js"></script>
+	
+    <!-- CUSTOM JS -->
+    <script src="../assets/js/custom.js"></script>
+
+<script>
+	$( ".fav-input" ).change(function(e) {
+		var popupTitle="";
+		console.log($(this).is(":checked"))
+		if($(this).is(":checked")){
+			popupTitle= 'تم اضافة الخدمة للخدمات المفضلة';
+		}else{
+			popupTitle= 'تم ازالة الخدمة من قائمة الخدمات المفضلة';
+		}
+        swal({
+			type: "success",
+            title: popupTitle,
+            
+            timer: 2000,
+            allowOutsideClick: true,
+            showConfirmButton: false,
+			customClass: 'swal-nobuttons'
+        });
+	});
+</script>
+<script>
+	$(document).ready(function() {
+
+		"use strict";
+		$(".knob1").knob({
+
+			'width':80,
+			'height':80,
+			'max':100,
+
+			change : function (value) {
+				//console.log("change : " + value);
+			},
+			release : function (value) {
+				//console.log(this.$.attr('value'));
+				console.log("release : " + value);
+			},
+			cancel : function () {
+				console.log("cancel : ", this);
+			},
+			format : function (value) {
+			 return value + '%';
+			 },
+			draw : function () {
+
+			}
+		});
+		
+		
+	});
+</script>
+<script> (function(){ var s = document.createElement('script'); var h = document.querySelector('head') || document.body; s.src = 'https://acsbapp.com/apps/app/dist/js/app.js'; s.async = true; s.onload = function(){ acsbJS.init({ statementLink : '', footerHtml : '', hideMobile : false, hideTrigger : false, disableBgProcess : false, language : 'ar', position : 'right', leadColor : '#000062', triggerColor : '#000062', triggerRadius : '50%', triggerPositionX : 'right', triggerPositionY : 'bottom', triggerIcon : 'people', triggerSize : 'bottom', triggerOffsetX : 20, triggerOffsetY : 20, mobile : { triggerSize : 'small', triggerPositionX : 'right', triggerPositionY : 'bottom', triggerOffsetX : 20, triggerOffsetY : 20, triggerRadius : '20' } }); }; h.appendChild(s); })(); </script>
+
+</body>
+
+</html>

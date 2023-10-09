@@ -1,0 +1,1038 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+
+<head>
+
+    <!-- META DATA -->
+    <meta charset="UTF-8">
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, user-scalable=0'>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description"
+        content="هيئة الاتصالات والفضاء والتقنية هي الجهة المسؤولة عن تنظيم قطاع الاتصالات وتقنية المعلومات في المملكة العربية السعودية. ويحدد كلٌ من ( نظام الاتصالات ) الصادر بقرار مجلس الوزراء ذي الرقم (74 ) في 5/3/1422هـ ولائحته التنفيذية الصادرة بالقرار الوزاري رقم ( 11) في 17 / 5 / 1423هـ الإطار القانوني الخاص بتنظيم القطاع" />
+    <meta name="keywords" content="هيئة الاتصالات والفضاء والتقنية" />
+    <meta name="author" content="هيئة الاتصالات والفضاء والتقنية">
+
+    <!-- FAVICON -->
+    <link rel="apple-touch-icon" sizes="180x180" href="../assets/images/fav/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../assets/images/fav/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../assets/images/fav/favicon-16x16.png">
+    <link rel="mask-icon" href="../assets/images/fav/safari-pinned-tab.svg" color="#000062">
+    <link rel="shortcut icon" href="../assets/images/fav/favicon.ico">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- TITLE -->
+    <title>منصة متصل - هيئة الاتصالات والفضاء والتقنية</title>
+
+    <!-- BOOTSTRAP CSS -->
+    <link id="style" href="../assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- STYLE CSS -->
+    <link href="../assets/css/style.css" rel="stylesheet" />
+
+    <!-- SINGLE-PAGE CSS -->
+    <link href="../assets/plugins/single-page/css/main.css" rel="stylesheet" type="text/css">
+
+    <!-- P-scroll bar css-->
+    <link href="../assets/plugins/p-scroll/perfect-scrollbar.css" rel="stylesheet" />
+
+    <!--- FONT-ICONS CSS -->
+    <link href="../assets/css/icons.css" rel="stylesheet" />
+    <link href="../assets/iconfonts/mutasil-service/mutasil-service.css?v21" rel="stylesheet" />
+
+    <!-- INTERNAL SELECT2 CSS -->
+    <link href="../assets/plugins/select2/select2.min.css" rel="stylesheet" />
+
+    <!-- INTERNAL Fancy File Upload css -->
+    <link href="../assets/plugins/fancyuploder/fancy_fileupload.css" rel="stylesheet" />
+
+    <!--SWEET ALERT CSS-->
+    <link href="../assets/plugins/sweet-alert/sweetalert.css" rel="stylesheet" />
+
+    <!-- INTERNAL Notifications  Css -->
+    <link href="../assets/plugins/growl-notification/light-theme.min.css" rel="stylesheet" />
+
+
+</head>
+
+<body class="app horizontal rtl individuals">
+
+    <!-- GLOBAL-LOADER -->
+    <div id="global-loader">
+        <img src="../assets/images/loader.svg" class="loader-img" alt="Loader">
+    </div>
+    <!-- /GLOBAL-LOADER -->
+
+    <!-- PAGE -->
+    <div class="page">
+        <div class="page-main">
+            <div class="beta-alert text-center">
+                <i class="fal fa-rocket fa-lg me-1 align-middle"></i>
+                <span>اطلاق تجريبي</span>
+            </div>
+            <!-- app-Header -->
+            <div class="header citc_header hor-header sticky">
+                <div class="header-particles" id="particles-js"></div>
+                <div class="main-container container-xxl">
+                    <div class="d-flex align-md-items-end align-items-center">
+                        <a class="logo-horizontal order-1 order-md-1" href="../index.html">
+                            <img src="../assets/images/brand/gate_logo_indv.svg" class="header-brand-img desktop-logo"
+                                alt="متصل">
+                            <img src="../assets/images/brand/gate_logo_indv.svg" class="header-brand-img light-logo1"
+                                alt="متصل">
+                        </a>
+                        <!-- LOGO -->
+                        <div class="d-flex header-right-icons flex-grow-1 order-2 order-lg-2">
+                            <button class="navbar-toggler navresponsive-toggler d-lg-none ms-auto" type="button"
+                                data-bs-toggle="offcanvas" data-bs-target="#offcanvasSideMenu"
+                                aria-controls="offcanvasSideMenu" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon mutasil-icon mutasil-icon-35"></span>
+                            </button>
+                            <div class="offcanvas offcanvas-end0-md offcanvas-start flex-grow-1" tabindex="-1"
+                                id="offcanvasSideMenu_footer" aria-labelledby="offcanvasSideMenu_footer">
+                                <div class="offcanvas-body p-lg-0">
+                                    <div class="navbar ps-lg-6 pe-lg-0">
+                                        <a class="nav-link icon ps-3 pe-3 head-notifications" href="notifications.html">
+                                            <i class="mutasil-icon mutasil-icon-06"></i>
+                                            <span
+                                                class="position-absolute top-2 start-90 translate-middle badge rounded-pill bg-danger">2
+                                                <span class="visually-hidden">عدد التنيهات</span>
+                                            </span>
+                                        </a>
+                                        <div class="d-flex position-relative head-icons">
+                                            <div class="v-separate mx-4 d-none d-lg-block"></div>
+
+                                            <div class="head-link text-nowrap">
+                                                <a href="faq.html" class="nav-link icon text-center font-weight-bold">
+                                                    <i
+                                                        class="mutasil-icon mutasil-icon-27 fa-lg d-inline d-lg-none me-2"></i>
+                                                    تواصل معنا
+                                                </a>
+                                            </div>
+                                            <!-- Language -->
+                                            <div class="country">
+                                                <a class="nav-link icon text-center fw-600 fs-14"
+                                                    href="../index_en.html">
+                                                    <strong>En</strong>
+                                                    <i
+                                                        class="mutasil-icon mutasil-business-global ms-lg-1 me-2 me-lg-0"></i>
+                                                </a>
+                                            </div>
+                                            <div class="v-separate mx-4 d-none d-lg-block"></div>
+                                            <div
+                                                class="nav-item nav-item-dropdown-lg dropdown d-none-d-lg-flex ms-lg-2">
+                                                <a href="#"
+                                                    class="navbar-nav-link align-items-center rounded-pill dropdown-toggle p-1 userImg"
+                                                    data-toggle="dropdown">
+                                                    <img src="../assets/images/user.jpg" height="32" width="32" alt="">
+                                                    <span class="d-none d-lg-inline-block fw-bold text-white mx-lg-2">
+                                                        أحمد
+                                                        عبدالرحمن </span>
+                                                </a>
+
+                                                <div class="dropdown-menu dropdown-menu-end">
+                                                    <a href="edit_user_info.html" class="dropdown-item">
+                                                        <i class="mutasil-icon mutasil-icon-09 me-2"></i>
+                                                        ادارة بيانات الحساب
+                                                    </a>
+                                                    <a href="circulars.html" class="dropdown-item">
+                                                        <i
+                                                            class="mutasil-icon  mutasil-communication-feedback me-2"></i>
+                                                        التعاميم
+                                                    </a>
+                                                    <a href="../index.html" class="dropdown-item">
+                                                        <i class="mutasil-icon  mutasil-device-shutdown me-2"></i>
+                                                        تسجيل خروج
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /app-Header -->
+            <!--app-content open-->
+            <div class="main-content hor-content container-xxl">
+                <div class="side-app">
+
+                    <!-- CONTAINER -->
+                    <div class="main-container">
+
+                        <div class="row">
+                            <div class="col-lg side-nav-col col-md-12">
+                                <div class="bg-white p-0 p-lg-4 h-100 d-flex flex-column offcanvas offcanvas-start"
+                                    id="offcanvasSideMenu">
+                                    <div class="offcanvas-header d-flex d-lg-none border-bottom">
+                                        <h5 class="offcanvas-title text-dark fw-bold" id="offcanvasExampleLabel">
+                                            <img class="offcanvas-logo"
+                                                src="../assets/images/brand/gate_logo_side.svg" />
+                                        </h5>
+                                        <a href="javascript:void(0)" class="text-dark p-0" data-bs-dismiss="offcanvas"
+                                            aria-label="close">
+                                            <i class="mutasil-icon mutasil-icon-29 fa-lg"></i>
+                                        </a>
+                                    </div>
+                                    <div class="p-4 p-lg-0">
+                                        <div class="page-title page-header-element mb-0 mb-lg-4">
+                                            <div class="d-flex align-items-center">
+                                                <span class="avatar avatar-lg bradius cover-image bg-avatar me-3"
+                                                    data-bs-image-src="../assets/images/user.jpg">
+                                                </span>
+                                                <div class="fw-normal fs-17">
+                                                    <small class="text-muted small">
+                                                        مرحبا ,
+                                                    </small><br />
+                                                    <span class="text-blue fw-bold">أحمد عبدالرحمن</span> <i
+                                                        class="fas fa-chevron-down ms-2 fs-14 d-none"></i>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <nav class="offcanvas-body p-0">
+                                        <div class="container-fluid nav-content px-0 position-relative">
+                                            <div>
+
+                                                <div class="list-group list-group-transparent mb-0 pb-3">
+                                                    <a href="service_catalog.html"
+                                                        class="list-group-item d-flex align-items-center py-3">
+                                                        <i class="mutasil-icon mutasil-buildings-home1 fa-lg"></i>
+                                                        <span class="ms-2">الرئيسية</span>
+                                                    </a>
+                                                    <hr class="light" />
+
+                                                    <a href="user_dashboard.html"
+                                                        class="list-group-item d-flex align-items-center">
+                                                        <i class="mutasil-icon mutasil-business-briefcase2 fa-lg"></i>
+                                                        <span class="ms-2">متابعة طلباتي</span>
+                                                    </a>
+                                                    <hr class="light" />
+
+                                                    <a href="all_services.html"
+                                                        class="list-group-item d-flex align-items-center">
+                                                        <i class="mutasil-icon mutasil-icon-20 fa-lg"></i>
+                                                        <span class="ms-2">الخدمات الالكترونية</span>
+                                                    </a>
+                                                    <hr class="light" />
+                                                    <a href="user_board.html"
+                                                        class="list-group-item d-flex align-items-center">
+                                                        <i class="mutasil-icon mutasil-business-barchart1 fa-lg"></i>
+                                                        <span class="ms-2">لوحة المعلومات</span>
+                                                    </a>
+                                                    <hr class="light" />
+                                                    <a href="edit_user_info.html"
+                                                        class="list-group-item d-flex align-items-center">
+                                                        <i class="mutasil-icon mutasil-icon-09 fa-lg"></i>
+                                                        <span class="ms-2">ادارة بيانات الحساب</span>
+                                                    </a>
+                                                </div>
+
+                                                <a href="help_wizzrad.html" class="faq-banner d-flex mb-4 mt-4 mt-lg-8">
+                                                    <span>
+                                                        <img src="../assets/images/svgs/banners/code.svg" width="40"
+                                                            class="ms-0" />
+                                                    </span>
+                                                    <span class="ms-2">
+                                                        <b>لتحديد الخدمة المناسبة</b><br />
+                                                        <small>اضغط هنا</small>
+                                                    </span>
+                                                </a>
+
+                                                <div class="card mt-0 mb-0">
+                                                    <div class="card-body bg-light-gray p-4">
+                                                        <div class="bg-white p-4">
+                                                            <h6 class="">
+                                                                <span class="fw-bold fs-">رأيك يصنع الفارق </span>
+                                                            </h6>
+                                                            <p class="fs-11 mt-3 mb-4 opacity-75">
+                                                                شارك برأيك في تقييم متصل للمساعدة في تطوير الخدمة
+                                                                المقدمة للعموم ...
+                                                            </p>
+                                                            <a href="questionnaire-2.html"
+                                                                class="btn btn-outline-warning btn-block btn-sm py-2 mt-3">بدا
+                                                                الإستبيان</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </nav>
+                                </div>
+                            </div>
+
+                            <div class="col-lg">
+                                <div class="site-content bg-white px-4 px-md-6 py-4">
+                                    <!-- PAGE-HEADER -->
+                                    <div class="page-header d-flex flex-md-row flex-column">
+                                        <div class="d-flex page-header-element align-items-center">
+                                            <img src="../assets/images/svgs/service_line/bills.svg" width="64"
+                                                class="me-2" />
+                                            <div>
+                                                <a href="service_catalog.html"
+                                                    class="back_btn pb-1 align-items-end mt-0 fs-12">
+                                                    <i class="mutasil-icon mutasil-icon-40 fa-lg"></i>
+                                                    &nbsp;&nbsp;
+                                                    عودة الى الرئيسية
+                                                </a>
+                                                <h1 class="page-title font-weight-bold page-header-element">
+                                                    الفواتير
+                                                </h1>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- PAGE-HEADER END -->
+                                    <!-- ROW-1 OPEN -->
+                                    <!-- Row -->
+                                    <div class="page-content">
+                                        <div class="row">
+
+                                            <div class="col-lg-12">
+
+                                                <div class="row">
+                                                    <div class="col-lg-6">
+                                                        <nav
+                                                            class="navbar navbar-sm inner-navbar navbar-expand-md navbar-light d-flex d-lg-inline-block white">
+                                                            <div
+                                                                class="container-fluid nav-content px-0 position-relative">
+                                                                <button class="navbar-toggler bg-transparent"
+                                                                    type="button" data-bs-toggle="collapse"
+                                                                    data-bs-target="#inPageNavBar2"
+                                                                    aria-controls="inPageNavBar2" aria-expanded="false"
+                                                                    aria-label="Toggle navigation">
+                                                                    <span
+                                                                        class="d-flex align-items-center justify-content-between">
+                                                                        <span>فلترة الفواتير حسب الحالة</span>
+                                                                        <i
+                                                                            class="mutasil-icon mutasil-icon-51 fa-sm"></i>
+                                                                    </span>
+                                                                </button>
+                                                                <div class="collapse navbar-collapse bills-filter-buttons"
+                                                                    id="inPageNavBar2">
+                                                                    <ul class="navbar-nav me-auto visible-links">
+                                                                        <li class="animated-state"></li>
+                                                                        <li class="nav-item">
+                                                                            <a href="#" data-filter="*"
+                                                                                class="btn btn-white btn-block text-start text-md-center active">
+                                                                                كل الفواتير
+                                                                            </a>
+                                                                        </li>
+                                                                        <li class="nav-item">
+                                                                            <a href="#" data-filter=".filter-not-paid"
+                                                                                class="btn btn-white btn-block text-start text-md-center">
+                                                                                فواتير غير المدفوعة
+                                                                            </a>
+                                                                        </li>
+                                                                        <li class="nav-item">
+                                                                            <a href="#" data-filter=".filter-paid"
+                                                                                class="btn btn-white btn-block text-start text-md-center">
+                                                                                فواتير مدفوعة
+                                                                            </a>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                        </nav>
+                                                    </div>
+                                                    <div class="col-lg-6">
+                                                        <div class="d-flex align-items-center">
+                                                            <div class="input-group-search flex-fill me-3">
+                                                                <i class="mutasil-icon mutasil-icon-11"></i>
+
+                                                                <input type="text" class="form-control billssearch"
+                                                                    placeholder="ابحث برقم الفاتورة"
+                                                                    aria-label="ابحث برقم الفاتورة">
+                                                            </div>
+                                                            <div
+                                                                class="navbar navbar-sm inner-navbar navbar-expand-md navbar-light white border-0 p-0 mb-0 ms-auto">
+                                                                <ul class="nav">
+                                                                    <li class="animated-state"></li>
+                                                                    <li class="nav-item">
+                                                                        <a data-bs-toggle="tab" href="#bills_grid"
+                                                                            class="btn btn-white btn-block text-start text-md-center active">
+                                                                            <i
+                                                                                class="mutasil-icon mutasil-icon-20 fs-16"></i>
+                                                                        </a>
+                                                                    </li>
+                                                                    <li class="nav-item">
+                                                                        <a data-bs-toggle="tab" href="#bills_list"
+                                                                            class="btn btn-white btn-block text-start text-md-center">
+                                                                            <i
+                                                                                class="mutasil-icon mutasil-icon-35 fs-16"></i>
+                                                                        </a>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+
+                                                </div>
+
+
+                                                <div class="tab-content mt-5">
+                                                    <div class="tab-pane active" id="bills_grid">
+
+                                                        <div class="bills_grid row pt-3">
+                                                            <div class="col-lg-4 col-md-6 mb-5 filter-paid grid-item">
+                                                                <div class="card bill_grid_item  p-0">
+                                                                    <div class="card-body">
+                                                                        <div class="bill_status bill_status_success">
+                                                                            <i class="mutasil-icon mutasil-icon-30"></i>
+                                                                        </div>
+                                                                        <h6 class="fs-12 text-muted">مبلغ الفاتورة</h6>
+                                                                        <h4 class="fs-18">
+                                                                            <span class="fw-bold">1000</span>
+                                                                            <span class="fw-normal">ر.س</span>
+                                                                        </h4>
+                                                                        <h5 class="text-success">
+                                                                            مدفوعة
+                                                                        </h5>
+                                                                        <div class="pay-day mb-3">
+                                                                            <i
+                                                                                class="mutasil-icon mutasil-business-calendar2 text-muted"></i>
+                                                                            <span class="text-muted fw-semibold">تاريخ
+                                                                                الدفع</span>
+                                                                            <span class="fw-bold">20/2/2022</span>
+                                                                        </div>
+                                                                        <div
+                                                                            class="d-flex justify-content-between mb-3">
+                                                                            <span class="text-muted">نوع الخدمة</span>
+                                                                            <span>التراخيص</span>
+                                                                        </div>
+                                                                        <div
+                                                                            class="d-flex justify-content-between mb-3">
+                                                                            <span class="text-muted">
+                                                                                رقم الفاتورة
+                                                                            </span>
+                                                                            <span class="bill_no">CS-1234567899</span>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="card-footer">
+                                                                        <span class="bill-handle left-handle"></span>
+                                                                        <span class="bill-handle right-handle"></span>
+                                                                        <div class="bill_paid text-muted mt-4">
+                                                                            تم الدفع بواسطة بطاقة ائتمانية
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-lg-4 col-md-6 mb-5 filter-paid grid-item">
+                                                                <div class="card bill_grid_item  p-0">
+                                                                    <div class="card-body">
+                                                                        <div class="bill_status bill_status_success">
+                                                                            <i class="mutasil-icon mutasil-icon-30"></i>
+                                                                        </div>
+                                                                        <h6 class="fs-12 text-muted">مبلغ الفاتورة</h6>
+                                                                        <h4 class="fs-18">
+                                                                            <span class="fw-bold">1000</span>
+                                                                            <span class="fw-normal">ر.س</span>
+                                                                        </h4>
+                                                                        <h5 class="text-success">
+                                                                            مدفوعة
+                                                                        </h5>
+                                                                        <div class="pay-day mb-3">
+                                                                            <i
+                                                                                class="mutasil-icon mutasil-business-calendar2 text-muted"></i>
+                                                                            <span class="text-muted fw-semibold">تاريخ
+                                                                                الدفع</span>
+                                                                            <span class="fw-bold">20/2/2022</span>
+                                                                        </div>
+                                                                        <div
+                                                                            class="d-flex justify-content-between mb-3">
+                                                                            <span class="text-muted">نوع الخدمة</span>
+                                                                            <span>التراخيص</span>
+                                                                        </div>
+                                                                        <div
+                                                                            class="d-flex justify-content-between mb-3">
+                                                                            <span class="text-muted">
+                                                                                رقم الفاتورة
+                                                                            </span>
+                                                                            <span class="bill_no">CS-1234567899</span>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="card-footer">
+                                                                        <span class="bill-handle left-handle"></span>
+                                                                        <span class="bill-handle right-handle"></span>
+                                                                        <div class="bill_paid text-muted mt-4">
+                                                                            تم الدفع بواسطة بطاقة ائتمانية
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div
+                                                                class="col-lg-4 col-md-6 mb-5 filter-not-paid grid-item">
+                                                                <div class="card bill_grid_item  p-0">
+                                                                    <div class="card-body">
+                                                                        <div class="bill_status bill_status_danger">
+                                                                            <i class="mutasil-icon mutasil-icon-28"></i>
+                                                                        </div>
+                                                                        <h6 class="fs-12 text-muted">مبلغ الفاتورة</h6>
+                                                                        <h4 class="fs-18">
+                                                                            <span class="fw-bold">1000</span>
+                                                                            <span class="fw-normal">ر.س</span>
+                                                                        </h4>
+                                                                        <h5 class="text-danger">
+                                                                            غير مدفوعة
+                                                                        </h5>
+                                                                        <div class="pay-day mb-3">
+                                                                            <i
+                                                                                class="mutasil-icon mutasil-business-calendar2 text-muted"></i>
+                                                                            <span class="text-muted fw-semibold">تاريخ
+                                                                                الدفع</span>
+                                                                            <span class="fw-bold">20/2/2022</span>
+                                                                        </div>
+                                                                        <div
+                                                                            class="d-flex justify-content-between mb-3">
+                                                                            <span class="text-muted">نوع الخدمة</span>
+                                                                            <span>التراخيص</span>
+                                                                        </div>
+                                                                        <div
+                                                                            class="d-flex justify-content-between mb-3">
+                                                                            <span class="text-muted">
+                                                                                رقم الفاتورة
+                                                                            </span>
+                                                                            <span class="bill_no">CS-1234567899</span>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="card-footer">
+                                                                        <span class="bill-handle left-handle"></span>
+                                                                        <span class="bill-handle right-handle"></span>
+                                                                        <a href="pay_bill.html"
+                                                                            class="btn btn-block btn-primary mt-4"><b>
+                                                                                دفع</b></a>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div
+                                                                class="col-lg-4 col-md-6 mb-5 filter-not-paid grid-item">
+                                                                <div class="card bill_grid_item  p-0">
+                                                                    <div class="card-body">
+                                                                        <div class="bill_status bill_status_danger">
+                                                                            <i class="mutasil-icon mutasil-icon-28"></i>
+                                                                        </div>
+                                                                        <h6 class="fs-12 text-muted">مبلغ الفاتورة</h6>
+                                                                        <h4 class="fs-18">
+                                                                            <span class="fw-bold">1000</span>
+                                                                            <span class="fw-normal">ر.س</span>
+                                                                        </h4>
+                                                                        <h5 class="text-danger">
+                                                                            غير مدفوعة
+                                                                        </h5>
+                                                                        <div class="pay-day mb-3">
+                                                                            <i
+                                                                                class="mutasil-icon mutasil-business-calendar2 text-muted"></i>
+                                                                            <span class="text-muted fw-semibold">تاريخ
+                                                                                الدفع</span>
+                                                                            <span class="fw-bold">20/2/2022</span>
+                                                                        </div>
+                                                                        <div
+                                                                            class="d-flex justify-content-between mb-3">
+                                                                            <span class="text-muted">نوع الخدمة</span>
+                                                                            <span>التراخيص</span>
+                                                                        </div>
+                                                                        <div
+                                                                            class="d-flex justify-content-between mb-3">
+                                                                            <span class="text-muted">
+                                                                                رقم الفاتورة
+                                                                            </span>
+                                                                            <span class="bill_no">CS-1234567899</span>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="card-footer">
+                                                                        <span class="bill-handle left-handle"></span>
+                                                                        <span class="bill-handle right-handle"></span>
+                                                                        <a href="pay_bill.html"
+                                                                            class="btn btn-block btn-primary mt-4"><b>
+                                                                                دفع</b></a>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-lg-4 col-md-6 mb-5 filter-paid grid-item">
+                                                                <div class="card bill_grid_item  p-0">
+                                                                    <div class="card-body">
+                                                                        <div class="bill_status bill_status_success">
+                                                                            <i class="mutasil-icon mutasil-icon-30"></i>
+                                                                        </div>
+                                                                        <h6 class="fs-12 text-muted">مبلغ الفاتورة</h6>
+                                                                        <h4 class="fs-18">
+                                                                            <span class="fw-bold">1000</span>
+                                                                            <span class="fw-normal">ر.س</span>
+                                                                        </h4>
+                                                                        <h5 class="text-success">
+                                                                            مدفوعة
+                                                                        </h5>
+                                                                        <div class="pay-day mb-3">
+                                                                            <i
+                                                                                class="mutasil-icon mutasil-business-calendar2 text-muted"></i>
+                                                                            <span class="text-muted fw-semibold">تاريخ
+                                                                                الدفع</span>
+                                                                            <span class="fw-bold">20/2/2022</span>
+                                                                        </div>
+                                                                        <div
+                                                                            class="d-flex justify-content-between mb-3">
+                                                                            <span class="text-muted">نوع الخدمة</span>
+                                                                            <span>التراخيص</span>
+                                                                        </div>
+                                                                        <div
+                                                                            class="d-flex justify-content-between mb-3">
+                                                                            <span class="text-muted">
+                                                                                رقم الفاتورة
+                                                                            </span>
+                                                                            <span class="bill_no">CS-1234567899</span>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="card-footer">
+                                                                        <span class="bill-handle left-handle"></span>
+                                                                        <span class="bill-handle right-handle"></span>
+                                                                        <div class="bill_paid text-muted mt-4">
+                                                                            تم الدفع بواسطة بطاقة ائتمانية
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div
+                                                                class="col-lg-4 col-md-6 mb-5 filter-not-paid grid-item">
+                                                                <div class="card bill_grid_item  p-0">
+                                                                    <div class="card-body">
+                                                                        <div class="bill_status bill_status_danger">
+                                                                            <i class="mutasil-icon mutasil-icon-28"></i>
+                                                                        </div>
+                                                                        <h6 class="fs-12 text-muted">مبلغ الفاتورة</h6>
+                                                                        <h4 class="fs-18">
+                                                                            <span class="fw-bold">1000</span>
+                                                                            <span class="fw-normal">ر.س</span>
+                                                                        </h4>
+                                                                        <h5 class="text-danger">
+                                                                            غير مدفوعة
+                                                                        </h5>
+                                                                        <div class="pay-day mb-3">
+                                                                            <i
+                                                                                class="mutasil-icon mutasil-business-calendar2 text-muted"></i>
+                                                                            <span class="text-muted fw-semibold">تاريخ
+                                                                                الدفع</span>
+                                                                            <span class="fw-bold">20/2/2022</span>
+                                                                        </div>
+                                                                        <div
+                                                                            class="d-flex justify-content-between mb-3">
+                                                                            <span class="text-muted">نوع الخدمة</span>
+                                                                            <span>التراخيص</span>
+                                                                        </div>
+                                                                        <div
+                                                                            class="d-flex justify-content-between mb-3">
+                                                                            <span class="text-muted">
+                                                                                رقم الفاتورة
+                                                                            </span>
+                                                                            <span class="bill_no">CS-1234567899</span>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="card-footer">
+                                                                        <span class="bill-handle left-handle"></span>
+                                                                        <span class="bill-handle right-handle"></span>
+                                                                        <a href="pay_bill.html"
+                                                                            class="btn btn-block btn-primary mt-4"><b>
+                                                                                دفع</b></a>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row no-results d-none">
+                                                            <div class="col-lg-12">
+                                                                <div class="text-center">
+                                                                    <img src="../assets/images/svgs/no-results.svg"
+                                                                        width="128">
+                                                                    <br>
+                                                                    <h6 class="mt-4 text-muted mb-5">
+                                                                        لم يتم العثور على فاتورة بهذا الرقم ...
+                                                                    </h6>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="tab-pane" id="bills_list">
+                                                        <div class="table-responsive">
+                                                            <table
+                                                                class="table table-bills text-nowrap text-md-nowrap mb-0">
+                                                                <thead class="table-primary">
+                                                                    <tr>
+                                                                        <th>رقم الفاتورة</th>
+                                                                        <th>حالة الفاتورة</th>
+                                                                        <th>نوع الخدمة</th>
+                                                                        <th>أخر موعد للدفع</th>
+                                                                        <th>المبلغ</th>
+                                                                        <th>تاريخ الدفع</th>
+                                                                        <th>اجراءات</th>
+                                                                    </tr>
+                                                                </thead>
+                                                                <tbody>
+                                                                    <tr class="filter-not-paid">
+                                                                        <td>CS-1234567899</td>
+                                                                        <td>
+                                                                            <span
+                                                                                class="bill_status_circle bill_status_circle_danger me-1"></span>
+                                                                            <span>
+                                                                                غير مدفوعة
+                                                                            </span>
+                                                                        </td>
+                                                                        <td>
+                                                                            التراخيص
+                                                                        </td>
+                                                                        <td>
+                                                                            20/3/2023
+                                                                        </td>
+                                                                        <td>
+                                                                            <strong>1000</strong>
+                                                                            <span class="text-muted">
+                                                                                ر.س
+                                                                            </span>
+                                                                        </td>
+                                                                        <td>
+                                                                            -
+                                                                        </td>
+                                                                        <td>
+                                                                            <a href="pay_bill.html"
+                                                                                class="btn btn-primary"><b>
+                                                                                    دفع</b></a>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr class="filter-paid">
+                                                                        <td>CS-1234567899</td>
+                                                                        <td>
+                                                                            <span
+                                                                                class="bill_status_circle bill_status_circle_success me-1"></span>
+                                                                            <span>
+                                                                                غير مدفوعة
+                                                                            </span>
+                                                                        </td>
+                                                                        <td>
+                                                                            المخالفات
+                                                                        </td>
+                                                                        <td>
+                                                                            20/3/2023
+                                                                        </td>
+                                                                        <td>
+                                                                            <strong>1000</strong>
+                                                                            <span class="text-muted">
+                                                                                ر.س
+                                                                            </span>
+                                                                        </td>
+                                                                        <td>
+                                                                            20/3/2023
+                                                                        </td>
+                                                                        <td>
+                                                                            <span class="text-muted">تم الدفع</span>
+                                                                        </td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+
+                                        </div>
+                                    </div>
+                                    <!-- /Row -->
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                    <!-- CONTAINER CLOSED -->
+                </div>
+            </div>
+            <!--app-content closed-->
+        </div>
+
+
+        <!-- FOOTER -->
+        <footer class="footer">
+            <div class="container-xxl">
+                <div class="row align-items-center">
+                    <div class="col-md-4 col-sm-12">
+                        <div class="footer-info">جميع الحقوق محفوظة © 2023 هيئة الاتصالات والفضاء والتقنية</div>
+                    </div>
+                    <div class="col-md-8 col-sm-12 text-end d-lg-flex justify-content-end">
+                        <ul class="footer-social-list me-lg-8">
+                            <li class="footer-link">
+                                <a href="faq.html">
+                                    الاسئلة الشائعة
+                                </a>
+                            </li>
+                            <li class="footer-link">
+                                <a href="complaint.html">
+                                    ارسل إستفسار أو مقترح
+                                </a>
+                            </li>
+                            <li class="footer-link">
+                                <a href="#">
+                                    سياسة الخصوصية
+                                </a>
+                            </li>
+                            <li class="footer-link">
+                                <a href="#">
+                                    شروط الاستخدام
+                                </a>
+                            </li>
+                        </ul>
+                        <ul class="footer-social-list ">
+                            <li>
+                                <a href="#"><img src="../assets/images/svgs/cst.svg" width="48"
+                                        class="vision-logo me-2" /></a>
+                            </li>
+                            <li>
+                                <img src="../assets/images/svgs/vision.svg" width="64" class="vision-logo" />
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- BACK-TO-TOP -->
+    <a href="#top" id="back-to-top"><i class="mutasil-icon mutasil-icon-37 fa-lg"></i></a>
+
+
+    <!-- JQUERY JS -->
+    <script src="../assets/js/jquery.min.js"></script>
+
+    <!-- BOOTSTRAP JS -->
+    <script src="../assets/plugins/bootstrap/js/popper.min.js"></script>
+    <script src="../assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- SIDEBAR JS -->
+    <script src="../assets/plugins/sidebar/sidebar.js"></script>
+
+    <!-- Sticky js -->
+    <script src="../assets/js/sticky.js"></script>
+    <!-- INTERNAL SELECT2 JS -->
+    <script src="../assets/plugins/select2/select2.full.min.js"></script>
+    <script src="../assets/js/select2.js"></script>
+
+    <!-- SWEET-ALERT JS -->
+    <script src="../assets/plugins/sweet-alert/sweetalert.min.js"></script>
+
+    <!-- INTERNAL Notifications js -->
+    <script src="../assets/plugins/growl-notification/growl-notification.min.js"></script>
+
+    <!-- INTERNAL File-Uploads Js-->
+    <script src="../assets/plugins/fancyuploder/jquery.ui.widget.js"></script>
+    <script src="../assets/plugins/fancyuploder/jquery.fileupload.js"></script>
+    <script src="../assets/plugins/fancyuploder/jquery.iframe-transport.js"></script>
+    <script src="../assets/plugins/fancyuploder/jquery.fancy-fileupload.js"></script>
+    <script src="../assets/plugins/fancyuploder/lang/ar.js"></script>
+
+
+    <!-- isotope Filter JS -->
+    <script src="../assets/plugins/isotope/isotope.pkgd.js"></script>
+
+    <!-- Particles Animation JS -->
+    <script src="../assets/plugins/particles/particles.min.js"></script>
+    <script src="../assets/plugins/particles/particles.init.js"></script>
+
+    <!-- CUSTOM JS -->
+    <script src="../assets/js/custom.js"></script>
+    <script>
+        const input = document.querySelector('.billssearch');
+        const rows = document.querySelectorAll('.table-bills tbody tr');
+
+        // add event listener to input
+        input.addEventListener('keyup', function (event) {
+            // get input value and convert to lowercase
+            const inputValue = event.target.value.toLowerCase();
+
+            // loop through rows and hide/show based on input value
+            rows.forEach(function (row) {
+                const firstColumn = row.querySelector('td:first-child').textContent.toLowerCase();
+                if (firstColumn.indexOf(inputValue) > -1) {
+                    row.style.display = '';
+                } else {
+                    row.style.display = 'none';
+                }
+            });
+        });
+
+        var initAnimatedNavbarState;
+        /******* Isotope Filtration + Search *******/
+
+        var buttonFilters = {};
+        var buttonFilter; // ='.filter-pinned'; // Default Filter
+
+        // quick search regex
+        var qsRegex;
+        var gridItemHeight = 0;
+        // Unify Items Height
+        updateServiceCardHeight = function () {
+            gridItemHeight = 0;
+            $(".grid-item>.bill_grid_item").css('min-height', 'auto');
+            $(".grid-item").each(function () {
+                var thisH = $(this).height();
+                if (thisH > gridItemHeight) {
+                    gridItemHeight = thisH;
+                }
+            });
+            $(".grid-item>.bills_grid").css('min-height', gridItemHeight);
+            $grid.isotope();
+        };
+        // init Isotope for bills
+        var $grid = $('.bills_grid').isotope({
+            itemSelector: '.grid-item',
+            layoutMode: (navigator.userAgent.indexOf("Firefox") > 0) ? 'masonry' : 'fitRows',
+
+            filter: function () {
+                return qsRegex ? $(this).find(".bill_no").text().match(qsRegex) : true;
+            },
+            filter: function () {
+                var $this = $(this).find(".bill_no");
+                var searchResult = qsRegex ? $this.text().match(qsRegex) : true;
+                var buttonResult = buttonFilter ? $(this).is(buttonFilter) : true;
+                return searchResult && buttonResult;
+            },
+            originLeft: !$('body').hasClass('rtl')
+        });
+        setTimeout(updateServiceCardHeight(), 500);
+
+        $('a[href="#bills_grid"]').on('shown.bs.tab', function (e) {
+            $grid.isotope();
+        });
+
+        // use value of search field to filter
+        var $servicesearch = $('.billssearch').keyup(debounce(function () {
+            try {
+                qsRegex = new RegExp($servicesearch.val(), 'gi');
+                $grid.isotope();
+                if (!$grid.data('isotope').filteredItems.length) {
+                    $('.no-results').removeClass('d-none');
+                } else {
+                    $('.no-results').addClass('d-none');
+                }
+
+            } catch (e) {};
+        }, 200));
+
+        // flatten object by concatting values
+        function concatValues(obj) {
+            var value = '';
+            for (var prop in obj) {
+                value += obj[prop];
+            }
+            return value;
+        }
+
+        // debounce so filtering doesn't happen every millisecond
+        function debounce(fn, threshold) {
+            var timeout;
+            threshold = threshold || 100;
+            return function debounced() {
+                clearTimeout(timeout);
+                var args = arguments;
+                var _this = this;
+
+                function delayed() {
+                    fn.apply(_this, args);
+                }
+                timeout = setTimeout(delayed, threshold);
+            };
+        }
+
+        setTimeout(window.dispatchEvent(new Event('resize')), 1000);
+
+        $('.bills-filter-buttons').on('click', 'a', function (event) {
+            event.stopPropagation();
+            event.preventDefault()
+            $('.billssearch').val('');
+            qsRegex = '';
+            var $this = $(this);
+            // get group key
+            var $buttonGroup = $this.parents('.button-group');
+            var filterGroup = $buttonGroup.attr('data-filter-group');
+            // set filter for group
+            buttonFilters[filterGroup] = $this.attr('data-filter');
+            // combine filters
+            buttonFilter = concatValues(buttonFilters);
+            // Isotope arrange
+            $grid.isotope();
+            if (!$grid.data('isotope').filteredItems.length) {
+                $('.no-results').removeClass('d-none');
+            } else {
+                $('.no-results').addClass('d-none');
+            }
+
+
+            //Filter on table
+            rows.forEach(function (row) {
+                // Remove the dot from buttonFilter
+                var filterClass = buttonFilter.substring(1);
+
+                // check if row has class equal to filterClass
+                if (buttonFilter === "*") {
+                    row.style.display = 'table-row';
+                } else if (row.classList.contains(filterClass)) {
+                    // if row has class, show it
+                    row.style.display = 'table-row';
+                } else {
+                    // if row doesn't have class, hide it
+                    row.style.display = 'none';
+                }
+            });
+        });
+
+
+
+        // change is-checked class on buttons
+        $('.bills-filter-buttons').each(function (i, buttonGroup) {
+            var $buttonGroup = $(buttonGroup);
+            $buttonGroup.on('click', 'a', function (event) {
+                $buttonGroup.find('.active').removeClass('active');
+                var $button = $(event.currentTarget);
+                $button.addClass('active');
+            });
+        });
+    </script>
+    <script>
+        (function () {
+            var s = document.createElement('script');
+            var h = document.querySelector('head') || document.body;
+            s.src = 'https://acsbapp.com/apps/app/dist/js/app.js';
+            s.async = true;
+            s.onload = function () {
+                acsbJS.init({
+                    statementLink: '',
+                    footerHtml: '',
+                    hideMobile: false,
+                    hideTrigger: false,
+                    disableBgProcess: false,
+                    language: 'ar',
+                    position: 'right',
+                    leadColor: '#000062',
+                    triggerColor: '#000062',
+                    triggerRadius: '50%',
+                    triggerPositionX: 'right',
+                    triggerPositionY: 'bottom',
+                    triggerIcon: 'people',
+                    triggerSize: 'bottom',
+                    triggerOffsetX: 20,
+                    triggerOffsetY: 20,
+                    mobile: {
+                        triggerSize: 'small',
+                        triggerPositionX: 'right',
+                        triggerPositionY: 'bottom',
+                        triggerOffsetX: 20,
+                        triggerOffsetY: 20,
+                        triggerRadius: '20'
+                    }
+                });
+            };
+            h.appendChild(s);
+        })();
+    </script>
+</body>
+
+</html>

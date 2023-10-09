@@ -1,0 +1,406 @@
+.growl-notification {
+	background: #fff;
+	border-radius: 4px;
+	box-shadow: 0 0 30px 0 rgba(0, 0, 0, .1);
+	min-height: 56px;
+	position: fixed;
+	width: 320px;
+	z-index: 1056
+}
+
+.growl-notification:before {
+	border-radius: 4px 0 0 4px;
+	bottom: 0;
+	content: "";
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 4px
+}
+.rtl .growl-notification:before{
+	right:0;
+	left: auto;;
+}
+.growl-notification__progress {
+	border-radius: 4px 4px 0 0;
+	display: none;
+	height: 4px
+}
+
+.growl-notification__progress.is-visible {
+	display: flex
+}
+
+.growl-notification__progress-bar {
+	border-radius: 4px 4px 0 0;
+	height: 4px;
+	width: 0
+}
+
+.growl-notification__body {
+	align-items: center;
+	display: flex;
+	min-height: 56px;
+	padding: 13px 25px
+}
+
+.growl-notification__buttons {
+	border-top: 1px solid rgba(0, 0, 0, .1);
+	display: none
+}
+
+.growl-notification__buttons.is-visible {
+	display: flex
+}
+
+.growl-notification__button {
+	align-items: center;
+	color: #000;
+	display: flex;
+	flex-grow: 1;
+	font-size: 14px;
+	font-weight: 600;
+	justify-content: center;
+	min-height: 39px;
+	min-width: 50%;
+	text-align: center
+}
+
+.growl-notification__button:hover {
+	background: rgba(0, 0, 0, .02);
+	color: #000;
+	text-decoration: none
+}
+
+.growl-notification__button--cancel,
+.growl-notification__button--cancel:hover {
+	color: #ff0048
+}
+
+.growl-notification__button+.growl-notification__button {
+	border-left: 1px solid rgba(0, 0, 0, .1)
+}
+
+.growl-notification__close {
+	cursor: pointer;
+	font-size: 12px;
+	line-height: 12px;
+	position: absolute;
+	right: 10px;
+	top: 10px;
+	transition: color .1s
+}
+.rtl .growl-notification__close{
+	left: 10px;
+	right: auto;
+}
+.growl-notification__close-icon {
+	background-repeat: no-repeat;
+	background-size: 100%;
+	display: inline-flex;
+	height: 18px;
+	opacity: .4;
+	width: 18px
+}
+.growl-notification__close-icon:after{
+	content: "\e91c";
+	font-family: 'mutasil';
+    speak: never;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+	font-size:18px;
+	color:var(--dark-body);
+}
+
+.growl-notification__close-icon:hover {
+	opacity: .6
+}
+
+.growl-notification--closed {
+	z-index: 1055
+}
+
+.growl-notification__title {
+	color: #00062;
+	font-size: 16px;
+	font-weight: 800;
+	margin-top: -2px
+}
+
+.growl-notification__desc {
+	color: #000
+}
+
+.growl-notification__title+.growl-notification__desc {
+	color: rgba(0, 0, 0, .6)
+}
+
+.growl-notification--close-on-click {
+	cursor: pointer
+}
+
+.growl-notification--default:before {
+	background: var(--primary-bg-color);
+}
+
+.growl-notification--default .growl-notification__progress {
+	background: hsla(0, 0%, 69.8%, .15)
+}
+
+.growl-notification--default .growl-notification__progress-bar {
+	background: hsla(0, 0%, 69.8%, .3)
+}
+
+.growl-notification--info:before {
+	background: var(--primary-bg-color)
+}
+
+.growl-notification--info .growl-notification__progress {
+	background: rgba(38, 154, 241, .15)
+}
+
+.growl-notification--info .growl-notification__progress-bar {
+	background: rgba(38, 154, 241, .3)
+}
+
+.growl-notification--success:before {
+	background: var(--success-color);
+}
+
+.growl-notification--success .growl-notification__progress {
+	background: rgba(139, 195, 74, .15)
+}
+
+.growl-notification--success .growl-notification__progress-bar {
+	background: rgba(139, 195, 74, .3)
+}
+
+.growl-notification--warning:before {
+	background: var(--warning-color);
+}
+
+.growl-notification--warning .growl-notification__progress {
+	background: rgba(255, 193, 7, .15)
+}
+
+.growl-notification--warning .growl-notification__progress-bar {
+	background: rgba(255, 193, 7, .3)
+}
+
+.growl-notification--danger:before,
+.growl-notification--error:before {
+	background: var(--danger-color);
+}
+
+.growl-notification--danger .growl-notification__progress,
+.growl-notification--error .growl-notification__progress {
+	background: rgba(255, 61, 0, .15)
+}
+
+.growl-notification--danger .growl-notification__progress-bar,
+.growl-notification--error .growl-notification__progress-bar {
+	background: rgba(255, 61, 0, .3)
+}
+
+.growl-notification--image {
+	width: 420px
+}
+
+.growl-notification__image {
+	background-position: 50%;
+	background-repeat: no-repeat;
+	height: 46px;
+	margin-right: 17px;
+	min-width: 40px
+}
+.rtl .growl-notification__image{
+	margin-right: 0px;
+	margin-left: 17px;
+}
+.growl-notification__image--custom {
+	background: none!important;
+	height: auto
+}
+
+.growl-notification--default .growl-notification__image {
+}
+.growl-notification--default .growl-notification__image:after,
+.growl-notification--info .growl-notification__image:after,
+.growl-notification--success .growl-notification__image:after,
+.growl-notification--warning .growl-notification__image:after,
+.growl-notification--danger .growl-notification__image:after,
+.growl-notification--error .growl-notification__image:after{
+	content: "\e905";
+	font-family: 'mutasil';
+    speak: never;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+	font-size:44px;
+	color:var(--primary-bg-color);
+}
+
+.growl-notification--success .growl-notification__image:after{
+	content: "\e98e";
+	color:var(--success-color);
+}
+.growl-notification--warning .growl-notification__image:after{
+	content: "\e9a2";
+	color:var(--warning-color);
+}
+.growl-notification--danger .growl-notification__image:after,
+.growl-notification--error .growl-notification__image:after{
+	content: "\e98f";
+	color:var(--danger-color);
+}
+/*
+.growl-notification--info .growl-notification__image {
+}
+.rtl .growl-notification--info .growl-notification__image.rtl .growl-notification--info .growl-notification__image {
+}
+
+.growl-notification--success .growl-notification__image {
+}
+
+.growl-notification--warning .growl-notification__image {
+}
+
+.growl-notification--danger .growl-notification__image,
+.growl-notification--error .growl-notification__image {
+}
+*/
+.growl-notification.position-bottom-right.animation-slide-in,
+.growl-notification.position-top-right.animation-slide-in {
+	animation: position-right-slide-in .2s forwards;
+	transform: translateX(100%)
+}
+
+.growl-notification.position-bottom-right.animation-slide-out,
+.growl-notification.position-top-right.animation-slide-out {
+	animation: position-right-slide-out .2s forwards;
+	margin-right: -20px;
+	transform: translateX(0)
+}
+
+.growl-notification.position-top-center.animation-slide-in {
+	animation: position-top-slide-in .2s forwards;
+	transform: translateY(-100%)
+}
+
+.growl-notification.position-top-center.animation-slide-out {
+	animation: position-top-slide-out .2s forwards;
+	margin-top: -20px;
+	transform: translateY(0)
+}
+
+.growl-notification.position-bottom-center.animation-slide-in {
+	animation: position-bottom-slide-in .2s forwards;
+	transform: translateY(100%)
+}
+
+.growl-notification.position-bottom-center.animation-slide-out {
+	animation: position-bottom-slide-out .2s forwards;
+	margin-bottom: -20px;
+	transform: translateY(0)
+}
+
+.growl-notification.position-bottom-left.animation-slide-in,
+.growl-notification.position-top-left.animation-slide-in {
+	animation: position-left-slide-in .2s forwards;
+	transform: translateX(-100%)
+}
+
+.growl-notification.position-bottom-left.animation-slide-out,
+.growl-notification.position-top-left.animation-slide-out {
+	animation: position-left-slide-out .2s forwards;
+	margin-left: -20px;
+	transform: translateX(0)
+}
+
+.growl-notification.position-top-center,
+.growl-notification.position-top-left,
+.growl-notification.position-top-right {
+	transition: top .2s
+}
+
+.growl-notification.position-bottom-center,
+.growl-notification.position-bottom-left,
+.growl-notification.position-bottom-right {
+	transition: bottom .2s
+}
+
+.growl-notification.animation-fade-in {
+	animation: fade-in .2s forwards;
+	opacity: 0
+}
+
+.growl-notification.animation-fade-out {
+	animation: fade-out .2s forwards
+}
+
+@keyframes position-right-slide-in {
+	to {
+		transform: translateX(0)
+	}
+}
+
+@keyframes position-right-slide-out {
+	to {
+		transform: translateX(100%)
+	}
+}
+
+@keyframes position-left-slide-in {
+	to {
+		transform: translateX(0)
+	}
+}
+
+@keyframes position-left-slide-out {
+	to {
+		transform: translateX(-100%)
+	}
+}
+
+@keyframes position-top-slide-in {
+	to {
+		transform: translateY(0)
+	}
+}
+
+@keyframes position-top-slide-out {
+	to {
+		transform: translateY(-100%)
+	}
+}
+
+@keyframes position-bottom-slide-in {
+	to {
+		transform: translateY(0)
+	}
+}
+
+@keyframes position-bottom-slide-out {
+	to {
+		transform: translateY(100%)
+	}
+}
+
+@keyframes fade-in {
+	to {
+		opacity: 1
+	}
+}
+
+@keyframes fade-out {
+	to {
+		opacity: 0
+	}
+}

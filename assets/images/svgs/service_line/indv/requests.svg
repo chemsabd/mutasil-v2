@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 24.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="32px" height="32px" viewBox="0 0 32 32" style="enable-background:new 0 0 32 32;" xml:space="preserve">
+<path style="fill:#7B87FF;" d="M29.3,8V6.7h-2.7v2.7h2.7V8L29.3,8z"/>
+<rect x="14.7" y="14.7" style="fill:#7B87FF;" width="2.7" height="4"/>
+<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="3.6432" y1="28.3067" x2="27.6418" y2="4.3083" gradientTransform="matrix(1 0 0 -1 0 34)">
+	<stop  offset="0" style="stop-color:#000062"/>
+	<stop  offset="1" style="stop-color:#363BA7"/>
+</linearGradient>
+<path style="fill:url(#SVGID_1_);" d="M26.7,10.7v4H20V12h-8v2.7H5.3V9.5h0.1V9.3h19.9V6.7h-2.7v-3l0,0V1.4h-1.3H20h-8.1h-1.2H9.3
+	v2.3l0,0v3H4l0,0H2.7V8v1.5v15.7v1.5V28H4h1h22h1h1.3v-1.3v-1.5V10.7H26.7z M12,4h8v2.7h-8V4z M14.7,14.7h2.7v4h-2.7V14.7z
+	 M26.7,25.3H5.3v-8H12v4h8v-4h6.7V25.3z"/>
+</svg>

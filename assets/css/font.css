@@ -1,0 +1,31 @@
+@font-face {
+	font-family: loew;
+	font-weight: 300;
+	font-style: normal;
+	src: url(../fonts/loew_v3/LoewNextArabic-Light.eot);
+	src: url(../fonts/loew_v3/LoewNextArabic-Light.eot?#iefix) format("embedded-opentype"), url(../fonts/loew_v3/LoewNextArabic-Light.woff) format("woff"), url(../fonts/loew_v3/LoewNextArabic-Light.ttf) format("truetype")
+}
+
+@font-face {
+	font-family: loew;
+	font-weight: 500;
+	font-style: normal;
+	src: url(../fonts/loew_v3/LoewNextArabic-Medium.eot);
+	src: url(../fonts/loew_v3/LoewNextArabic-Medium.eot?#iefix) format("embedded-opentype"), url(../fonts/loew_v3/LoewNextArabic-Medium.woff) format("woff"), url(../fonts/loew_v3/LoewNextArabic-Medium.ttf) format("truetype")
+}
+
+@font-face {
+	font-family: loew;
+	font-weight: 600;
+	font-style: normal;
+	src: url(../fonts/loew_v3/LoewNextArabic-Bold.eot);
+	src: url(../fonts/loew_v3/LoewNextArabic-Bold.eot?#iefix) format("embedded-opentype"), url(../fonts/loew_v3/LoewNextArabic-Bold.woff) format("woff"), url(../fonts/loew_v3/LoewNextArabic-Bold.ttf) format("truetype")
+}
+
+@font-face {
+	font-family: loew;
+	font-weight: 700;
+	font-style: normal;
+	src: url(../fonts/loew_v3/LoewNextArabic-Heavy.eot);
+	src: url(../fonts/loew_v3/LoewNextArabic-Heavy.eot?#iefix) format("embedded-opentype"), url(../fonts/loew_v3/LoewNextArabic-Heavy.woff) format("woff"), url(../fonts/loew_v3/LoewNextArabic-Heavy.ttf) format("truetype")
+}

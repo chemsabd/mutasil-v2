@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 25.4.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 512 512" enable-background="new 0 0 512 512" xml:space="preserve">
+<g>
+	<path d="M448,64H106.7v42.7h320v256H122.9l-37.6,29.5V128H42.7v352l95-74.7H448c11.8,0,21.3-9.6,21.3-21.3V85.3
+		C469.3,73.6,459.8,64,448,64z"/>
+	<polygon points="192,170.7 192,213.3 149.3,213.3 149.3,256 192,256 192,298.7 234.7,298.7 234.7,256 277.3,256 277.3,213.3 
+		234.7,213.3 234.7,170.7 	"/>
+	<rect x="320" y="149.3" width="42.7" height="170.7"/>
+	<polygon points="85.3,64 64,64 64,64 42.7,64 42.7,85.3 42.7,85.3 42.7,106.7 85.3,106.7 	"/>
+</g>
+</svg>

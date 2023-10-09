@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>CITC Digital Gate - Responsive Mobile WebView Page</title>
+	<meta name="description" content="CITC Digital Gate - Responsive Mobile WebView Page">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<!-- FAVICON -->
+	<link rel="apple-touch-icon" sizes="180x180" href="../assets/images/fav/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="../assets/images/fav/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="../assets/images/fav/favicon-16x16.png">
+	<link rel="mask-icon" href="../assets/images/fav/safari-pinned-tab.svg" color="#000062">
+	<link rel="shortcut icon" href="../assets/images/fav/favicon.ico">
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="theme-color" content="#ffffff">
+	<!-- STYLESHEETS -->
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700" rel="stylesheet">
+	<link rel="stylesheet" href="assets/devices.css" type="text/css" media="all">
+	<link rel="stylesheet" href="assets/demo.css" type="text/css" media="all">
+
+
+
+
+	<style>
+		body {
+			font-family: 'Montserrat', sans-serif !important;
+		}
+
+
+		.section,
+		section {
+			float: left;
+			width: 100%;
+			position: relative;
+		}
+
+		.onepage-screen .banner-wrapper {
+			width: 100%;
+			background-size: cover;
+			background-repeat: no-repeat;
+			background-position: center bottom;
+			background-color: #000062;
+		}
+
+		.posr {
+			position: relative !important;
+		}
+
+		a:focus {
+			outline: none;
+			text-decoration: none;
+		}
+
+		h1 {
+			font-size: 95px;
+		}
+
+		h2 {
+			font-size: 70px;
+		}
+
+		h3 {
+			font-size: 50px;
+		}
+
+		p {
+			font-size: 14px;
+			color: #eee;
+			line-height: 30px;
+		}
+
+		.w75 {
+			width: 75%;
+		}
+
+		.w80 {
+			width: 75%;
+			margin: 0 auto;
+		}
+
+		.brand-logo {
+			max-width: 50px;
+		}
+
+		.hero-full {
+			padding: 50px 0;
+			min-height: 100vh;
+		}
+
+		.section.active . {
+			opacity: 1;
+			-webkit-transition: translateY(0px);
+			transform: translateY(0px);
+		}
+
+		.phone-wrap {
+			position: relative;
+			width: 320px;
+			height: 730px;
+		}
+
+		.phone-frame {
+			position: relative;
+			left: 2px;
+			z-index: 1;
+			width: 340px;
+			height: 734px;
+			background-image: url(images/phone.png);
+			background-size: cover;
+		}
+
+		.getFrame {
+			width: 100%;
+			height: 100%;
+			border: 0 !important;
+			padding: 0;
+			margin: 0;
+		}
+
+
+		.btn-lg {
+			padding: 20px 70px !important;
+			font-size: 10px;
+			letter-spacing: 1px;
+			font-weight: 600;
+			text-transform: uppercase;
+			display: inline-block;
+		}
+
+		.bg-red-gradiant {
+			background: linear-gradient(90deg, #ff000a 0%, #ff00a3 100%);
+		}
+
+		.align-middle {
+			padding: 0;
+			position: absolute;
+			top: 50%;
+			left: 00%;
+			margin-left: 0px;
+			width: 100%;
+			-webkit-transform: translateY(-50%);
+			-moz-transform: translateY(-50%);
+			-ms-transform: translateY(-50%);
+			-o-transform: translateY(-50%);
+			transform: translateY(-50%);
+		}
+
+		.qrcode {
+			width: 120px;
+		}
+
+		.mobile-wrapper {
+			display: none;
+		}
+
+		@media (min-width: 1800px) {
+			.container-fluid {
+				max-width: 1600px;
+			}
+		}
+	</style>
+
+</head>
+
+<body class="onepage-screen">
+
+
+	<div class="section banner-wrapper hero-full" style="background-image: url(assets/bg.png);">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-6 mt-3 d-none d-md-block">
+					<div class="align-middle">
+						<h2 class=" text-white delay-2 pt-0 mt-0"><b>Request Need Action</b></h2>
+						<h4 class="text-white">Mobile App WebView Page</h4>
+						<h5 class="text-white d-flex mt-4">
+							<img width="36" class="mr-3"
+								src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAyNC4xLjAsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjxzdmcgdmVyc2lvbj0iMS4xIiBpZD0iTGF5ZXJfMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeD0iMHB4IiB5PSIwcHgiDQoJIHdpZHRoPSI1MTJweCIgaGVpZ2h0PSI1MTJweCIgdmlld0JveD0iMCAwIDUxMiA1MTIiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDUxMiA1MTI7IiB4bWw6c3BhY2U9InByZXNlcnZlIj4NCjxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI+DQoJLnN0MHtmaWxsOiNGRkZGRkY7fQ0KPC9zdHlsZT4NCjxnPg0KCTxnPg0KCQk8cGF0aCBjbGFzcz0ic3QwIiBkPSJNMjU2LDBDMTE0LjUsMCwwLDExNC41LDAsMjU2YzAsMTQxLjUsMTE0LjUsMjU2LDI1NiwyNTZjMTQxLjUsMCwyNTYtMTE0LjUsMjU2LTI1NkM1MTIsMTE0LjUsMzk3LjUsMCwyNTYsMHoNCgkJCSBNMjU2LDQ3Ni4zYy0xMjEuNSwwLTIyMC4zLTk4LjgtMjIwLjMtMjIwLjNTMTM0LjUsMzUuNywyNTYsMzUuN1M0NzYuMywxMzQuNSw0NzYuMywyNTZTMzc3LjUsNDc2LjMsMjU2LDQ3Ni4zeiIvPg0KCTwvZz4NCjwvZz4NCjxnPg0KCTxnPg0KCQk8cGF0aCBjbGFzcz0ic3QwIiBkPSJNMjU2LDIxMy40Yy0xNS4yLDAtMjUuOSw2LjQtMjUuOSwxNS44djEyOC40YzAsOC4xLDEwLjgsMTYuMiwyNS45LDE2LjJjMTQuNSwwLDI2LjMtOC4xLDI2LjMtMTYuMlYyMjkuMg0KCQkJQzI4Mi4zLDIxOS44LDI3MC41LDIxMy40LDI1NiwyMTMuNHoiLz4NCgk8L2c+DQo8L2c+DQo8Zz4NCgk8Zz4NCgkJPHBhdGggY2xhc3M9InN0MCIgZD0iTTI1NiwxMzQuMmMtMTUuNSwwLTI3LjYsMTEuMS0yNy42LDIzLjljMCwxMi44LDEyLjEsMjQuMywyNy42LDI0LjNjMTUuMiwwLDI3LjMtMTEuNSwyNy4zLTI0LjMNCgkJCUMyODMuMywxNDUuMywyNzEuMiwxMzQuMiwyNTYsMTM0LjJ6Ii8+DQoJPC9nPg0KPC9nPg0KPC9zdmc+DQo=" />
+							Same web page will be used in mobile app webview and web portal with different layout ,
+							Mobile webview layout won’t have header and footer
+						</h5>
+					</div>
+				</div>
+				<div class="col-md-6 text-md-right text-center">
+					<div class="device device-iphone-14-pro ml-auto">
+						<div class="device-frame">
+							<iframe class="getFrame" src="individuals_mobile/request.html" frameborder="0"
+								scrolling="no"></iframe>
+						</div>
+						<div class="device-stripe"></div>
+						<div class="device-header"></div>
+						<div class="device-sensors"></div>
+						<div class="device-btns"></div>
+						<div class="device-power"></div>
+						<div class="device-home"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- SCRIPTS -->
+	<script src="../assets/js/jquery.min.js"></script>
+
+</body>
+
+</html>

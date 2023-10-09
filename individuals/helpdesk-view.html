@@ -1,0 +1,1188 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+
+<head>
+
+    <!-- META DATA -->
+    <meta charset="UTF-8">
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, user-scalable=0'>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description"
+        content="هيئة الاتصالات والفضاء والتقنية هي الجهة المسؤولة عن تنظيم قطاع الاتصالات وتقنية المعلومات في المملكة العربية السعودية. ويحدد كلٌ من ( نظام الاتصالات ) الصادر بقرار مجلس الوزراء ذي الرقم (74 ) في 5/3/1422هـ ولائحته التنفيذية الصادرة بالقرار الوزاري رقم ( 11) في 17 / 5 / 1423هـ الإطار القانوني الخاص بتنظيم القطاع" />
+    <meta name="keywords" content="هيئة الاتصالات والفضاء والتقنية" />
+    <meta name="author" content="هيئة الاتصالات والفضاء والتقنية">
+
+    <!-- FAVICON -->
+    <link rel="apple-touch-icon" sizes="180x180" href="../assets/images/fav/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../assets/images/fav/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../assets/images/fav/favicon-16x16.png">
+    <link rel="mask-icon" href="../assets/images/fav/safari-pinned-tab.svg" color="#000062">
+    <link rel="shortcut icon" href="../assets/images/fav/favicon.ico">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- TITLE -->
+    <title>منصة متصل - هيئة الاتصالات والفضاء والتقنية</title>
+
+    <!-- BOOTSTRAP CSS -->
+    <link id="style" href="../assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- STYLE CSS -->
+    <link href="../assets/css/style.css" rel="stylesheet" />
+
+    <!-- SINGLE-PAGE CSS -->
+    <link href="../assets/plugins/single-page/css/main.css" rel="stylesheet" type="text/css">
+
+    <!-- P-scroll bar css-->
+    <link href="../assets/plugins/p-scroll/perfect-scrollbar.css" rel="stylesheet" />
+
+    <!--- FONT-ICONS CSS -->
+    <link href="../assets/css/icons.css" rel="stylesheet" />
+    <link href="../assets/iconfonts/mutasil-service/mutasil-service.css?v21" rel="stylesheet" />
+
+    <!-- INTERNAL SELECT2 CSS -->
+    <link href="../assets/plugins/select2/select2.min.css" rel="stylesheet" />
+
+    <!-- INTERNAL Fancy File Upload css -->
+    <link href="../assets/plugins/fancyuploder/fancy_fileupload.css" rel="stylesheet" />
+
+    <!--SWEET ALERT CSS-->
+    <link href="../assets/plugins/sweet-alert/sweetalert.css" rel="stylesheet" />
+
+    <!-- INTERNAL Notifications  Css -->
+    <link href="../assets/plugins/growl-notification/light-theme.min.css" rel="stylesheet" />
+
+
+</head>
+
+<body class="app horizontal rtl individuals">
+
+    <!-- GLOBAL-LOADER -->
+    <div id="global-loader">
+        <img src="../assets/images/loader.svg" class="loader-img" alt="Loader">
+    </div>
+    <!-- /GLOBAL-LOADER -->
+
+    <!-- PAGE -->
+    <div class="page">
+        <div class="page-main">
+            <div class="beta-alert text-center">
+                <i class="fal fa-rocket fa-lg me-1 align-middle"></i>
+                <span>اطلاق تجريبي</span>
+            </div>
+            <!-- app-Header -->
+            <div class="header citc_header hor-header sticky">
+                <div class="header-particles" id="particles-js"></div>
+                <div class="main-container container-xxl">
+                    <div class="d-flex align-md-items-end align-items-center">
+                        <a class="logo-horizontal order-1 order-md-1" href="../index.html">
+                            <img src="../assets/images/brand/gate_logo_indv.svg" class="header-brand-img desktop-logo"
+                                alt="متصل">
+                            <img src="../assets/images/brand/gate_logo_indv.svg" class="header-brand-img light-logo1"
+                                alt="متصل">
+                        </a>
+                        <!-- LOGO -->
+                        <div class="d-flex header-right-icons flex-grow-1 order-2 order-lg-2">
+                            <button class="navbar-toggler navresponsive-toggler d-lg-none ms-auto" type="button"
+                                data-bs-toggle="offcanvas" data-bs-target="#offcanvasSideMenu"
+                                aria-controls="offcanvasSideMenu" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon mutasil-icon mutasil-icon-35"></span>
+                            </button>
+                            <div class="offcanvas offcanvas-end0-md offcanvas-start flex-grow-1" tabindex="-1"
+                                id="offcanvasSideMenu_footer" aria-labelledby="offcanvasSideMenu_footer">
+                                <div class="offcanvas-body p-lg-0">
+                                    <div class="navbar ps-lg-6 pe-lg-0">
+                                        <a class="nav-link icon ps-3 pe-3 head-notifications" href="notifications.html">
+                                            <i class="mutasil-icon mutasil-icon-06"></i>
+                                            <span
+                                                class="position-absolute top-2 start-90 translate-middle badge rounded-pill bg-danger">2
+                                                <span class="visually-hidden">عدد التنيهات</span>
+                                            </span>
+                                        </a>
+                                        <div class="d-flex position-relative head-icons">
+                                            <div class="v-separate mx-4 d-none d-lg-block"></div>
+
+                                            <div class="head-link text-nowrap">
+                                                <a href="faq.html" class="nav-link icon text-center font-weight-bold">
+                                                    <i
+                                                        class="mutasil-icon mutasil-icon-27 fa-lg d-inline d-lg-none me-2"></i>
+                                                    تواصل معنا
+                                                </a>
+                                            </div>
+                                            <!-- <div class="head-link">
+                                                <a href="helpdesk.html"
+                                                    class="nav-link icon text-center font-weight-bold">
+                                                    <i
+                                                        class="mutasil-icon mutasil-business-customerservice fa-lg d-inline d-lg-none me-2"></i>
+                                                    طلبات الدعم التقني
+                                                </a>
+                                            </div> -->
+                                            <!-- Language -->
+                                            <div class="country">
+                                                <a class="nav-link icon text-center fw-600 fs-14"
+                                                    href="../index_en.html">
+                                                    <strong>En</strong>
+                                                    <i
+                                                        class="mutasil-icon mutasil-business-global ms-lg-1 me-2 me-lg-0"></i>
+                                                </a>
+                                            </div>
+                                            <div class="v-separate mx-4 d-none d-lg-block"></div>
+                                            <div
+                                                class="nav-item nav-item-dropdown-lg dropdown d-none-d-lg-flex ms-lg-2">
+                                                <a href="#"
+                                                    class="navbar-nav-link align-items-center rounded-pill dropdown-toggle p-1 userImg"
+                                                    data-toggle="dropdown">
+                                                    <img src="../assets/images/user.jpg" height="32" width="32" alt="">
+                                                    <span class="d-none d-lg-inline-block fw-bold mx-lg-2">
+                                                        أحمد
+                                                        عبدالرحمن </span>
+                                                </a>
+
+                                                <div class="dropdown-menu dropdown-menu-end">
+                                                    <a href="edit_user_info.html" class="dropdown-item">
+                                                        <i class="mutasil-icon mutasil-icon-09 me-2"></i>
+                                                        ادارة بيانات الحساب
+                                                    </a>
+                                                    <!-- <a href="helpdesk.html" class="dropdown-item">
+                                                        <i
+                                                            class="mutasil-icon mutasil-business-customerservice me-2"></i>
+                                                        طلبات الدعم التقني
+                                                    </a> -->
+                                                    <a href="../index.html" class="dropdown-item">
+                                                        <i class="mutasil-icon  mutasil-device-shutdown me-2"></i>
+                                                        تسجيل خروج
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /app-Header -->
+            <!--app-content open-->
+            <div class="main-content hor-content container-xxl">
+                <div class="side-app">
+
+                    <!-- CONTAINER -->
+                    <div class="main-container">
+
+                        <div class="row">
+                            <div class="col-lg side-nav-col col-md-12">
+                                <div class="bg-white p-0 p-lg-4 h-100 d-flex flex-column offcanvas offcanvas-start"
+                                    id="offcanvasSideMenu">
+                                    <div class="offcanvas-header d-flex d-lg-none border-bottom">
+                                        <h5 class="offcanvas-title text-dark fw-bold" id="offcanvasExampleLabel">
+                                            <img class="offcanvas-logo"
+                                                src="../assets/images/brand/gate_logo_side.svg" />
+                                        </h5>
+                                        <a href="javascript:void(0)" class="text-dark p-0" data-bs-dismiss="offcanvas"
+                                            aria-label="close">
+                                            <i class="mutasil-icon mutasil-icon-29 fa-lg"></i>
+                                        </a>
+                                    </div>
+                                    <div class="p-4 p-lg-0 d-lg-none">
+                                        <div class="page-title page-header-element mb-0 mb-lg-4">
+                                            <div class="d-flex align-items-center">
+                                                <span class="avatar avatar-lg bradius cover-image bg-avatar me-3"
+                                                    data-bs-image-src="../assets/images/user.jpg">
+                                                </span>
+                                                <div class="fw-normal fs-17">
+                                                    <small class="text-muted small">
+                                                        مرحبا ,
+                                                    </small>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <nav class="offcanvas-body p-0">
+                                        <div class="container-fluid nav-content px-0 position-relative">
+                                            <div>
+
+                                                <div class="list-group list-group-transparent mb-0 pb-3">
+                                                    <a href="service_catalog.html"
+                                                        class="list-group-item d-flex align-items-center py-3">
+                                                        <i class="mutasil-icon mutasil-buildings-home1 fa-lg"></i>
+                                                        <span class="ms-2">الرئيسية</span>
+                                                    </a>
+                                                    <hr class="light" />
+
+                                                    <a href="user_dashboard.html"
+                                                        class="list-group-item d-flex align-items-center">
+                                                        <i class="mutasil-icon mutasil-business-briefcase2 fa-lg"></i>
+                                                        <span class="ms-2">متابعة طلباتي</span>
+                                                    </a>
+                                                    <hr class="light" />
+
+                                                    <a href="all_services.html"
+                                                        class="list-group-item d-flex align-items-center">
+                                                        <i class="mutasil-icon mutasil-icon-20 fa-lg"></i>
+                                                        <span class="ms-2">الخدمات الالكترونية</span>
+                                                    </a>
+                                                    <hr class="light" />
+                                                    <a href="user_documents.html"
+                                                        class="list-group-item d-flex align-items-center">
+                                                        <i class="mutasil-icon mutasil-business-barchart1 fa-lg"></i>
+                                                        <span class="ms-2">لوحة المعلومات</span>
+                                                    </a>
+
+                                                </div>
+
+                                                <a href="help_wizzrad.html" class="faq-banner d-flex mb-4 mt-4 mt-lg-8">
+                                                    <span>
+                                                        <img src="../assets/images/svgs/banners/code.svg" width="40"
+                                                            class="ms-0" />
+                                                    </span>
+                                                    <span class="ms-2">
+                                                        <b>لتحديد الخدمة المناسبة</b><br />
+                                                        <small>اضغط هنا</small>
+                                                    </span>
+                                                </a>
+
+                                                <a href="help.html" class="faq-banner support-banner d-flex my-2">
+                                                    <span>
+                                                        <i class="mutasil-icon mutasil-icon-56"
+                                                            style="font-size: 40px;"></i>
+                                                    </span>
+                                                    <span class="ms-2">
+                                                        <b>هل تحتاج إلى مساعدة؟</b><br />
+                                                        <small>اضغط هنا</small>
+                                                    </span>
+                                                </a>
+
+                                                <div class="card mt-0 mb-0">
+                                                    <div class="card-body bg-light-gray p-4">
+                                                        <div class="bg-white p-4">
+                                                            <h6 class="">
+                                                                <span class="fw-bold fs-">رأيك يصنع الفارق </span>
+                                                            </h6>
+                                                            <p class="fs-11 mt-3 mb-4 opacity-75">
+                                                                شارك برأيك في تقييم متصل للمساعدة في تطوير الخدمة
+                                                                المقدمة للعموم ...
+                                                            </p>
+                                                            <a href="questionnaire.html"
+                                                                class="btn btn-outline-warning btn-block btn-sm py-2 mt-3">بدا
+                                                                الإستبيان</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </nav>
+                                </div>
+                            </div>
+
+                            <div class="col-lg">
+                                <div class="site-content bg-white px-4 px-md-6 py-4">
+                                    <!-- PAGE-HEADER -->
+                                    <div class="page-header d-flex flex-md-row flex-column">
+                                        <div class="d-flex page-header-element align-items-center">
+                                            <i class="mutasil-icon mutasil-business-customerservice text-primary me-2"
+                                                style="font-size: 64px;"></i>
+                                            <div>
+                                                <a href="helpdesk.html"
+                                                    class="back_btn pb-1 align-items-end mt-0 fs-12">
+                                                    <i class="mutasil-icon mutasil-icon-40 fa-lg"></i>
+                                                    &nbsp;&nbsp;
+                                                    عودة الى الطلبات
+                                                </a>
+                                                <h1 class="page-title font-weight-bold page-header-element">
+                                                    تذكرة دعم رقم: #3322018
+                                                </h1>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <!-- PAGE-HEADER END -->
+                                    <!-- ROW-1 OPEN -->
+                                    <!-- Row -->
+                                    <div class="page-content">
+                                        <div class="request_item pb-0 mb-3">
+                                            <div class="request_item_content">
+                                                <div class="row align-items-center gy-2">
+                                                    <div class="col-lg-12">
+                                                        <div class="d-flex justify-content-between">
+                                                            <div class="d-inline-block mx-3">
+                                                                <span class="text-primary">
+                                                                    <i
+                                                                        class="mutasil-icon mutasil-icon-04 fa-lg"></i>&nbsp;
+                                                                    <b>تاريخ الطلب : </b>
+                                                                </span>
+                                                                02/09/2023
+                                                            </div>
+                                                            <div class="d-inline-block">
+                                                                <span class="text-primary">
+                                                                    <i class="mutasil-icon mutasil-document-file15
+                                                                        fa-lg"></i>&nbsp;
+                                                                    <b>حالة الطلب </b>
+                                                                </span>
+                                                                <span
+                                                                    class="badge bg-warning text-white lh-sm fw-bold py-2 px-4 ms-2">
+                                                                    بحاجة لتعديل
+                                                                </span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="alert alert-warning text-black d-block fs-14" role="alert">
+                                            <div class="mb-4">
+                                                <strong class="text-warning d-inline-block me-2">الطلب بحاجة لتعديل
+                                                </strong>
+                                                برجاء تعديل بيانات التصنيف الفرعي للطلب: مشاكل تسجيل الدخول
+                                            </div>
+                                            <a href="helpdesk-new.html"
+                                                class="btn btn-outline-primary px-5 fw-bold mb-3">
+                                                تعديل الطلب
+                                            </a>
+                                        </div>
+                                        <div class="alert alert-warning text-black d-block fs-14" role="alert">
+                                            <div class="mb-4">
+                                                <strong class="text-warning d-inline-block me-2">الطلب بحاجة لبيانات
+                                                    إضافية </strong> برجاء إضافة صورة
+                                                واضحة لرسالة الخطأ التي تظهر خلال التقديم على الخدمة.
+                                            </div>
+
+
+                                            <div class="form-group">
+                                                <label class="text-warning d-inline-block"> الملفات
+                                                    المرفقه</label>
+                                                <div class="tags">
+                                                    <span class="tag file-square-attachments tag-outline fw-600"><span><i
+                                                                class="fas fa-file-image me-2 text-primary"></i></span>Image_attachment.jpg
+                                                        <a href="#" class="attachment_tag_btn"><i
+                                                                class="fal fa-arrow-circle-down"></i></a></span>
+                                                    <span class="tag file-square-attachments tag-outline fw-600"><span><i
+                                                                class="fas fa-file-word me-2 text-secondary"></i></span>
+                                                        Word_attachment.doc <a href="#" class="attachment_tag_btn"><i
+                                                                class="fal fa-arrow-circle-down"></i></a></span>
+                                                    <span class="tag file-square-attachments tag-outline fw-600"><span><i
+                                                                class="fas fa-file-image me-2 text-success"></i></span>
+                                                        Excel_attachment.xls <a href="#" class="attachment_tag_btn"><i
+                                                                class="fal fa-arrow-circle-down"></i></a></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="alert p-lg-5 bg-light-gray text-black border-2 mb-3">
+                                            <h4 class="fw-bold text-blue">
+                                                البيانات الاضافية المطلوبة
+                                            </h4>
+                                            <hr class="light" />
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <div class="form-group">
+                                                        <label class="form-label-small">اكتب تعليقك على الطلب
+                                                            :</label>
+                                                        <textarea class="form-control mb-4"
+                                                            placeholder="اكتب تعليقك هنا" rows="6"></textarea>
+                                                        <i class="accent"></i>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="form-group">
+                                                        <label class="form-label-small">اختر الملفات المرفقه *
+                                                            :</label>
+                                                        <div class="alert alert-default mb-0" role="alert">
+                                                            <span class="alert-inner--icon"><i
+                                                                    class="mutasil-document-file15 mutasil-icon fa-lg"></i></span>
+                                                            <span class="alert-inner--text small">
+                                                                <strong>الملفات المسموحة : </strong>
+                                                                <span dir="rtl">.bmp, .gif, .jpg, .jpeg, .png,
+                                                                    .doc,.docx, .pdf, .tif, .xls , .xlsx , .zip,
+                                                                    .rar, .wav, .mp3, .msg, .shp</span>
+                                                            </span>
+                                                        </div>
+                                                        <input class="fancy_uploader" type="file" name="files"
+                                                            accept="bmp, .gif, .jpg, .jpeg, .png, .doc,.docx, .pdf, .tif, .xls , .xlsx , .zip, .rar, .wav, .mp3, .msg, .shp"
+                                                            multiple>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-12 text-end mt-5">
+                                                    <a href="#" class="btn btn-primary px-5 py-2 fw-bold">ارسال
+                                                        اللإفادة</a>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <div class="scroll_wrapper mt-4 inner-navbar position-relative">
+                                            <div class="fixed_scroll_item bg-white pb-lg-5">
+                                                <ul class="nav nav-pills nav-fill service-nav">
+                                                    <li class="animated-state"></li>
+                                                    <li class="nav-item">
+                                                        <a class="nav-link active" href="#request_info"
+                                                            aria-current="page" data-bs-toggle="tab">
+                                                            <i
+                                                                class="mutasil-icon mutasil-document-file11 fa-lg"></i>&nbsp;
+                                                            <span class="nav-link-title">تفاصيل الطلب</span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a class="nav-link" href="#request_history"
+                                                            data-bs-toggle="tab">
+                                                            <i class="mutasil-icon mutasil-icon-28 fa-lg"></i>&nbsp;
+                                                            <span class="nav-link-title">تاريخ الطلب</span>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="tab-content">
+                                            <div class="tab-pane active" id="request_info">
+                                                <div class="service-steps accordion mb-6" id="service-steps">
+                                                    <div class="accordion-item">
+                                                        <h2 class="accordion-header disabled-btns" id="headingOne">
+                                                            <button class="accordion-button" type="button"
+                                                                data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                                                                aria-expanded="true" aria-controls="collapseOne">
+                                                                1. بيانات مقدم الطلب
+                                                            </button>
+                                                        </h2>
+                                                        <div id="collapseOne" class="accordion-collapse collapse show"
+                                                            aria-labelledby="headingOne"
+                                                            data-bs-parent="#service-steps">
+                                                            <div class="accordion-body">
+                                                                <!-- <div class="row">
+                                                                    <div class="col-md-6">
+                                                                        <div class="form-group">
+                                                                            <label class="form-label-small">رقم
+                                                                                الهوية *:</label>
+                                                                            <input type="text"
+                                                                                class="form-control form-control-lg"
+                                                                                placeholder="رقم الهوية" readonly
+                                                                                value="1226325101220">
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="row">
+                                                                    <div class="col-md-6">
+                                                                        <div class="form-group">
+                                                                            <label class="form-label-small">
+                                                                                الاسم باللغة العربية *:</label>
+                                                                            <input type="text"
+                                                                                class="form-control form-control-lg"
+                                                                                readonly placeholder="اسم مقدم البلاغ"
+                                                                                value="احمد عبد الرحمن محمد علي">
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-md-6">
+                                                                        <div class="form-group">
+                                                                            <label class="form-label-small">
+                                                                                الاسم باللغة الانجليزية *:</label>
+                                                                            <input type="text"
+                                                                                class="form-control form-control-lg"
+                                                                                readonly placeholder="اسم مقدم البلاغ"
+                                                                                value="Ahmed Abdelahmen Mohamed Ali">
+                                                                        </div>
+                                                                    </div>
+                                                                </div> -->
+                                                                <div class="row">
+                                                                    <div class="col-md-6">
+                                                                        <div class="form-group">
+                                                                            <label class="form-label-small">
+                                                                                رقم الجوال *:</label>
+                                                                            <input type="text"
+                                                                                class="form-control form-control-lg"
+                                                                                placeholder="أدخل رقم الجوال" readonly
+                                                                                value="05911384420">
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-md-6">
+                                                                        <div class="form-group">
+                                                                            <label class="form-label-small">
+                                                                                البريد الالكتروني *:</label>
+                                                                            <input type="text"
+                                                                                class="form-control form-control-lg"
+                                                                                placeholder="أدخل البريد الالكتروني "
+                                                                                readonly
+                                                                                value="med.abdrahmen@gmail.com">
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <!-- <div class="row">
+                                                                    <div class="col-md-6">
+                                                                        <div class="form-group select2-lg">
+                                                                            <label class="form-label-small">
+                                                                                طريقة التواصل المفضلة * :</label>
+                                                                            <select disabled
+                                                                                class="form-control form-select select2">
+                                                                                <option>اختر طريقة التواصل
+                                                                                </option>
+                                                                                <option>الكل </option>
+                                                                                <option selected>الجوال </option>
+                                                                                <option>البريد الالكتروني </option>
+                                                                            </select>
+                                                                        </div>
+                                                                    </div>
+                                                                </div> -->
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="accordion-item">
+                                                        <h2 class="accordion-header disabled-btns" id="headingTwo">
+                                                            <button class="accordion-button" type="button"
+                                                                data-bs-toggle="collapse" data-bs-target="#collapseTwo"
+                                                                aria-expanded="false" aria-controls="collapseTwo">
+                                                                2. تفاصيل الطلب
+                                                            </button>
+                                                        </h2>
+                                                        <div id="collapseTwo" class="accordion-collapse collapse show"
+                                                            aria-labelledby="headingTwo"
+                                                            data-bs-parent="#service-steps">
+                                                            <div class="accordion-body">
+                                                                <div class="row">
+                                                                    <div class="col-md-6">
+                                                                        <div class="form-group select2-lg">
+                                                                            <label class="form-label-small">التصنيف
+                                                                                الرئيسي *
+                                                                                :</label>
+                                                                            <select disabled
+                                                                                class="form-control form-select select2"
+                                                                                data-bs-placeholder="Select Country">
+                                                                                <option selected disabled>اختر التصنيف
+                                                                                    الرئيسي
+                                                                                </option>
+                                                                                <option>بلاغات</option>
+                                                                            </select>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-md-6">
+                                                                        <div class="form-group select2-lg">
+                                                                            <label class="form-label-small">التصنيف
+                                                                                الفرعي *
+                                                                                :</label>
+                                                                            <select disabled
+                                                                                class="form-control form-select select2"
+                                                                                data-bs-placeholder="Select Country">
+                                                                                <option selected disabled>اختر التصنيف
+                                                                                    الفرعي
+                                                                                </option>
+                                                                                <option>بلاغ ازعاج</option>
+                                                                            </select>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-md-12">
+                                                                        <div class="form-group select2-lg">
+                                                                            <label class="form-label-small">الخدمة *
+                                                                                :</label>
+                                                                            <select disabled
+                                                                                class="form-control form-select select2"
+                                                                                data-bs-placeholder="Select Country">
+                                                                                <option disabled>اختر الخدمة
+                                                                                </option>
+                                                                                <option selected>خدمة تصعيد شكوى شركة
+                                                                                    الإتصالات
+                                                                                </option>
+                                                                            </select>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="row">
+                                                                    <div class="col-md-6" id="related">
+                                                                        <div class="form-group">
+                                                                            <label class="form-label-small">
+                                                                                رقم الطلب:</label>
+                                                                            <input type="text"
+                                                                                class="form-control form-control-lg"
+                                                                                readonly
+                                                                                placeholder="أدخل رقم الطلب المرتبط"
+                                                                                value="76551">
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-md-6" id="case">
+                                                                        <div class="form-group">
+                                                                            <label class="form-label-small">
+                                                                                رقم التذكرة السابق:</label>
+                                                                            <input type="text"
+                                                                                class="form-control form-control-lg"
+                                                                                value="98811" readonly
+                                                                                placeholder="أدخل رقم التذكرة السابق">
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="row">
+                                                                    <div class="col-md-12">
+                                                                        <div class="form-group">
+                                                                            <label class="form-label-small">وصف البلاغ
+                                                                                :</label>
+                                                                            <textarea class="form-control mb-4"
+                                                                                placeholder="" readonly
+                                                                                rows="4">أواجه مشكلة في الوصول لصفحة مراجعة الطلب</textarea>
+                                                                            <i class="accent"></i>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-md-12">
+                                                                        <div class="form-group">
+                                                                            <label class="form-label-small"> الملفات
+                                                                                المرفقه :</label>
+                                                                            <div class="tags">
+                                                                                <span
+                                                                                    class="tag file-square-attachments tag-outline fw-600"><span><i
+                                                                                            class="fas fa-file-image me-2 text-primary"></i></span>Image_attachment.jpg
+                                                                                    <a href="#"
+                                                                                        class="attachment_tag_btn"><i
+                                                                                            class="fal fa-arrow-circle-down"></i></a></span>
+                                                                                <span
+                                                                                    class="tag file-square-attachments tag-outline fw-600"><span><i
+                                                                                            class="fas fa-file-word me-2 text-secondary"></i></span>
+                                                                                    Word_attachment.doc <a href="#"
+                                                                                        class="attachment_tag_btn"><i
+                                                                                            class="fal fa-arrow-circle-down"></i></a></span>
+                                                                                <span
+                                                                                    class="tag file-square-attachments tag-outline fw-600"><span><i
+                                                                                            class="fas fa-file-image me-2 text-success"></i></span>
+                                                                                    Excel_attachment.xls <a href="#"
+                                                                                        class="attachment_tag_btn"><i
+                                                                                            class="fal fa-arrow-circle-down"></i></a></span>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="tab-pane" id="request_history">
+                                                <div class="service-steps accordion mb-6">
+                                                    <div class="accordion-item">
+                                                        <h2 class="accordion-header">
+                                                            <div class="accordion-button">
+                                                                تاريخ سير اجراء الطلب
+                                                            </div>
+                                                        </h2>
+                                                        <div class="accordion-collapse collapse show">
+                                                            <div class="accordion-body">
+                                                                <div class="row">
+                                                                    <div class="col-md-12">
+
+                                                                        <ul class="notification">
+                                                                            <li>
+                                                                                <div class="notification-time">
+                                                                                    <span class="date">الاثنين
+                                                                                        12/09/2021 م</span>
+                                                                                    <span class="time fw-bold">02:31
+                                                                                        مساء</span>
+                                                                                </div>
+                                                                                <div class="notification-icon">
+                                                                                    <a href="javascript:void(0);"></a>
+                                                                                </div>
+                                                                                <div
+                                                                                    class="notification-time-date mb-2 d-block d-md-none">
+                                                                                    <span class="date">الاثنين
+                                                                                        12/09/2021 م</span>
+                                                                                    <span class="time ms-2">02:31
+                                                                                        مساء</span>
+                                                                                </div>
+                                                                                <div class="notification-body">
+                                                                                    <div class="media mt-0">
+                                                                                        <div
+                                                                                            class="main-avatar avatar-md">
+                                                                                            <span
+                                                                                                class="avatar avatar-md  bg-blue me-3">
+                                                                                                <i
+                                                                                                    class="mutasil-icon mutasil-icon-24 fa-lg"></i>
+                                                                                            </span>
+                                                                                        </div>
+                                                                                        <div
+                                                                                            class="media-body ms-3 d-flex">
+                                                                                            <div class="">
+                                                                                                <p
+                                                                                                    class="fs-15 fw-bold mb-0 text-primary">
+                                                                                                    اغلاق الطلب
+                                                                                                </p>
+                                                                                                <p
+                                                                                                    class="mb-0 fs-13 text-dark">
+                                                                                                    تم تنفيذ
+                                                                                                    الطلب
+                                                                                                    واغلاقه من
+                                                                                                    قبل الهيئة
+                                                                                                </p>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </li>
+                                                                            <li>
+                                                                                <div class="notification-time">
+                                                                                    <span class="date">الأحد
+                                                                                        27/08/2021 م</span>
+                                                                                    <span class="time fw-bold">12:45
+                                                                                        صباحا</span>
+                                                                                </div>
+                                                                                <div class="notification-icon">
+                                                                                    <a href="javascript:void(0);"></a>
+                                                                                </div>
+                                                                                <div
+                                                                                    class="notification-time-date mb-2 d-block d-md-none">
+                                                                                    <span class="date">الأحد
+                                                                                        27/08/2021 م</span>
+                                                                                    <span class="time ms-2">12:45
+                                                                                        صباحا</span>
+                                                                                </div>
+                                                                                <div class="notification-body">
+                                                                                    <div class="media mt-0">
+                                                                                        <div
+                                                                                            class="main-avatar avatar-md">
+                                                                                            <span
+                                                                                                class="avatar avatar-md  bg-blue me-3">
+                                                                                                <i
+                                                                                                    class="mutasil-icon mutasil-icon-17 fa-lg"></i>
+                                                                                            </span>
+                                                                                        </div>
+                                                                                        <div
+                                                                                            class="media-body ms-3 d-flex">
+                                                                                            <div class="">
+                                                                                                <p
+                                                                                                    class="fs-15 text-primary fw-bold mb-0">
+                                                                                                    الطلب في
+                                                                                                    انتظار افادة
+                                                                                                </p>
+                                                                                                <p
+                                                                                                    class="mb-0 fs-13 text-dark">
+                                                                                                    الطلب في
+                                                                                                    انتظار افادة
+                                                                                                    المستخدم
+                                                                                                    بتنفيذ الطلب
+                                                                                                </p>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </li>
+                                                                            <li>
+                                                                                <div class="notification-time">
+                                                                                    <span class="date">الاثنين
+                                                                                        12/09/2021 م</span>
+                                                                                    <span class="time fw-bold">02:31
+                                                                                        مساء</span>
+                                                                                </div>
+                                                                                <div class="notification-icon">
+                                                                                    <a href="javascript:void(0);"></a>
+                                                                                </div>
+                                                                                <div
+                                                                                    class="notification-time-date mb-2 d-block d-md-none">
+                                                                                    <span class="date">الاثنين
+                                                                                        12/09/2021 م</span>
+                                                                                    <span class="time ms-2">02:31
+                                                                                        مساء</span>
+                                                                                </div>
+                                                                                <div class="notification-body">
+                                                                                    <div class="media mt-0">
+                                                                                        <div
+                                                                                            class="main-avatar avatar-md">
+                                                                                            <span
+                                                                                                class="avatar avatar-md  bg-blue me-3">
+                                                                                                <i
+                                                                                                    class="mutasil-icon mutasil-icon-06 fa-lg"></i>
+                                                                                            </span>
+                                                                                        </div>
+                                                                                        <div
+                                                                                            class="media-body ms-3 d-flex">
+                                                                                            <div class="">
+                                                                                                <p
+                                                                                                    class="fs-15 fw-bold mb-0 text-primary">
+                                                                                                    في حاجه الي
+                                                                                                    اتخاذ اجراء
+                                                                                                </p>
+                                                                                                <p
+                                                                                                    class="mb-0 fs-13 text-dark">
+                                                                                                    الطلب في
+                                                                                                    حاجه لبيانات
+                                                                                                    إضافية من
+                                                                                                    قبل المستخدم
+                                                                                                </p>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </li>
+                                                                            <li>
+                                                                                <div class="notification-time">
+                                                                                    <span class="date">الأحد
+                                                                                        27/08/2021 م</span>
+                                                                                    <span class="time fw-bold">12:45
+                                                                                        صباحا</span>
+                                                                                </div>
+                                                                                <div class="notification-icon">
+                                                                                    <a href="javascript:void(0);"></a>
+                                                                                </div>
+                                                                                <div
+                                                                                    class="notification-time-date mb-2 d-block d-md-none">
+                                                                                    <span class="date">الأحد
+                                                                                        27/08/2021 م</span>
+                                                                                    <span class="time ms-2">12:45
+                                                                                        صباحا</span>
+                                                                                </div>
+                                                                                <div class="notification-body">
+                                                                                    <div class="media mt-0">
+                                                                                        <div
+                                                                                            class="main-avatar avatar-md">
+                                                                                            <span
+                                                                                                class="avatar avatar-md bg-blue me-3">
+                                                                                                <i
+                                                                                                    class="mutasil-icon mutasil-document-folder8 fa-lg"></i>
+                                                                                            </span>
+                                                                                        </div>
+                                                                                        <div
+                                                                                            class="media-body ms-3 d-flex">
+                                                                                            <div class="">
+                                                                                                <p
+                                                                                                    class="fs-15 text-primary fw-bold mb-0">
+                                                                                                    الطلب تحت
+                                                                                                    المعالجة</p>
+                                                                                                <p
+                                                                                                    class="mb-0 fs-13 text-dark">
+                                                                                                    تم تغير حالة
+                                                                                                    الطلب الي
+                                                                                                    تحت المعالجة
+                                                                                                    من قبل
+                                                                                                    الهيئة</p>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </li>
+                                                                            <li>
+                                                                                <div class="notification-time">
+                                                                                    <span class="date">الاثنين
+                                                                                        12/09/2021 م</span>
+                                                                                    <span class="time fw-bold">02:31
+                                                                                        مساء</span>
+                                                                                </div>
+                                                                                <div class="notification-icon">
+                                                                                    <a href="javascript:void(0);"></a>
+                                                                                </div>
+                                                                                <div
+                                                                                    class="notification-time-date mb-2 d-block d-md-none">
+                                                                                    <span class="date">الاثنين
+                                                                                        12/09/2021 م</span>
+                                                                                    <span class="time ms-2">02:31
+                                                                                        مساء</span>
+                                                                                </div>
+                                                                                <div class="notification-body">
+                                                                                    <div class="media mt-0">
+                                                                                        <div
+                                                                                            class="main-avatar avatar-md">
+                                                                                            <span
+                                                                                                class="avatar avatar-md  bg-blue me-3">
+                                                                                                <i
+                                                                                                    class="mutasil-icon mutasil-document-task fa-lg"></i>
+                                                                                            </span>
+                                                                                        </div>
+                                                                                        <div
+                                                                                            class="media-body ms-3 d-flex">
+                                                                                            <div class="">
+                                                                                                <p
+                                                                                                    class="fs-15 fw-bold mb-0 text-primary">
+                                                                                                    ارسال الطلب
+                                                                                                </p>
+                                                                                                <p
+                                                                                                    class="mb-0 fs-13 text-dark">
+                                                                                                    تم ارسال
+                                                                                                    الطلب من قبل
+                                                                                                    المستخدم</p>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </li>
+                                                                            <li>
+                                                                                <div class="notification-time">
+                                                                                    <span class="date">الأحد
+                                                                                        27/08/2021 م</span>
+                                                                                    <span class="time fw-bold">12:45
+                                                                                        صباحا</span>
+                                                                                </div>
+                                                                                <div class="notification-icon">
+                                                                                    <a href="javascript:void(0);"></a>
+                                                                                </div>
+                                                                                <div
+                                                                                    class="notification-time-date mb-2 d-block d-md-none">
+                                                                                    <span class="date">الأحد
+                                                                                        27/08/2021 م</span>
+                                                                                    <span class="time ms-2">12:45
+                                                                                        صباحا</span>
+                                                                                </div>
+                                                                                <div class="notification-body">
+                                                                                    <div class="media mt-0">
+                                                                                        <div
+                                                                                            class="main-avatar avatar-md">
+                                                                                            <span
+                                                                                                class="avatar avatar-md  bg-blue me-3">
+                                                                                                <i
+                                                                                                    class="mutasil-icon mutasil-icon-28 fa-lg"></i>
+                                                                                            </span>
+                                                                                        </div>
+                                                                                        <div
+                                                                                            class="media-body ms-3 d-flex">
+                                                                                            <div class="">
+                                                                                                <p
+                                                                                                    class="fs-15 text-primary fw-bold mb-0">
+                                                                                                    حفظ مؤقت</p>
+                                                                                                <p
+                                                                                                    class="mb-0 fs-13 text-dark">
+                                                                                                    تم حفظ
+                                                                                                    بيانات الطلب
+                                                                                                    بشكل مؤقت من
+                                                                                                    قبل المستخدم
+                                                                                                </p>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </li>
+                                                                        </ul>
+
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="d-block mt-4">
+                                            <a href="#" id="close" class="btn btn-primary btn-lg px-5 py-2 fw-600">
+                                                إلغاء الطلب
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <!-- /Row -->
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                    <!-- CONTAINER CLOSED -->
+                </div>
+            </div>
+            <!--app-content closed-->
+        </div>
+
+
+        <!-- FOOTER -->
+        <footer class="footer">
+            <div class="container-xxl">
+                <div class="row align-items-center">
+                    <div class="col-md-4 col-sm-12">
+                        <div class="footer-info">جميع الحقوق محفوظة © 2023 هيئة الاتصالات والفضاء والتقنية</div>
+                    </div>
+                    <div class="col-md-8 col-sm-12 text-end d-lg-flex justify-content-end">
+                        <ul class="footer-social-list me-lg-8">
+                            <li class="footer-link">
+                                <a href="faq.html">
+                                    الاسئلة الشائعة
+                                </a>
+                            </li>
+                            <li class="footer-link">
+                                <a href="complaint.html">
+                                    ارسل إستفسار أو مقترح
+                                </a>
+                            </li>
+                            <li class="footer-link">
+                                <a href="#">
+                                    سياسة الخصوصية
+                                </a>
+                            </li>
+                            <li class="footer-link">
+                                <a href="#">
+                                    شروط الاستخدام
+                                </a>
+                            </li>
+
+                        </ul>
+                        <ul class="footer-social-list ">
+                            <li>
+                                <a href="#"><img src="../assets/images/svgs/cst.svg" width="48"
+                                        class="vision-logo me-2" /></a>
+                            </li>
+                            <li>
+                                <img src="../assets/images/svgs/vision.svg" width="64" class="vision-logo" />
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- BACK-TO-TOP -->
+    <a href="#top" id="back-to-top"><i class="mutasil-icon mutasil-icon-37 fa-lg"></i></a>
+
+
+    <!-- JQUERY JS -->
+    <script src="../assets/js/jquery.min.js"></script>
+
+    <!-- BOOTSTRAP JS -->
+    <script src="../assets/plugins/bootstrap/js/popper.min.js"></script>
+    <script src="../assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- SIDEBAR JS -->
+    <script src="../assets/plugins/sidebar/sidebar.js"></script>
+
+    <!-- Sticky js -->
+    <script src="../assets/js/sticky.js"></script>
+    <!-- INTERNAL SELECT2 JS -->
+    <script src="../assets/plugins/select2/select2.full.min.js"></script>
+    <script src="../assets/js/select2.js"></script>
+
+    <!-- SWEET-ALERT JS -->
+    <script src="../assets/plugins/sweet-alert/sweetalert.min.js"></script>
+
+    <!-- INTERNAL Notifications js -->
+    <script src="../assets/plugins/growl-notification/growl-notification.min.js"></script>
+
+    <!-- INTERNAL File-Uploads Js-->
+    <script src="../assets/plugins/fancyuploder/jquery.ui.widget.js"></script>
+    <script src="../assets/plugins/fancyuploder/jquery.fileupload.js"></script>
+    <script src="../assets/plugins/fancyuploder/jquery.iframe-transport.js"></script>
+    <script src="../assets/plugins/fancyuploder/jquery.fancy-fileupload.js"></script>
+    <script src="../assets/plugins/fancyuploder/lang/ar.js"></script>
+
+    <script src="../assets/plugins/apex-chart/apex-chart.js"></script>
+    <script src="../assets/plugins/apex-chart/stock-prices.js"></script>
+
+    <!-- INTERNAL CHARTJS CHART JS-->
+    <script src="../assets/plugins/chart/Chart.bundle.js"></script>
+
+    <script src="../assets/plugins/chart/utils.js"></script>
+
+    <!-- Particles Animation JS -->
+    <script src="../assets/plugins/particles/particles.min.js"></script>
+    <script src="../assets/plugins/particles/particles.init.js"></script>
+
+    <!-- CUSTOM JS -->
+    <script src="../assets/js/custom.js"></script>
+    <script>
+        // $("#close").on("click", function (e) {
+        //     swal({
+        //         icon: "error",
+        //         title: "هل أنت متأكد من إغلاق التذكرة؟",
+        //         allowOutsideClick: false,
+        //         showCancelButton: true,
+        //         showConfirmButton: true,
+        //         confirmButtonText: 'نعم، متأكد',
+        //         cancelButtonText: 'لا',
+        //         customClass: {
+        //             cancelButton: 'btn btn-outline-primary'
+        //         },
+        //     });
+        // });
+    </script>
+    <script>
+        $(document).ready(function () {
+            $("input[name='related']").on("change", function () {
+                if ($("input[name='related']").is(":checked")) {
+                    $("#related").removeClass("d-none");
+                } else {
+                    $("#related").addClass("d-none");
+                }
+
+            });
+            $("input[name='case']").on("change", function () {
+                if ($("input[name='case']").is(":checked")) {
+                    $("#case").removeClass("d-none");
+                } else {
+                    $("#case").addClass("d-none");
+                }
+
+            })
+        });
+        $(document).ready(function () {
+            //fancyfileuplod
+            $('.fancy_uploader').FancyFileUpload({
+                params: {
+                    action: 'fileuploader'
+                },
+                maxfilesize: 41943040
+            });
+        });
+    </script>
+    <script>
+        $(".fav-input").change(function (e) {
+            var popupTitle = "";
+            console.log($(this).is(":checked"))
+            if ($(this).is(":checked")) {
+                popupTitle = 'تم اضافة الخدمة للخدمات المفضلة';
+            } else {
+                popupTitle = 'تم ازالة الخدمة من قائمة الخدمات المفضلة';
+            }
+            swal({
+                type: "success",
+                title: popupTitle,
+
+                timer: 2000,
+                allowOutsideClick: true,
+                showConfirmButton: false,
+                customClass: 'swal-nobuttons'
+            });
+        });
+    </script>
+    <script>
+        function notifiCopy(reqNumber) {
+            GrowlNotification.closeAll();
+            GrowlNotification.notify({
+                description: 'تم نسخ رقم الطلب : ' + reqNumber,
+                image: {
+                    visible: true,
+                },
+                type: 'success',
+                closeTimeout: 3000
+            });
+        }
+    </script>
+    <script>
+        (function () {
+            var s = document.createElement('script');
+            var h = document.querySelector('head') || document.body;
+            s.src = 'https://acsbapp.com/apps/app/dist/js/app.js';
+            s.async = true;
+            s.onload = function () {
+                acsbJS.init({
+                    statementLink: '',
+                    footerHtml: '',
+                    hideMobile: false,
+                    hideTrigger: false,
+                    disableBgProcess: false,
+                    language: 'ar',
+                    position: 'right',
+                    leadColor: '#000062',
+                    triggerColor: '#000062',
+                    triggerRadius: '50%',
+                    triggerPositionX: 'right',
+                    triggerPositionY: 'bottom',
+                    triggerIcon: 'people',
+                    triggerSize: 'bottom',
+                    triggerOffsetX: 20,
+                    triggerOffsetY: 20,
+                    mobile: {
+                        triggerSize: 'small',
+                        triggerPositionX: 'right',
+                        triggerPositionY: 'bottom',
+                        triggerOffsetX: 20,
+                        triggerOffsetY: 20,
+                        triggerRadius: '20'
+                    }
+                });
+            };
+            h.appendChild(s);
+        })();
+    </script>
+    <style>
+        #chart-dashbord .apexcharts-legend.position-left {
+            right: calc(50% - 8px) !important;
+            top: 36px !important;
+            line-height: 20px;
+        }
+    </style>
+</body>
+
+</html>
